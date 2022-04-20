@@ -1,0 +1,96 @@
+uuid: 44e23fb1-b36a-4944-b4d8-a6dbdf43b47e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.page.field_taxo
+    - field.field.node.page.layout_builder__layout
+    - node.type.page
+    - views.view.latest_news
+  module:
+    - layout_builder
+    - layout_discovery
+    - user
+    - views
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          0b4bd91d-1459-4def-9149-fe87c1449736:
+            uuid: 0b4bd91d-1459-4def-9149-fe87c1449736
+            region: content
+            configuration:
+              id: 'extra_field_block:node:page:links'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 0
+            additional: {  }
+          8a0cd046-f988-421d-9ac9-068827ee2115:
+            uuid: 8a0cd046-f988-421d-9ac9-068827ee2115
+            region: content
+            configuration:
+              id: 'field_block:node:page:field_taxo'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: main
+          context_mapping: {  }
+          column_widths: 67-33
+        components:
+          83c9ca56-23d2-4112-b0a0-a04008efb75a:
+            uuid: 83c9ca56-23d2-4112-b0a0-a04008efb75a
+            region: second
+            configuration:
+              id: 'views_block:latest_news-block_1'
+              label: ''
+              label_display: visible
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+_core:
+  default_config_hash: M_Y8L5tfmhx7DR143E05YyZSpvgil6VFvqcfBWykalg
+id: node.page.default
+targetEntityType: node
+bundle: page
+mode: default
+content:
+  field_taxo:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+hidden:
+  langcode: true
+  layout_builder__layout: true
+  search_api_excerpt: true

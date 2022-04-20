@@ -1,0 +1,29 @@
+uuid: eb656bcd-645a-4c4c-bd1d-1917cde75a81
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_taxo
+    - node.type.page
+    - taxonomy.vocabulary.ar
+id: node.page.field_taxo
+field_name: field_taxo
+entity_type: node
+bundle: page
+label: Taxonomy
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      ar: ar
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

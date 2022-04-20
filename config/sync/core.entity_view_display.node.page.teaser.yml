@@ -1,0 +1,26 @@
+uuid: 6b626ed7-2477-476e-b6e1-b4079cf85bbb
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.page.field_taxo
+    - field.field.node.page.layout_builder__layout
+    - node.type.page
+  module:
+    - user
+_core:
+  default_config_hash: 8BgdRtLbtQ0F__o0FHSH0Mx5fvXOra9tfT1GmNKbRYw
+id: node.page.teaser
+targetEntityType: node
+bundle: page
+mode: teaser
+content:
+  links:
+    weight: 101
+    region: content
+hidden:
+  field_taxo: true
+  langcode: true
+  layout_builder__layout: true
+  search_api_excerpt: true
