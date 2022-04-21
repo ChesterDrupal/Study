@@ -1,0 +1,96 @@
+uuid: 5716c99f-2e18-49e5-86d0-344f0d39dca0
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.trst
+    - field.field.node.articles.field_comment
+    - field.field.node.articles.field_head
+    - field.field.node.articles.field_para
+    - field.field.node.articles.field_taxonommy
+    - field.field.node.articles.layout_builder__layout
+    - node.type.articles
+  module:
+    - layout_builder
+    - layout_discovery
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          ef8b5518-7ae0-451d-9b13-892b1e3dee86:
+            uuid: ef8b5518-7ae0-451d-9b13-892b1e3dee86
+            region: content
+            configuration:
+              id: 'field_block:node:articles:field_head'
+              label: headimmage
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: media_thumbnail
+                label: hidden
+                settings:
+                  image_link: ''
+                  image_style: thumbnail
+                third_party_settings: {  }
+            weight: 5
+            additional: {  }
+        third_party_settings: {  }
+id: node.articles.trst
+targetEntityType: node
+bundle: articles
+mode: trst
+content:
+  field_head:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_headd:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_taxonommy:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_taxonomyhead:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_comment: true
+  field_para: true
+  langcode: true
+  layout_builder__layout: true
+  search_api_excerpt: true

@@ -1,0 +1,10 @@
+uuid: 30348539-b53a-4d35-a1a2-b5be9837f635
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.trst
+label: 'immage + date'
+targetEntityType: node
+cache: true
