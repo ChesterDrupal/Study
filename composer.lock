@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "741dc1ca87c1de05405cc9e15827f895",
+    "content-hash": "0dfcb1503576e50d69750a8d33443021",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1222,6 +1222,47 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/entity_usage",
                 "issues": "http://drupal.org/project/issues/entity_usage"
+            }
+        },
+        {
+            "name": "drupal/layout_builder_perms",
+            "version": "dev-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/layout_builder_perms.git",
+                "reference": "f55a5fde9151f7fd98dc32c7ba587e51dec1c89e"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.x-dev",
+                    "datestamp": "1607633887",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "sdstyles",
+                    "homepage": "https://www.drupal.org/user/1420228"
+                }
+            ],
+            "description": "Advanced permissions.",
+            "homepage": "https://www.drupal.org/project/layout_builder_perms",
+            "support": {
+                "source": "https://git.drupalcode.org/project/layout_builder_perms"
             }
         },
         {
@@ -5092,7 +5133,8 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "drupal/entity_usage": 10
+        "drupal/entity_usage": 10,
+        "drupal/layout_builder_perms": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
