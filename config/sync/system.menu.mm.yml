@@ -1,8 +1,0 @@
-uuid: df66ae39-7202-41dc-9d21-f59adea282ab
-langcode: en
-status: true
-dependencies: {  }
-id: mm
-label: 'Main menu'
-description: 'Main site menu'
-locked: false
