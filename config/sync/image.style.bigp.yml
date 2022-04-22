@@ -1,0 +1,15 @@
+uuid: 3b5fea48-e5fb-44d4-9369-e5fcf964afe5
+langcode: en
+status: true
+dependencies: {  }
+name: bigp
+label: 'Bigpicture 650x440'
+effects:
+  b79da848-8a8a-4de0-8da9-bb6ec1d6890b:
+    uuid: b79da848-8a8a-4de0-8da9-bb6ec1d6890b
+    id: image_scale
+    weight: 1
+    data:
+      width: 650
+      height: 440
+      upscale: false
