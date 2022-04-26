@@ -51,13 +51,13 @@ datasource_settings:
       default: true
       selected: {  }
 processor_settings:
+  add_url: {  }
   aggregated_field: {  }
   rendered_item: {  }
-  add_url: {  }
 tracker_settings:
   default: {  }
 options:
-  index_directly: true
   cron_limit: 50
+  index_directly: true
   track_changes_in_references: true
 server: paragraphs_demo_server

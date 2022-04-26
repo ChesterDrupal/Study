@@ -1,0 +1,21 @@
+uuid: 5a12054f-d91a-4246-8e07-a63d9feeac78
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_people
+    - paragraphs.paragraphs_type.stay_connected
+  module:
+    - options
+id: paragraph.stay_connected.field_people
+field_name: field_people
+entity_type: paragraph
+bundle: stay_connected
+label: People
+description: "choose your category\r\n"
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

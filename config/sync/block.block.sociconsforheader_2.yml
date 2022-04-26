@@ -1,0 +1,25 @@
+uuid: 87163e57-6bd5-42a0-bb2a-a9f7852c2314
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:6524642b-4101-48cd-bfe1-aa1a9bb33946'
+  module:
+    - block_content
+  theme:
+    - bartik
+id: sociconsforheader_2
+theme: bartik
+region: secondary_menu
+weight: -2
+provider: null
+plugin: 'block_content:6524642b-4101-48cd-bfe1-aa1a9bb33946'
+settings:
+  id: 'block_content:6524642b-4101-48cd-bfe1-aa1a9bb33946'
+  label: 'Soc Icons for header'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
