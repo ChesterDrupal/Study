@@ -1,0 +1,21 @@
+uuid: 2f397aaf-2f48-4591-b740-03d588d05509
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.basic
+    - field.storage.block_content.field_header
+  module:
+    - text
+id: block_content.basic.field_header
+field_name: field_header
+entity_type: block_content
+bundle: basic
+label: Title
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

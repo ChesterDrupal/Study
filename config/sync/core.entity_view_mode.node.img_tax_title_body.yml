@@ -1,0 +1,10 @@
+uuid: 46b595f1-37c7-4021-ba7d-fe56eb609c34
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.img_tax_title_body
+label: 'img + tax + title + body'
+targetEntityType: node
+cache: true

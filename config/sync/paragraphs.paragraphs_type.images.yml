@@ -8,5 +8,5 @@ id: images
 label: Images
 icon_uuid: null
 icon_default: null
-description: 'Use <em>Images</em> for adding one or multiple images.'
+description: image
 behavior_plugins: {  }

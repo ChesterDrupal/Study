@@ -4,6 +4,8 @@ status: true
 dependencies:
   config:
     - field.field.media.image.field_media_image
+    - field.field.media.image.field_txi
+    - field.field.media.image.layout_builder__layout
     - image.style.thumbnail
     - media.type.image
   module:
@@ -29,6 +31,16 @@ content:
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_txi:
+    type: entity_reference_autocomplete
+    weight: 101
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
   langcode:
     type: language_select
@@ -61,4 +73,5 @@ content:
       placeholder: ''
     third_party_settings: {  }
 hidden:
+  layout_builder__layout: true
   name: true

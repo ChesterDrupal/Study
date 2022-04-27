@@ -1,4 +1,4 @@
-uuid: bc7e0182-919d-4260-8163-df409b0ff429
+uuid: 8d880981-c7df-4787-b8a7-eb41fa762d25
 langcode: en
 status: true
 dependencies:
@@ -8,16 +8,16 @@ dependencies:
     - system
   theme:
     - bartik
-id: mainmenu
+id: mainmenu_3
 theme: bartik
-region: primary_menu
-weight: -7
+region: secondary_menu
+weight: -3
 provider: null
 plugin: 'system_menu_block:mm'
 settings:
   id: 'system_menu_block:mm'
   label: 'Main menu'
-  label_display: visible
+  label_display: '0'
   provider: system
   level: 1
   depth: 0

@@ -1,0 +1,12 @@
+uuid: 2ced0879-8ce0-4306-a8a5-7d774adbd790
+langcode: en
+status: true
+dependencies: {  }
+id: node_view
+label: 'Node view'
+description: ''
+use_admin_theme: false
+path: /node/70
+access_logic: and
+access_conditions: {  }
+parameters: {  }
