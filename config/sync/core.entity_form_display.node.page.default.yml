@@ -3,12 +3,14 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.page.field_body
     - field.field.node.page.field_taxo
     - field.field.node.page.layout_builder__layout
     - node.type.page
   module:
     - content_moderation
     - path
+    - text
 _core:
   default_config_hash: SfpLhPExzvR0MgFp0Wp7CrmgEnhcqQ-fXIWFhbf4ue0
 id: node.page.default
@@ -21,6 +23,14 @@ content:
     weight: 2
     region: content
     settings: {  }
+    third_party_settings: {  }
+  field_body:
+    type: text_textarea
+    weight: 101
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
     third_party_settings: {  }
   field_taxo:
     type: entity_reference_autocomplete

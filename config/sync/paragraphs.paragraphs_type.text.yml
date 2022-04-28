@@ -8,5 +8,5 @@ id: text
 label: Text
 icon_uuid: null
 icon_default: null
-description: 'Use <em>Text</em> for adding a text.'
+description: text
 behavior_plugins: {  }

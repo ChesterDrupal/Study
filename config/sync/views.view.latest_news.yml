@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.img_tax_title_body
     - core.entity_view_mode.node.nes
     - node.type.articles
   content:
@@ -93,7 +94,7 @@ display:
         type: some
         options:
           offset: null
-          items_per_page: 17
+          items_per_page: 15
       exposed_form:
         type: basic
         options:
@@ -214,20 +215,7 @@ display:
           query_tags: {  }
       relationships: {  }
       header: {  }
-      footer:
-        entity_media:
-          id: entity_media
-          table: views
-          field: entity_media
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: entity
-          empty: false
-          target: aa4b1cc9-aa69-4a2f-a37b-11a622d9ed32
-          view_mode: full
-          tokenize: true
-          bypass_access: false
+      footer: {  }
       display_extenders: {  }
     cache_metadata:
       max-age: -1
@@ -248,10 +236,66 @@ display:
         type: some
         options:
           offset: 0
-          items_per_page: 4
+          items_per_page: 1
+      defaults:
+        footer: false
+      footer:
+        entity_media:
+          id: entity_media
+          table: views
+          field: entity_media
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: entity
+          empty: false
+          target: aa4b1cc9-aa69-4a2f-a37b-11a622d9ed32
+          view_mode: default
+          tokenize: true
+          bypass_access: false
       display_extenders: {  }
       displays:
         block_1: block_1
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+        - 'user.node_grants:view'
+        - user.permissions
+      tags: {  }
+  attachment_2:
+    id: attachment_2
+    display_title: 'Attachment 2'
+    display_plugin: attachment
+    position: 5
+    display_options:
+      pager:
+        type: some
+        options:
+          offset: 0
+          items_per_page: 2
+      defaults:
+        header: false
+      header:
+        entity_media:
+          id: entity_media
+          table: views
+          field: entity_media
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: entity
+          empty: false
+          target: aa4b1cc9-aa69-4a2f-a37b-11a622d9ed32
+          view_mode: default
+          tokenize: true
+          bypass_access: false
+      display_extenders: {  }
+      displays:
+        block_2: block_2
+      attachment_position: after
     cache_metadata:
       max-age: -1
       contexts:
@@ -280,7 +324,36 @@ display:
       header: {  }
       footer: {  }
       display_extenders: {  }
-      block_description: 'Latest News'
+      block_description: 'Latest News for category'
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+        - 'user.node_grants:view'
+        - user.permissions
+      tags: {  }
+  block_2:
+    id: block_2
+    display_title: 'Latest News for article'
+    display_plugin: block
+    position: 1
+    display_options:
+      pager:
+        type: some
+        options:
+          offset: null
+          items_per_page: 4
+      defaults:
+        pager: false
+        header: false
+        footer: false
+      display_description: ''
+      header: {  }
+      footer: {  }
+      display_extenders: {  }
+      block_description: 'Latest News for article'
     cache_metadata:
       max-age: -1
       contexts:
@@ -301,22 +374,53 @@ display:
         footer: false
       display_description: ''
       header: {  }
-      footer:
-        entity_media:
-          id: entity_media
-          table: views
-          field: entity_media
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: entity
-          empty: false
-          target: aa4b1cc9-aa69-4a2f-a37b-11a622d9ed32
-          view_mode: default
-          tokenize: false
-          bypass_access: false
+      footer: {  }
       display_extenders: {  }
-      block_description: 'Latest News main'
+      block_description: 'Latest News for frontpage'
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+        - 'user.node_grants:view'
+        - user.permissions
+      tags: {  }
+  block_4:
+    id: block_4
+    display_title: 'Must read for article'
+    display_plugin: block
+    position: 1
+    display_options:
+      title: 'Must read'
+      pager:
+        type: some
+        options:
+          offset: null
+          items_per_page: 2
+      style:
+        type: default
+        options:
+          row_class: ''
+          default_row_class: true
+          uses_fields: false
+      row:
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: img_tax_title_body
+      defaults:
+        title: false
+        pager: false
+        style: false
+        row: false
+        header: false
+        footer: false
+      display_description: ''
+      header: {  }
+      footer: {  }
+      display_extenders: {  }
+      block_description: 'Must read for article'
     cache_metadata:
       max-age: -1
       contexts:

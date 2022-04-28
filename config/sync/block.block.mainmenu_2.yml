@@ -1,0 +1,25 @@
+uuid: f7fdd8e6-8a4c-4ccf-9ba8-0e599c8f6c17
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.mm
+  module:
+    - system
+  theme:
+    - bartik
+id: mainmenu_2
+theme: bartik
+region: header
+weight: -5
+provider: null
+plugin: 'system_menu_block:mm'
+settings:
+  id: 'system_menu_block:mm'
+  label: 'Main menu'
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

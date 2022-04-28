@@ -12,7 +12,6 @@ dependencies:
     - node.type.articles
   module:
     - layout_builder
-    - layout_discovery
     - user
 third_party_settings:
   layout_builder:
@@ -20,13 +19,15 @@ third_party_settings:
     allow_custom: false
     sections:
       -
-        layout_id: layout_onecol
+        layout_id: layout_twocol_section
         layout_settings:
           label: ''
+          context_mapping: {  }
+          column_widths: 33-67
         components:
           ef8b5518-7ae0-451d-9b13-892b1e3dee86:
             uuid: ef8b5518-7ae0-451d-9b13-892b1e3dee86
-            region: content
+            region: first
             configuration:
               id: 'field_block:node:articles:field_head'
               label: headimmage
@@ -39,10 +40,50 @@ third_party_settings:
                 type: media_thumbnail
                 label: hidden
                 settings:
-                  image_link: ''
+                  image_link: content
                   image_style: thumbnail
                 third_party_settings: {  }
-            weight: 5
+            weight: 0
+            additional: {  }
+          0bb45c44-07c7-4696-8d17-54a5042e90ec:
+            uuid: 0bb45c44-07c7-4696-8d17-54a5042e90ec
+            region: second
+            configuration:
+              id: 'field_block:node:articles:created'
+              label: 'Authored on'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: timestamp
+                label: hidden
+                settings:
+                  date_format: custom
+                  custom_date_format: Y/m/d
+                  timezone: ''
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          5bfad76a-2041-4b32-993e-753a6e845cef:
+            uuid: 5bfad76a-2041-4b32-993e-753a6e845cef
+            region: second
+            configuration:
+              id: 'field_block:node:articles:title'
+              label: Title
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: true
+                third_party_settings: {  }
+            weight: 0
             additional: {  }
         third_party_settings: {  }
 id: node.articles.trst

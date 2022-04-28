@@ -1,0 +1,50 @@
+uuid: d47136bf-d852-44ed-a31e-2056b90c39b6
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.stay_connected
+    - field.storage.block_content.field_paragraph
+  module:
+    - entity_reference_revisions
+id: block_content.stay_connected.field_paragraph
+field_name: field_paragraph
+entity_type: block_content
+bundle: stay_connected
+label: Paragraph
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles: {  }
+    negate: 0
+    target_bundles_drag_drop:
+      from_library:
+        weight: 9
+        enabled: false
+      image_text:
+        weight: 11
+        enabled: false
+      images:
+        weight: 10
+        enabled: false
+      nested_paragraph:
+        weight: 12
+        enabled: false
+      stay_connected:
+        weight: 13
+        enabled: true
+      text:
+        weight: 14
+        enabled: false
+      text_image:
+        weight: 15
+        enabled: false
+      user:
+        weight: 16
+        enabled: false
+field_type: entity_reference_revisions

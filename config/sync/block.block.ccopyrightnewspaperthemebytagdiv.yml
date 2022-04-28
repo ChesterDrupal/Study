@@ -1,0 +1,25 @@
+uuid: 8b589130-90c9-40d0-b49f-19bc00c7fd28
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:348b941e-8a7e-4d4f-9aee-6cf303f3af21'
+  module:
+    - block_content
+  theme:
+    - bartik
+id: ccopyrightnewspaperthemebytagdiv
+theme: bartik
+region: footer_fifth
+weight: -3
+provider: null
+plugin: 'block_content:348b941e-8a7e-4d4f-9aee-6cf303f3af21'
+settings:
+  id: 'block_content:348b941e-8a7e-4d4f-9aee-6cf303f3af21'
+  label: "© Copyright -\_Newspaper theme\_by tagDiv"
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
