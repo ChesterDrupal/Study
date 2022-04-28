@@ -76,6 +76,69 @@ third_party_settings:
                 third_party_settings: {  }
             weight: 0
             additional: {  }
+          97f45f40-b40b-4867-add0-05008b63cb2c:
+            uuid: 97f45f40-b40b-4867-add0-05008b63cb2c
+            region: content
+            configuration:
+              id: 'field_block:block_content:basic:body'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 3
+            additional: {  }
+          2e9e4957-1e53-434c-a81a-31e05e6d1deb:
+            uuid: 2e9e4957-1e53-434c-a81a-31e05e6d1deb
+            region: content
+            configuration:
+              id: 'field_block:block_content:basic:field_social'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_entity_view
+                label: above
+                settings:
+                  view_mode: default
+                  link: false
+                third_party_settings: {  }
+            weight: 4
+            additional: {  }
+          2b6fa20e-f8df-4d1d-a28d-690259ec2eb0:
+            uuid: 2b6fa20e-f8df-4d1d-a28d-690259ec2eb0
+            region: content
+            configuration:
+              id: 'field_block:block_content:basic:field_taxii'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 5
+            additional: {  }
+          e2c3ac6a-7ace-4c29-8927-830df6b9ba16:
+            uuid: e2c3ac6a-7ace-4c29-8927-830df6b9ba16
+            region: content
+            configuration:
+              id: 'field_block:block_content:basic:field_header'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 6
+            additional: {  }
         third_party_settings: {  }
 _core:
   default_config_hash: hBNNDTFwakREOTa6GGMqN899Iyrii0hInwSJtQ7Kj30
