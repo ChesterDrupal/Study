@@ -25,7 +25,8 @@
         "drupal/entity_usage": "^2.0@beta",
         "drupal/layout_builder_perms": "1.x-dev@dev",
         "drupal/paragraphs": "^1.13",
-        "drupal/search_api_db": "^1.8"
+        "drupal/search_api_db": "^1.8",
+        "drupal/views_bulk_operations": "^4.1"
     },
     "conflict": {
         "drupal/drupal": "*"

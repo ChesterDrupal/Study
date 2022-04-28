@@ -1,0 +1,41 @@
+uuid: 3a49b177-e654-46bf-9d72-3487d88c6453
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.stay_connected.field_action
+    - field.field.paragraph.stay_connected.field_number
+    - field.field.paragraph.stay_connected.field_people
+    - paragraphs.paragraphs_type.stay_connected
+  module:
+    - options
+id: paragraph.stay_connected.default
+targetEntityType: paragraph
+bundle: stay_connected
+mode: default
+content:
+  field_action:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_number:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_people:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  search_api_excerpt: true

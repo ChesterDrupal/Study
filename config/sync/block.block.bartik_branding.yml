@@ -1,6 +1,6 @@
 uuid: 1be1e5fb-32ce-4d14-846b-5c28f1391147
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - system
@@ -11,7 +11,7 @@ _core:
 id: bartik_branding
 theme: bartik
 region: header
-weight: -8
+weight: -3
 provider: null
 plugin: system_branding_block
 settings:
