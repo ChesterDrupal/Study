@@ -8,5 +8,5 @@ id: image_text
 label: 'Image + Text'
 icon_uuid: null
 icon_default: null
-description: 'Image + Text'
+description: 'Use <em>Image + Text</em> for adding an image on the left and a text on the right.'
 behavior_plugins: {  }

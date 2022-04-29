@@ -6,7 +6,6 @@ dependencies:
     - field.field.node.paragraphed_content_demo.field_paragraphs_demo
     - node.type.paragraphed_content_demo
   module:
-    - content_moderation
     - paragraphs
     - path
 _core:

@@ -21,7 +21,7 @@ dependencies:
     - taxonomy
     - user
 id: duplicate_of_main_blocks
-label: 'Duplicate of Main blocks'
+label: 'Main blocks'
 module: views
 description: ''
 tag: ''

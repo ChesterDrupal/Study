@@ -21,32 +21,6 @@ variant_settings:
         context_mapping: {  }
         column_widths: 25-75
       components:
-        b0318628-ab27-4f00-8ebe-31bd7b949372:
-          uuid: b0318628-ab27-4f00-8ebe-31bd7b949372
-          region: second
-          configuration:
-            id: 'views_block:main_view-block_1'
-            label: ''
-            label_display: visible
-            provider: views
-            context_mapping: {  }
-            views_label: ''
-            items_per_page: none
-          weight: 0
-          additional: {  }
-        0093f602-5e8d-4066-9974-060fd7d0a83e:
-          uuid: 0093f602-5e8d-4066-9974-060fd7d0a83e
-          region: second
-          configuration:
-            id: 'views_block:main_-block_3'
-            label: ''
-            label_display: visible
-            provider: views
-            context_mapping: {  }
-            views_label: ''
-            items_per_page: none
-          weight: 1
-          additional: {  }
         f80a4f8c-c397-4d56-b229-7a7b28610486:
           uuid: f80a4f8c-c397-4d56-b229-7a7b28610486
           region: first
@@ -59,84 +33,6 @@ variant_settings:
             views_label: ''
             items_per_page: none
           weight: 0
-          additional: {  }
-        aea3bdf5-2830-44fd-a8c4-3d0b557b1248:
-          uuid: aea3bdf5-2830-44fd-a8c4-3d0b557b1248
-          region: second
-          configuration:
-            id: 'views_block:main_-block_5'
-            label: ''
-            label_display: visible
-            provider: views
-            context_mapping: {  }
-            views_label: ''
-            items_per_page: none
-          weight: 2
-          additional: {  }
-        c87ee540-10d7-42e9-bc83-ff576ab2bacf:
-          uuid: c87ee540-10d7-42e9-bc83-ff576ab2bacf
-          region: second
-          configuration:
-            id: 'views_block:main_-block_7'
-            label: ''
-            label_display: visible
-            provider: views
-            context_mapping: {  }
-            views_label: ''
-            items_per_page: none
-          weight: 4
-          additional: {  }
-        f86ddb25-a511-402b-859e-2c4965fb3aca:
-          uuid: f86ddb25-a511-402b-859e-2c4965fb3aca
-          region: second
-          configuration:
-            id: 'views_block:main_-block_6'
-            label: ''
-            label_display: visible
-            provider: views
-            context_mapping: {  }
-            views_label: ''
-            items_per_page: none
-          weight: 5
-          additional: {  }
-        a1304f2c-a2c7-4a73-a7ba-e5f78be6d5bc:
-          uuid: a1304f2c-a2c7-4a73-a7ba-e5f78be6d5bc
-          region: second
-          configuration:
-            id: 'views_block:main_view-block_2'
-            label: ''
-            label_display: visible
-            provider: views
-            context_mapping: {  }
-            views_label: ''
-            items_per_page: none
-          weight: 6
-          additional: {  }
-        6fd384a3-5edc-4908-90cc-78d4f7e1d58c:
-          uuid: 6fd384a3-5edc-4908-90cc-78d4f7e1d58c
-          region: second
-          configuration:
-            id: 'views_block:main_-block_8'
-            label: ''
-            label_display: visible
-            provider: views
-            context_mapping: {  }
-            views_label: ''
-            items_per_page: none
-          weight: 7
-          additional: {  }
-        ff1d3385-136a-4df0-8dbc-10b7e1e14994:
-          uuid: ff1d3385-136a-4df0-8dbc-10b7e1e14994
-          region: second
-          configuration:
-            id: 'views_block:stay_connected-block_1'
-            label: ''
-            label_display: visible
-            provider: views
-            context_mapping: {  }
-            views_label: ''
-            items_per_page: none
-          weight: 3
           additional: {  }
       third_party_settings: {  }
     -
@@ -157,19 +53,6 @@ variant_settings:
             views_label: ''
             items_per_page: none
           weight: 1
-          additional: {  }
-        3b66f9f2-8e4f-4871-8142-911ff2926eca:
-          uuid: 3b66f9f2-8e4f-4871-8142-911ff2926eca
-          region: content
-          configuration:
-            id: 'views_block:main_-block_9'
-            label: ''
-            label_display: visible
-            provider: views
-            context_mapping: {  }
-            views_label: ''
-            items_per_page: none
-          weight: 2
           additional: {  }
       third_party_settings: {  }
 page: node_view
