@@ -37,6 +37,43 @@ third_party_settings:
                 third_party_settings: {  }
             weight: 2
             additional: {  }
+          51766044-f339-4818-95f6-27d34ce83bdc:
+            uuid: 51766044-f339-4818-95f6-27d34ce83bdc
+            region: content
+            configuration:
+              id: 'extra_field_block:node:paragraphed_content_demo:content_moderation_control'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 3
+            additional: {  }
+          a066ea08-9878-41e3-9d0f-2bff0ae8fbc0:
+            uuid: a066ea08-9878-41e3-9d0f-2bff0ae8fbc0
+            region: content
+            configuration:
+              id: 'extra_field_block:node:paragraphed_content_demo:links'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 4
+            additional: {  }
+          51942469-de60-4e01-94b6-86e07f31ff4f:
+            uuid: 51942469-de60-4e01-94b6-86e07f31ff4f
+            region: content
+            configuration:
+              id: 'field_block:node:paragraphed_content_demo:field_paragraphs_demo'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_revisions_entity_view
+                label: hidden
+                settings:
+                  view_mode: default
+                  link: ''
+                third_party_settings: {  }
+            weight: 5
+            additional: {  }
         third_party_settings: {  }
 _core:
   default_config_hash: wpSUWAu1ONuI7AtzAHuRQr7YFPKet0TdzvgqydDFVU4

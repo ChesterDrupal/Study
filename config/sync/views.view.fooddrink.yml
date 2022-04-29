@@ -1,22 +1,21 @@
-uuid: 16360e72-8220-4bed-ac4a-8d9e0ccc522b
+uuid: 07d562ce-26d8-4de1-b190-2dd72b23c0c9
 langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.big_art
-    - core.entity_view_mode.node.img_head_
-    - node.type.articles
-    - taxonomy.vocabulary.ar
+    - core.entity_view_mode.node.teaser
+    - taxonomy.vocabulary.tags
   content:
-    - 'taxonomy_term:ar:61a53f62-3aac-43a5-a80b-7b989d3221de'
+    - 'taxonomy_term:tags:d7aa1e69-11dd-46f6-b37a-638264c13e75'
+    - 'taxonomy_term:tags:f62ebfc0-048b-42df-a748-6d6c312f0fd9'
   module:
     - node
     - taxonomy
     - user
-id: main_view
-label: 'Main view'
+id: fooddrink
+label: 'Food & Drink'
 module: views
-description: 'View at the top of front page'
+description: ''
 tag: ''
 base_table: node_field_data
 base_field: nid
@@ -27,7 +26,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: 'Main view'
+      title: ''
       fields:
         title:
           id: title
@@ -95,8 +94,8 @@ display:
       pager:
         type: some
         options:
-          offset: 1
-          items_per_page: 4
+          offset: 0
+          items_per_page: 5
       exposed_form:
         type: basic
         options:
@@ -115,7 +114,23 @@ display:
         type: tag
         options: {  }
       empty: {  }
-      sorts: {  }
+      sorts:
+        created:
+          id: created
+          table: node_field_data
+          field: created
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: created
+          plugin_id: date
+          order: DESC
+          expose:
+            label: ''
+            field_identifier: ''
+          exposed: false
+          granularity: second
       arguments: {  }
       filters:
         status:
@@ -131,18 +146,6 @@ display:
             operator: ''
             operator_limit_selection: false
             operator_list: {  }
-        type:
-          id: type
-          table: node_field_data
-          field: type
-          entity_type: node
-          entity_field: type
-          plugin_id: bundle
-          value:
-            articles: articles
-          expose:
-            operator_limit_selection: false
-            operator_list: {  }
         tid:
           id: tid
           table: taxonomy_index
@@ -153,7 +156,7 @@ display:
           plugin_id: taxonomy_index_tid
           operator: or
           value:
-            - 1
+            - 12
           group: 1
           exposed: false
           expose:
@@ -184,27 +187,18 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           reduce_duplicates: false
-          vid: ar
+          vid: tags
           type: textfield
           hierarchy: false
           limit: true
           error_message: true
       style:
-        type: grid
-        options:
-          uses_fields: false
-          columns: 2
-          automatic_width: true
-          alignment: horizontal
-          row_class_custom: ''
-          row_class_default: true
-          col_class_custom: ''
-          col_class_default: true
+        type: default
       row:
         type: 'entity:node'
         options:
           relationship: none
-          view_mode: img_head_
+          view_mode: teaser
       query:
         type: views_query
         options:
@@ -214,6 +208,11 @@ display:
           replica: false
           query_tags: {  }
       relationships: {  }
+      use_more: false
+      use_more_always: false
+      use_more_text: more
+      link_display: '0'
+      link_url: 'http://drupka.localhost:8000/node/1'
       header: {  }
       footer: {  }
       display_extenders: {  }
@@ -226,17 +225,12 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
-  attachment_1:
-    id: attachment_1
-    display_title: Attachment
-    display_plugin: attachment
-    position: 2
+  block_1:
+    id: block_1
+    display_title: foodview
+    display_plugin: block
+    position: 1
     display_options:
-      pager:
-        type: some
-        options:
-          offset: 0
-          items_per_page: 1
       filters:
         status:
           id: status
@@ -251,94 +245,62 @@ display:
             operator: ''
             operator_limit_selection: false
             operator_list: {  }
+        tid:
+          id: tid
+          table: taxonomy_index
+          field: tid
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: taxonomy_index_tid
+          operator: or
+          value:
+            - 11
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          vid: tags
+          type: textfield
+          hierarchy: false
+          limit: true
+          error_message: true
       filter_groups:
         operator: AND
         groups:
           1: AND
-      style:
-        type: grid
-        options:
-          grouping: {  }
-          columns: 2
-          automatic_width: true
-          alignment: horizontal
-          row_class_custom: ''
-          row_class_default: true
-          col_class_custom: ''
-          col_class_default: true
-      row:
-        type: 'entity:node'
-        options:
-          relationship: none
-          view_mode: big_art
       defaults:
-        style: false
-        row: false
         filters: false
         filter_groups: false
-      display_extenders: {  }
-      displays:
-        block_1: block_1
-      attachment_position: before
-    cache_metadata:
-      max-age: -1
-      contexts:
-        - 'languages:language_content'
-        - 'languages:language_interface'
-        - 'user.node_grants:view'
-        - user.permissions
-      tags: {  }
-  attachment_2:
-    id: attachment_2
-    display_title: 'Attachment 2'
-    display_plugin: attachment
-    position: 4
-    display_options:
-      pager:
-        type: some
-        options:
-          offset: 0
-          items_per_page: 1
-      style:
-        type: grid
-        options:
-          uses_fields: false
-          columns: 2
-          automatic_width: true
-          alignment: horizontal
-          row_class_custom: ''
-          row_class_default: true
-          col_class_custom: ''
-          col_class_default: true
-      row:
-        type: 'entity:node'
-        options:
-          relationship: none
-          view_mode: big_art
-      defaults:
-        style: false
-        row: false
-      display_extenders: {  }
-      displays:
-        block_2: block_2
-    cache_metadata:
-      max-age: -1
-      contexts:
-        - 'languages:language_content'
-        - 'languages:language_interface'
-        - user
-        - 'user.node_grants:view'
-        - user.permissions
-      tags: {  }
-  block_1:
-    id: block_1
-    display_title: 'main view'
-    display_plugin: block
-    position: 1
-    display_options:
       display_description: ''
       display_extenders: {  }
-      block_description: 'main view'
+      block_description: foodview
     cache_metadata:
       max-age: -1
       contexts:
@@ -350,16 +312,23 @@ display:
       tags: {  }
   block_2:
     id: block_2
-    display_title: Celebrities
+    display_title: Fashion
     display_plugin: block
-    position: 3
+    position: 2
     display_options:
-      title: Celebrities
       defaults:
-        title: false
+        use_more: false
+        use_more_always: false
+        use_more_text: false
+        link_display: false
+        link_url: false
       display_description: ''
+      use_more: false
+      use_more_always: false
+      use_more_text: 'http://drupka.localhost:8000/node/6'
+      link_display: '0'
+      link_url: 'http://drupka.localhost:8000/node/6'
       display_extenders: {  }
-      block_description: Celebrities
     cache_metadata:
       max-age: -1
       contexts:
