@@ -5,9 +5,5 @@ definitions:
     weight: -50
     menu_name: footer
     parent: ''
-<<<<<<< HEAD
-    weight: -50
-=======
->>>>>>> 30b72c7e48f720668b4df5f0f0aff7b9d14a8f81
     expanded: false
     enabled: false

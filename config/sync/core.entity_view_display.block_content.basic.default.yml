@@ -76,7 +76,6 @@ third_party_settings:
                 third_party_settings: {  }
             weight: 0
             additional: {  }
-<<<<<<< HEAD
           97f45f40-b40b-4867-add0-05008b63cb2c:
             uuid: 97f45f40-b40b-4867-add0-05008b63cb2c
             region: content
@@ -140,9 +139,6 @@ third_party_settings:
                 third_party_settings: {  }
             weight: 6
             additional: {  }
-=======
->>>>>>> 30b72c7e48f720668b4df5f0f0aff7b9d14a8f81
-        third_party_settings: {  }
 _core:
   default_config_hash: hBNNDTFwakREOTa6GGMqN899Iyrii0hInwSJtQ7Kj30
 id: block_content.basic.default

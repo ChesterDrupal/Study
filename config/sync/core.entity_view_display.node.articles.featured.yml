@@ -29,7 +29,6 @@ third_party_settings:
         components:
           8d670eea-1ba4-429f-9a3f-556b9e13224b:
             uuid: 8d670eea-1ba4-429f-9a3f-556b9e13224b
-<<<<<<< HEAD
             region: content
             configuration:
               id: 'field_block:node:articles:field_head'
@@ -48,57 +47,22 @@ third_party_settings:
                 third_party_settings: {  }
             weight: 0
             additional: {  }
-          d29f6320-806f-4ea4-bb6e-4ffd7fafd81d:
-            uuid: d29f6320-806f-4ea4-bb6e-4ffd7fafd81d
-            region: content
-            configuration:
-              id: 'field_block:node:articles:created'
-              label: 'Authored on'
-              label_display: '0'
-              provider: layout_builder
-              context_mapping:
-                entity: layout_builder.entity
-                view_mode: view_mode
-              formatter:
-                type: timestamp
-                label: hidden
-                settings:
-                  date_format: custom
-                  custom_date_format: Y/m/d
-                  timezone: ''
-                third_party_settings: {  }
-            weight: 2
-            additional: {  }
           ffc016d7-e33e-413f-ae2b-dd51107c3b09:
             uuid: ffc016d7-e33e-413f-ae2b-dd51107c3b09
             region: content
             configuration:
               id: 'field_block:node:articles:title'
               label: Title
-=======
-            region: content
-            configuration:
-              id: 'field_block:node:articles:field_head'
-              label: headimmage
->>>>>>> 30b72c7e48f720668b4df5f0f0aff7b9d14a8f81
               label_display: '0'
               provider: layout_builder
               context_mapping:
                 entity: layout_builder.entity
                 view_mode: view_mode
               formatter:
-<<<<<<< HEAD
                 type: string
                 label: hidden
                 settings:
                   link_to_entity: true
-=======
-                type: media_thumbnail
-                label: hidden
-                settings:
-                  image_link: content
-                  image_style: large
->>>>>>> 30b72c7e48f720668b4df5f0f0aff7b9d14a8f81
                 third_party_settings: {  }
             weight: 1
             additional: {  }

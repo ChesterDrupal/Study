@@ -5,10 +5,6 @@ dependencies:
   config:
     - block_content.type.stay_connected
     - field.storage.block_content.field_paragraph
-<<<<<<< HEAD
-=======
-
->>>>>>> 30b72c7e48f720668b4df5f0f0aff7b9d14a8f81
   module:
     - entity_reference_revisions
 id: block_content.stay_connected.field_paragraph
@@ -24,13 +20,7 @@ default_value_callback: ''
 settings:
   handler: 'default:paragraph'
   handler_settings:
-<<<<<<< HEAD
     target_bundles: {  }
-=======
-
-    target_bundles: {  }
-
->>>>>>> 30b72c7e48f720668b4df5f0f0aff7b9d14a8f81
     negate: 0
     target_bundles_drag_drop:
       from_library:
