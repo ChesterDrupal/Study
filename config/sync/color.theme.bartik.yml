@@ -2,6 +2,7 @@ palette:
   top: '#292929'
   bottom: '#292929'
   bg: '#ffffff'
+
   sidebar: '#ffffff'
   sidebarborders: '#ffffff'
   footer: '#292929'
@@ -14,3 +15,4 @@ stylesheets:
 files:
   - 'public://color/bartik-5fa19764/logo.svg'
   - 'public://color/bartik-5fa19764/colors.css'
+

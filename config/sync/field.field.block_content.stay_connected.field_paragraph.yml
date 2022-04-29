@@ -5,6 +5,7 @@ dependencies:
   config:
     - block_content.type.stay_connected
     - field.storage.block_content.field_paragraph
+
   module:
     - entity_reference_revisions
 id: block_content.stay_connected.field_paragraph
@@ -20,7 +21,9 @@ default_value_callback: ''
 settings:
   handler: 'default:paragraph'
   handler_settings:
+
     target_bundles: {  }
+
     negate: 0
     target_bundles_drag_drop:
       from_library:
