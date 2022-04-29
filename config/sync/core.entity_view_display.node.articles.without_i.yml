@@ -26,7 +26,47 @@ third_party_settings:
         layout_id: layout_onecol
         layout_settings:
           label: ''
-        components: {  }
+        components:
+          0108f7ac-deb0-472c-a4ea-0a3604dc8e6f:
+            uuid: 0108f7ac-deb0-472c-a4ea-0a3604dc8e6f
+            region: content
+            configuration:
+              id: 'field_block:node:articles:uid'
+              label: 'Authored by'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_label
+                label: hidden
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          fb794e90-6091-49f6-9ac2-b55bc1d9b897:
+            uuid: fb794e90-6091-49f6-9ac2-b55bc1d9b897
+            region: content
+            configuration:
+              id: 'field_block:node:articles:created'
+              label: 'Authored on'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: timestamp
+                label: hidden
+                settings:
+                  date_format: custom
+                  custom_date_format: Y-m-d
+                  timezone: ''
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
         third_party_settings: {  }
 id: node.articles.without_i
 targetEntityType: node

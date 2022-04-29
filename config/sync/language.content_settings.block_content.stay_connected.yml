@@ -1,0 +1,11 @@
+uuid: 1e3f778a-67e8-49dd-bdf2-4b2414bbb850
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.stay_connected
+id: block_content.stay_connected
+target_entity_type_id: block_content
+target_bundle: stay_connected
+default_langcode: site_default
+language_alterable: false

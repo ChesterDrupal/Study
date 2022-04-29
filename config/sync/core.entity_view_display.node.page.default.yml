@@ -3,13 +3,16 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.page.field_body
     - field.field.node.page.field_taxo
     - field.field.node.page.layout_builder__layout
     - node.type.page
+    - views.view.advertise
     - views.view.latest_news
   module:
     - layout_builder
     - layout_discovery
+    - text
     - user
     - views
 third_party_settings:
@@ -22,31 +25,57 @@ third_party_settings:
         layout_settings:
           label: ''
         components:
-          0b4bd91d-1459-4def-9149-fe87c1449736:
-            uuid: 0b4bd91d-1459-4def-9149-fe87c1449736
+          95fc3386-1a16-411b-9abd-b66cbcfaf404:
+            uuid: 95fc3386-1a16-411b-9abd-b66cbcfaf404
             region: content
             configuration:
-              id: 'extra_field_block:node:page:links'
+              id: 'field_block:node:page:field_body'
+              label: body
               label_display: '0'
+              provider: layout_builder
               context_mapping:
                 entity: layout_builder.entity
-            weight: 0
+                view_mode: view_mode
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 2
             additional: {  }
           8a0cd046-f988-421d-9ac9-068827ee2115:
             uuid: 8a0cd046-f988-421d-9ac9-068827ee2115
             region: content
             configuration:
               id: 'field_block:node:page:field_taxo'
+              label: Taxonomy
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_label
+                label: hidden
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 3
+            additional: {  }
+          95fc3386-1a16-411b-9abd-b66cbcfaf404:
+            uuid: 95fc3386-1a16-411b-9abd-b66cbcfaf404
+            region: content
+            configuration:
+              id: 'field_block:node:page:field_body'
               label_display: '0'
               context_mapping:
                 entity: layout_builder.entity
               formatter:
-                type: entity_reference_label
+                type: text_default
                 label: above
-                settings:
-                  link: true
+                settings: {  }
                 third_party_settings: {  }
-            weight: 1
+            weight: 2
             additional: {  }
         third_party_settings: {  }
       -
@@ -69,6 +98,39 @@ third_party_settings:
               items_per_page: none
             weight: 0
             additional: {  }
+          7e14a118-0109-4d9c-a6eb-6028fc5e19c7:
+            uuid: 7e14a118-0109-4d9c-a6eb-6028fc5e19c7
+            region: second
+            configuration:
+              id: 'views_block:latest_news-block_4'
+              label: ''
+              label_display: visible
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 1
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+        components:
+          5da677cc-6f17-4242-9b5b-023e25dd8e22:
+            uuid: 5da677cc-6f17-4242-9b5b-023e25dd8e22
+            region: content
+            configuration:
+              id: 'views_block:advertise-block_1'
+              label: ''
+              label_display: visible
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 0
+            additional: {  }
         third_party_settings: {  }
 _core:
   default_config_hash: M_Y8L5tfmhx7DR143E05YyZSpvgil6VFvqcfBWykalg
@@ -77,6 +139,13 @@ targetEntityType: node
 bundle: page
 mode: default
 content:
+  field_body:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
   field_taxo:
     type: entity_reference_label
     label: above

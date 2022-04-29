@@ -5,7 +5,12 @@ dependencies:
   config:
     - block_content.type.basic
     - field.field.block_content.basic.body
+    - field.field.block_content.basic.field_header
+    - field.field.block_content.basic.field_social
+    - field.field.block_content.basic.field_taxii
+    - field.field.block_content.basic.layout_builder__layout
   module:
+    - media_library
     - text
 _core:
   default_config_hash: jAps3FCxvKecABS_tgExbhCZrBLQB3bNPWw18WjE3ss
@@ -16,7 +21,7 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: -4
+    weight: 2
     region: content
     settings:
       rows: 9
@@ -24,9 +29,34 @@ content:
       placeholder: ''
       show_summary: false
     third_party_settings: {  }
+  field_header:
+    type: text_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_social:
+    type: media_library_widget
+    weight: 4
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_taxii:
+    type: entity_reference_autocomplete
+    weight: 5
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
   info:
     type: string_textfield
-    weight: -5
+    weight: 1
     region: content
     settings:
       size: 60
@@ -34,9 +64,10 @@ content:
     third_party_settings: {  }
   langcode:
     type: language_select
-    weight: 2
+    weight: 3
     region: content
     settings:
       include_locked: true
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  layout_builder__layout: true

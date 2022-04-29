@@ -32,15 +32,17 @@ third_party_settings:
             region: content
             configuration:
               id: 'field_block:node:articles:field_head'
+              label: headimmage
               label_display: '0'
+              provider: layout_builder
               context_mapping:
                 entity: layout_builder.entity
+                view_mode: view_mode
               formatter:
                 type: entity_reference_entity_view
-                label: above
+                label: hidden
                 settings:
                   view_mode: default
-                  link: false
                 third_party_settings: {  }
             weight: 2
             additional: {  }

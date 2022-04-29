@@ -4,10 +4,81 @@ status: true
 dependencies:
   config:
     - field.field.media.image.field_media_image
+    - field.field.media.image.field_txi
+    - field.field.media.image.layout_builder__layout
     - image.style.large
     - media.type.image
   module:
     - image
+    - layout_builder
+    - layout_discovery
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          8d3a3c2d-8854-4a6b-be81-274897e18de6:
+            uuid: 8d3a3c2d-8854-4a6b-be81-274897e18de6
+            region: content
+            configuration:
+              id: 'field_block:media:image:field_media_image'
+              label: Image
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: image
+                label: hidden
+                settings:
+                  image_link: ''
+                  image_style: large
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+<<<<<<< HEAD
+          18e57ab0-1b8d-420a-ae23-f26216ad3df0:
+            uuid: 18e57ab0-1b8d-420a-ae23-f26216ad3df0
+            region: content
+            configuration:
+              id: 'field_block:media:image:field_media_image'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: image
+                label: visually_hidden
+                settings:
+                  image_link: ''
+                  image_style: large
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          fdf0690e-68d2-46f4-bc72-2620a794dbea:
+            uuid: fdf0690e-68d2-46f4-bc72-2620a794dbea
+            region: content
+            configuration:
+              id: 'field_block:media:image:field_txi'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+=======
+>>>>>>> 30b72c7e48f720668b4df5f0f0aff7b9d14a8f81
+        third_party_settings: {  }
 _core:
   default_config_hash: whJrNezqUJ7Qhg7raMQj2Hz9JPiWxijezhWIEN9BVVk
 id: media.image.default
@@ -24,9 +95,18 @@ content:
     third_party_settings: {  }
     weight: 1
     region: content
+  field_txi:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
 hidden:
   created: true
   langcode: true
+  layout_builder__layout: true
   name: true
   search_api_excerpt: true
   thumbnail: true

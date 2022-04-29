@@ -320,20 +320,7 @@ display:
           replica: false
           query_tags: {  }
       relationships: {  }
-      header:
-        area:
-          id: area
-          table: views
-          field: area
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: text
-          empty: false
-          content:
-            value: 'Find Your Perfect Music Festival'
-            format: basic_html
-          tokenize: false
+      header: {  }
       footer: {  }
       display_extenders: {  }
     cache_metadata:
@@ -645,9 +632,22 @@ display:
         operator: AND
         groups:
           1: AND
+      style:
+        type: default
+        options:
+          row_class: ''
+          default_row_class: true
+          uses_fields: false
+      row:
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: trst
       defaults:
         title: false
         pager: false
+        style: false
+        row: false
         filters: false
         filter_groups: false
       display_description: ''
@@ -861,10 +861,11 @@ display:
       tags: {  }
   block_4:
     id: block_4
-    display_title: 'Must read 3 pic'
+    display_title: 'Must read'
     display_plugin: block
     position: 4
     display_options:
+      title: 'Must read'
       pager:
         type: some
         options:
@@ -930,8 +931,22 @@ display:
         operator: AND
         groups:
           1: AND
+      style:
+        type: default
+        options:
+          row_class: ''
+          default_row_class: true
+          uses_fields: false
+      row:
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: trst
       defaults:
+        title: false
         pager: false
+        style: false
+        row: false
         filters: false
         filter_groups: false
       display_description: ''
@@ -1384,7 +1399,22 @@ display:
         style: false
         row: false
         sorts: false
+        header: false
       display_description: ''
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text
+          empty: false
+          content:
+            value: 'Find Your Perfect Music Festival'
+            format: basic_html
+          tokenize: false
       display_extenders: {  }
       block_description: 'Music Festivals'
     cache_metadata:

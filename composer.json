@@ -20,17 +20,24 @@
         "drupal/core-composer-scaffold": "^9.3",
         "drupal/core-project-message": "^9.3",
         "drupal/core-recommended": "^9.3",
+        "drupal/ctools": "^3.7",
         "drupal/entity_browser": "^2.6",
         "drupal/entity_reference_revisions": "^1.9",
         "drupal/entity_usage": "^2.0@beta",
         "drupal/layout_builder_perms": "1.x-dev@dev",
+        "drupal/page_manager": "^4.0@beta",
+<<<<<<< HEAD
+        "drupal/page_manager_ui": "^4.0@beta",
+=======
+>>>>>>> 30b72c7e48f720668b4df5f0f0aff7b9d14a8f81
         "drupal/paragraphs": "^1.13",
-        "drupal/search_api_db": "^1.8"
+        "drupal/search_api_db": "^1.8",
+        "drupal/views_bulk_operations": "^4.1"
     },
     "conflict": {
         "drupal/drupal": "*"
     },
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "prefer-stable": true,
     "config": {
         "sort-packages": true,
