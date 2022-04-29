@@ -62,6 +62,21 @@ third_party_settings:
                 third_party_settings: {  }
             weight: 3
             additional: {  }
+          95fc3386-1a16-411b-9abd-b66cbcfaf404:
+            uuid: 95fc3386-1a16-411b-9abd-b66cbcfaf404
+            region: content
+            configuration:
+              id: 'field_block:node:page:field_body'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
         third_party_settings: {  }
       -
         layout_id: layout_twocol_section

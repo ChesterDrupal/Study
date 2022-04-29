@@ -245,6 +245,22 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
+  attachment_1:
+    id: attachment_1
+    display_title: Attachment
+    display_plugin: attachment
+    position: 11
+    display_options:
+      display_extenders: {  }
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - user
+        - 'user.node_grants:view'
+        - user.permissions
+      tags: {  }
   block_1:
     id: block_1
     display_title: 'Food & Drink'

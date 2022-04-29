@@ -1,0 +1,15 @@
+uuid: 28187c46-34fd-4310-aeb7-7945d5d9fe3f
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs_library
+third_party_settings:
+  paragraphs_library:
+    allow_library_conversion: true
+id: stay_connected
+label: 'Stay connected'
+icon_uuid: null
+icon_default: null
+description: 'custom block'
+behavior_plugins: {  }
