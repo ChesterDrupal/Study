@@ -2,15 +2,17 @@ palette:
   top: '#292929'
   bottom: '#292929'
   bg: '#ffffff'
-  sidebar: '#f6f6f2'
-  sidebarborders: '#f9f9f9'
+
+  sidebar: '#ffffff'
+  sidebarborders: '#ffffff'
   footer: '#292929'
   titleslogan: '#fffeff'
   text: '#3b3b3b'
-  link: '#fcb900'
-logo: 'public://color/bartik-f470c814/logo.svg'
+  link: '#000000'
+logo: 'public://color/bartik-5fa19764/logo.svg'
 stylesheets:
-  - 'public://color/bartik-f470c814/colors.css'
+  - 'public://color/bartik-5fa19764/colors.css'
 files:
-  - 'public://color/bartik-f470c814/logo.svg'
-  - 'public://color/bartik-f470c814/colors.css'
+  - 'public://color/bartik-5fa19764/logo.svg'
+  - 'public://color/bartik-5fa19764/colors.css'
+

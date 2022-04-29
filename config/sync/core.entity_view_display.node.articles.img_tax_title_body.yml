@@ -1,10 +1,10 @@
-uuid: d84f4abf-5c5a-45e4-8031-9a204e04da83
+uuid: 87bac979-0e08-4571-b5bc-a47c7619b7df
 langcode: en
 status: true
 dependencies:
   config:
     - core.entity_view_display.comment.comment.default
-    - core.entity_view_mode.node.big_art
+    - core.entity_view_mode.node.img_tax_title_body
     - field.field.node.articles.field_comment
     - field.field.node.articles.field_head
     - field.field.node.articles.field_para
@@ -27,8 +27,8 @@ third_party_settings:
         layout_settings:
           label: ''
         components:
-          082208d5-fd5f-45ce-8185-54fb827f1b9c:
-            uuid: 082208d5-fd5f-45ce-8185-54fb827f1b9c
+          7e06fff9-ca37-4996-b933-16f24e8a609e:
+            uuid: 7e06fff9-ca37-4996-b933-16f24e8a609e
             region: content
             configuration:
               id: 'field_block:node:articles:field_head'
@@ -39,15 +39,16 @@ third_party_settings:
                 entity: layout_builder.entity
                 view_mode: view_mode
               formatter:
-                type: entity_reference_entity_view
+                type: media_thumbnail
                 label: hidden
                 settings:
-                  view_mode: default
+                  image_link: content
+                  image_style: medium
                 third_party_settings: {  }
             weight: 2
             additional: {  }
-          6fae249e-aaa4-4f6c-99b1-0bffb9564b0d:
-            uuid: 6fae249e-aaa4-4f6c-99b1-0bffb9564b0d
+          1731bf88-a598-42e3-8f76-c73712c5ab85:
+            uuid: 1731bf88-a598-42e3-8f76-c73712c5ab85
             region: content
             configuration:
               id: 'field_block:node:articles:field_taxonommy'
@@ -65,8 +66,8 @@ third_party_settings:
                 third_party_settings: {  }
             weight: 3
             additional: {  }
-          c30bb62d-bb22-4ffb-a9f1-74e3f6666007:
-            uuid: c30bb62d-bb22-4ffb-a9f1-74e3f6666007
+          7912ee41-43e0-4c9b-857c-6f0d3a54f329:
+            uuid: 7912ee41-43e0-4c9b-857c-6f0d3a54f329
             region: content
             configuration:
               id: 'field_block:node:articles:field_para'
@@ -84,10 +85,10 @@ third_party_settings:
             weight: 4
             additional: {  }
         third_party_settings: {  }
-id: node.articles.big_art
+id: node.articles.img_tax_title_body
 targetEntityType: node
 bundle: articles
-mode: big_art
+mode: img_tax_title_body
 content:
   field_comment:
     type: comment_default

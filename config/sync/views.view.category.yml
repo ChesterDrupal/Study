@@ -229,6 +229,22 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
+  attachment_1:
+    id: attachment_1
+    display_title: Attachment
+    display_plugin: attachment
+    position: 11
+    display_options:
+      display_extenders: {  }
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - user
+        - 'user.node_grants:view'
+        - user.permissions
+      tags: {  }
   block_1:
     id: block_1
     display_title: 'Food & Drink'
@@ -1029,6 +1045,24 @@ display:
     display_plugin: block
     position: 1
     display_options:
+      pager:
+        type: mini
+        options:
+          offset: 0
+          items_per_page: 8
+          total_pages: null
+          id: 0
+          tags:
+            next: ' ››'
+            previous: '‹‹ '
+          expose:
+            items_per_page: false
+            items_per_page_label: 'Items per page'
+            items_per_page_options: '5, 10, 25, 50'
+            items_per_page_options_all: false
+            items_per_page_options_all_label: '- All -'
+            offset: false
+            offset_label: Offset
       filters:
         status:
           id: status
@@ -1111,6 +1145,7 @@ display:
         groups:
           1: AND
       defaults:
+        pager: false
         filters: false
         filter_groups: false
       display_description: ''
@@ -1121,6 +1156,7 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - url.query_args
         - user
         - 'user.node_grants:view'
         - user.permissions
