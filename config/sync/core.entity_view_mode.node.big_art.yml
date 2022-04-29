@@ -1,0 +1,10 @@
+uuid: bb1c2136-34b2-4c7a-ad43-0d3e5498329c
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.big_art
+label: 'big art'
+targetEntityType: node
+cache: true

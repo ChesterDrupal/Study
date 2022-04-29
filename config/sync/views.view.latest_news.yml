@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.teaser
+    - core.entity_view_mode.node.nes
     - node.type.articles
   content:
     - 'media:image:aa4b1cc9-aa69-4a2f-a37b-11a622d9ed32'
@@ -90,9 +90,10 @@ display:
           separator: ', '
           field_api_classes: false
       pager:
-        type: none
+        type: some
         options:
-          offset: 0
+          offset: null
+          items_per_page: 17
       exposed_form:
         type: basic
         options:
@@ -202,7 +203,7 @@ display:
         type: 'entity:node'
         options:
           relationship: none
-          view_mode: teaser
+          view_mode: nes
       query:
         type: views_query
         options:
@@ -212,20 +213,7 @@ display:
           replica: false
           query_tags: {  }
       relationships: {  }
-      header:
-        entity_media:
-          id: entity_media
-          table: views
-          field: entity_media
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: entity
-          empty: false
-          target: aa4b1cc9-aa69-4a2f-a37b-11a622d9ed32
-          view_mode: media_library
-          tokenize: true
-          bypass_access: false
+      header: {  }
       footer:
         entity_media:
           id: entity_media
@@ -237,7 +225,7 @@ display:
           plugin_id: entity
           empty: false
           target: aa4b1cc9-aa69-4a2f-a37b-11a622d9ed32
-          view_mode: media_library
+          view_mode: full
           tokenize: true
           bypass_access: false
       display_extenders: {  }
@@ -250,15 +238,68 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
+  attachment_1:
+    id: attachment_1
+    display_title: Attachment
+    display_plugin: attachment
+    position: 3
+    display_options:
+      pager:
+        type: some
+        options:
+          offset: 0
+          items_per_page: 4
+      display_extenders: {  }
+      displays:
+        block_1: block_1
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+        - 'user.node_grants:view'
+        - user.permissions
+      tags: {  }
   block_1:
     id: block_1
-    display_title: Block
+    display_title: 'Latest News'
+    display_plugin: block
+    position: 1
+    display_options:
+      pager:
+        type: some
+        options:
+          offset: null
+          items_per_page: 2
+      defaults:
+        pager: false
+        header: false
+        footer: false
+      display_description: ''
+      header: {  }
+      footer: {  }
+      display_extenders: {  }
+      block_description: 'Latest News'
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+        - 'user.node_grants:view'
+        - user.permissions
+      tags: {  }
+  block_3:
+    id: block_3
+    display_title: 'Latest News2'
     display_plugin: block
     position: 1
     display_options:
       defaults:
         header: false
         footer: false
+      display_description: ''
       header: {  }
       footer:
         entity_media:
@@ -275,6 +316,7 @@ display:
           tokenize: false
           bypass_access: false
       display_extenders: {  }
+      block_description: 'Latest News main'
     cache_metadata:
       max-age: -1
       contexts:

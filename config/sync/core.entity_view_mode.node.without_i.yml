@@ -1,0 +1,10 @@
+uuid: b7fb248b-b6a3-4916-9ad0-ac4456567494
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.without_i
+label: 'Without immage'
+targetEntityType: node
+cache: true
