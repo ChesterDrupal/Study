@@ -1,0 +1,25 @@
+uuid: 9e8c2ec6-03a7-474d-930b-f1b2ca85cb30
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:6524642b-4101-48cd-bfe1-aa1a9bb33946'
+  module:
+    - block_content
+  theme:
+    - bart
+id: bart_sociconsforheader_2
+theme: bart
+region: secondary_menu
+weight: -2
+provider: null
+plugin: 'block_content:6524642b-4101-48cd-bfe1-aa1a9bb33946'
+settings:
+  id: 'block_content:6524642b-4101-48cd-bfe1-aa1a9bb33946'
+  label: 'Soc Icons for header'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

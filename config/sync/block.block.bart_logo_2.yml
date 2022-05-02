@@ -1,0 +1,25 @@
+uuid: c0a69cf4-b98e-43c7-803a-9f7b12d30288
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:038d490e-cdb3-44b6-9890-50fe43c7d658'
+  module:
+    - block_content
+  theme:
+    - bart
+id: bart_logo_2
+theme: bart
+region: secondary_menu
+weight: -4
+provider: null
+plugin: 'block_content:038d490e-cdb3-44b6-9890-50fe43c7d658'
+settings:
+  id: 'block_content:038d490e-cdb3-44b6-9890-50fe43c7d658'
+  label: LOGO
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

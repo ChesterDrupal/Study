@@ -1,0 +1,22 @@
+uuid: 67813aa6-a355-48f9-a9cd-d71a05fe5198
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - bart
+_core:
+  default_config_hash: KC12e0aosUnBBs5bd374JVcQjJaFNOSIHzu0dUGf22o
+id: bart_messages
+theme: bart
+region: highlighted
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  label_display: '0'
+  provider: system
+visibility: {  }
