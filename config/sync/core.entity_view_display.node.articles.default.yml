@@ -12,6 +12,7 @@ dependencies:
     - node.type.articles
     - views.view.advertise
     - views.view.latest_news
+    - views.view.you_might_also_like
   module:
     - comment
     - entity_reference_revisions
@@ -243,18 +244,31 @@ third_party_settings:
                 third_party_settings: {  }
             weight: 2
             additional: {  }
-          b9945c99-59e8-445a-8812-2ea629b5c8cf:
-            uuid: b9945c99-59e8-445a-8812-2ea629b5c8cf
+          0fd7541b-86e3-46d9-b5d3-f89a2b5b32c0:
+            uuid: 0fd7541b-86e3-46d9-b5d3-f89a2b5b32c0
             region: second
             configuration:
-              id: 'views_block:latest_news-block_1'
+              id: 'views_block:latest_news-block_2'
               label: ''
-              label_display: '0'
+              label_display: visible
               provider: views
               context_mapping: {  }
               views_label: ''
               items_per_page: none
             weight: 0
+            additional: {  }
+          496854a0-6514-45e6-8506-7d716c33ddea:
+            uuid: 496854a0-6514-45e6-8506-7d716c33ddea
+            region: second
+            configuration:
+              id: 'views_block:latest_news-block_4'
+              label: ''
+              label_display: visible
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 1
             additional: {  }
         third_party_settings: {  }
       -
@@ -276,11 +290,11 @@ third_party_settings:
               items_per_page: none
             weight: 0
             additional: {  }
-          3fb57fb4-f8b0-427d-8780-58f129eb6197:
-            uuid: 3fb57fb4-f8b0-427d-8780-58f129eb6197
+          f3009548-5233-461a-8baf-eb43a07b6ca9:
+            uuid: f3009548-5233-461a-8baf-eb43a07b6ca9
             region: content
             configuration:
-              id: 'views_block:main_-block_10'
+              id: 'views_block:you_might_also_like-block_1'
               label: ''
               label_display: visible
               provider: views

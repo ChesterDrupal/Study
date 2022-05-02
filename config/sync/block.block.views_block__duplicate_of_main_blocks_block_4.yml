@@ -1,0 +1,24 @@
+uuid: ce291cb0-d426-4557-a504-055a49814b96
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.duplicate_of_main_blocks
+  module:
+    - views
+  theme:
+    - bartik
+id: views_block__duplicate_of_main_blocks_block_4
+theme: bartik
+region: featured_bottom_second
+weight: 0
+provider: null
+plugin: 'views_block:duplicate_of_main_blocks-block_4'
+settings:
+  id: 'views_block:duplicate_of_main_blocks-block_4'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility: {  }

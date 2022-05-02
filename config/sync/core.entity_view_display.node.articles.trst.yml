@@ -85,6 +85,27 @@ third_party_settings:
                 third_party_settings: {  }
             weight: 0
             additional: {  }
+          57f2af93-d86d-4731-85c1-ae74a0624444:
+            uuid: 57f2af93-d86d-4731-85c1-ae74a0624444
+            region: second
+            configuration:
+              id: 'field_block:node:articles:created'
+              label: 'Authored on'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: timestamp
+                label: above
+                settings:
+                  date_format: custom
+                  custom_date_format: Y/m/d
+                  timezone: ''
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
         third_party_settings: {  }
 id: node.articles.trst
 targetEntityType: node
