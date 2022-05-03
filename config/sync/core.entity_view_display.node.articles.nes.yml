@@ -62,7 +62,47 @@ third_party_settings:
                 label: hidden
                 settings: {  }
                 third_party_settings: {  }
-            weight: 4
+            weight: 7
+            additional: {  }
+          99482b61-40af-481c-9196-f07b8b1b2108:
+            uuid: 99482b61-40af-481c-9196-f07b8b1b2108
+            region: content
+            configuration:
+              id: 'field_block:node:articles:created'
+              label: 'Authored on'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: timestamp
+                label: above
+                settings:
+                  date_format: custom
+                  custom_date_format: Y/m/d
+                  timezone: ''
+                third_party_settings: {  }
+            weight: 5
+            additional: {  }
+          427bb65e-1ba0-4ced-92e8-fa12be3f5b75:
+            uuid: 427bb65e-1ba0-4ced-92e8-fa12be3f5b75
+            region: content
+            configuration:
+              id: 'field_block:node:articles:title'
+              label: Title
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: above
+                settings:
+                  link_to_entity: true
+                third_party_settings: {  }
+            weight: 6
             additional: {  }
         third_party_settings: {  }
 id: node.articles.nes

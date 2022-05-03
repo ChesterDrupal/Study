@@ -34,6 +34,97 @@ variant_settings:
             items_per_page: none
           weight: 0
           additional: {  }
+        7dd45812-a288-4fe3-88d7-755ae87596c3:
+          uuid: 7dd45812-a288-4fe3-88d7-755ae87596c3
+          region: second
+          configuration:
+            id: 'views_block:main_view-block_1'
+            label: ''
+            label_display: visible
+            provider: views
+            context_mapping: {  }
+            views_label: ''
+            items_per_page: none
+          weight: 0
+          additional: {  }
+        6c93652f-cd92-43e4-8f22-6d29e1fe90f6:
+          uuid: 6c93652f-cd92-43e4-8f22-6d29e1fe90f6
+          region: second
+          configuration:
+            id: 'views_block:duplicate_of_main_blocks-block_3'
+            label: ''
+            label_display: visible
+            provider: views
+            context_mapping: {  }
+            views_label: ''
+            items_per_page: none
+          weight: 1
+          additional: {  }
+        71158371-0492-4f92-9292-db85cf822445:
+          uuid: 71158371-0492-4f92-9292-db85cf822445
+          region: second
+          configuration:
+            id: 'views_block:duplicate_of_main_blocks-block_5'
+            label: ''
+            label_display: visible
+            provider: views
+            context_mapping: {  }
+            views_label: ''
+            items_per_page: none
+          weight: 2
+          additional: {  }
+        489168e8-6733-4d35-b6e0-a9c76e669523:
+          uuid: 489168e8-6733-4d35-b6e0-a9c76e669523
+          region: second
+          configuration:
+            id: 'views_block:duplicate_of_main_blocks-block_7'
+            label: ''
+            label_display: visible
+            provider: views
+            context_mapping: {  }
+            views_label: ''
+            items_per_page: none
+          weight: 3
+          additional: {  }
+        3d543f7a-7a08-469a-af63-fb21f67052d1:
+          uuid: 3d543f7a-7a08-469a-af63-fb21f67052d1
+          region: second
+          configuration:
+            id: 'views_block:duplicate_of_main_blocks-block_6'
+            label: ''
+            label_display: visible
+            provider: views
+            context_mapping: {  }
+            views_label: ''
+            items_per_page: none
+          weight: 4
+          additional: {  }
+        a93e41b4-d72c-4cb6-a38c-bad23b6f831a:
+          uuid: a93e41b4-d72c-4cb6-a38c-bad23b6f831a
+          region: second
+          configuration:
+            id: 'views_block:main_view-block_2'
+            label: ''
+            label_display: visible
+            provider: views
+            context_mapping: {  }
+            views_label: ''
+            items_per_page: none
+          weight: 5
+          additional: {  }
+        a69eb9f9-6c2d-4d4f-bf71-5100f5512806:
+          uuid: a69eb9f9-6c2d-4d4f-bf71-5100f5512806
+          region: second
+          configuration:
+            id: 'views_block:duplicate_of_main_blocks-block_8'
+            label: ''
+            label_display: visible
+            provider: views
+            context_mapping: {  }
+            views_label: ''
+            items_per_page: none
+          weight: 6
+          additional: {  }
       third_party_settings: {  }
     -
       layout_id: layout_onecol
@@ -53,6 +144,19 @@ variant_settings:
             views_label: ''
             items_per_page: none
           weight: 1
+          additional: {  }
+        683ff53c-8f67-4ff3-823a-74d15b7ed510:
+          uuid: 683ff53c-8f67-4ff3-823a-74d15b7ed510
+          region: content
+          configuration:
+            id: 'views_block:duplicate_of_main_blocks-block_9'
+            label: ''
+            label_display: visible
+            provider: views
+            context_mapping: {  }
+            views_label: ''
+            items_per_page: none
+          weight: 2
           additional: {  }
       third_party_settings: {  }
 page: node_view

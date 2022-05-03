@@ -231,7 +231,7 @@ display:
       tags: {  }
   attachment_1:
     id: attachment_1
-    display_title: Attachment
+    display_title: 'Attachment main view'
     display_plugin: attachment
     position: 2
     display_options:
@@ -279,6 +279,7 @@ display:
         row: false
         filters: false
         filter_groups: false
+      display_description: ''
       display_extenders: {  }
       displays:
         block_1: block_1
@@ -293,7 +294,7 @@ display:
       tags: {  }
   attachment_2:
     id: attachment_2
-    display_title: 'Attachment 2'
+    display_title: 'Attachment Celebrities'
     display_plugin: attachment
     position: 4
     display_options:
@@ -321,6 +322,7 @@ display:
       defaults:
         style: false
         row: false
+      display_description: ''
       display_extenders: {  }
       displays:
         block_2: block_2

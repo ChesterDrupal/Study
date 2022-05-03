@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.media.full
     - taxonomy.vocabulary.tags
   content:
     - 'taxonomy_term:tags:1f946061-22f1-4093-8194-c9cf6b0c23ff'
@@ -164,7 +165,7 @@ display:
           uses_fields: false
           columns: 6
           automatic_width: true
-          alignment: horizontal
+          alignment: vertical
           row_class_custom: ''
           row_class_default: true
           col_class_custom: ''
@@ -173,7 +174,7 @@ display:
         type: 'entity:media'
         options:
           relationship: none
-          view_mode: default
+          view_mode: full
       query:
         type: views_query
         options:

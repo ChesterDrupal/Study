@@ -1,0 +1,78 @@
+uuid: 1ff9574f-5385-4110-869d-fedb064cace0
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.full
+    - field.field.media.image.field_media_image
+    - field.field.media.image.field_txi
+    - field.field.media.image.layout_builder__layout
+    - image.style.large
+    - media.type.image
+  module:
+    - image
+    - layout_builder
+    - layout_discovery
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          34085d90-0993-41cc-800f-2e9fd65b61f0:
+            uuid: 34085d90-0993-41cc-800f-2e9fd65b61f0
+            region: content
+            configuration:
+              id: 'field_block:media:image:field_media_image'
+              label: Image
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: image
+                label: hidden
+                settings:
+                  image_link: content
+                  image_style: medium_300x300
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+_core:
+  default_config_hash: whJrNezqUJ7Qhg7raMQj2Hz9JPiWxijezhWIEN9BVVk
+id: media.image.full
+targetEntityType: media
+bundle: image
+mode: full
+content:
+  field_media_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: large
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_txi:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  created: true
+  langcode: true
+  layout_builder__layout: true
+  name: true
+  search_api_excerpt: true
+  thumbnail: true
+  uid: true

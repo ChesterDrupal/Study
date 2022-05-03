@@ -2,10 +2,6 @@ uuid: e0a5d045-7380-4307-8939-b42e3c98da25
 langcode: en
 status: false
 dependencies:
-  content:
-    - 'block_content:stay_connected:c72cea77-d573-4200-b9ac-7c3298ce2f4a'
-  module:
-    - block_content
   theme:
     - bartik
 id: stayconnected
