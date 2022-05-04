@@ -1,0 +1,22 @@
+uuid: 84ffd0fd-d866-479c-bdfe-420f0b6244d5
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - bart
+_core:
+  default_config_hash: kigu8pTxXt1qGR2NJ5HHdC4G2G1wsDrIjLPKBT5wUBc
+id: bart_content
+theme: bart
+region: content
+weight: -2
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

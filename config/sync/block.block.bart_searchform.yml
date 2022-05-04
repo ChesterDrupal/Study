@@ -1,0 +1,21 @@
+uuid: d08aa03f-83c0-42e9-9d64-d5206a9509d4
+langcode: en
+status: false
+dependencies:
+  module:
+    - search
+  theme:
+    - bart
+id: bart_searchform
+theme: bart
+region: header
+weight: 0
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form'
+  label_display: visible
+  provider: search
+  page_id: ''
+visibility: {  }

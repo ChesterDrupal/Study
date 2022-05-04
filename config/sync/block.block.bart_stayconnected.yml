@@ -1,0 +1,21 @@
+uuid: ac097517-8e8f-4991-b736-f35b4ff4aa92
+langcode: en
+status: false
+dependencies:
+  theme:
+    - bart
+id: bart_stayconnected
+theme: bart
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:c72cea77-d573-4200-b9ac-7c3298ce2f4a'
+settings:
+  id: 'block_content:c72cea77-d573-4200-b9ac-7c3298ce2f4a'
+  label: 'Stay connected'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,0 +1,25 @@
+uuid: aa9bbaa7-f760-46eb-8a80-fa9527edffab
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.mm
+  module:
+    - system
+  theme:
+    - bart
+id: bart_mainmenu_3
+theme: bart
+region: secondary_menu
+weight: -3
+provider: null
+plugin: 'system_menu_block:mm'
+settings:
+  id: 'system_menu_block:mm'
+  label: 'Main menu'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }
