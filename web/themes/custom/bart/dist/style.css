@@ -24,7 +24,7 @@
 .region-secondary-menu .layout--twocol-section--25-75 .field--type-entity-reference {
   padding: 20px 0;
 }
-.region-secondary-menu #block-bart-mainmenu-2 {
+.region-secondary-menu .menu--mm {
   float: left;
   max-width: 40%;
   padding: 30px 0;

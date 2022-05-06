@@ -11,7 +11,7 @@ dependencies:
 id: bart_sociconsforheader_2
 theme: bart
 region: secondary_menu
-weight: -2
+weight: -6
 provider: null
 plugin: 'block_content:6524642b-4101-48cd-bfe1-aa1a9bb33946'
 settings:
