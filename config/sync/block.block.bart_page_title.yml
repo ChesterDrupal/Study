@@ -1,6 +1,6 @@
 uuid: 49440089-315f-44ee-a707-5f07b129ba79
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - node
@@ -10,8 +10,8 @@ _core:
   default_config_hash: ItFhhiUOoeR7oIq73ZaCV7PAYrOwXZ-9fazMzF5DJXM
 id: bart_page_title
 theme: bart
-region: breadcrumb
-weight: -3
+region: header
+weight: -8
 provider: null
 plugin: page_title_block
 settings:

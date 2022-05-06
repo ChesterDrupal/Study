@@ -1,6 +1,6 @@
 uuid: 01f5b6eb-2291-4adc-ba5a-02e22700a601
 langcode: en
-status: false
+status: true
 dependencies:
   content:
     - 'block_content:basic:6524642b-4101-48cd-bfe1-aa1a9bb33946'
@@ -10,14 +10,14 @@ dependencies:
     - bart
 id: bart_sociconsforheader
 theme: bart
-region: header
-weight: -4
+region: secondary_menu
+weight: -6
 provider: null
 plugin: 'block_content:6524642b-4101-48cd-bfe1-aa1a9bb33946'
 settings:
   id: 'block_content:6524642b-4101-48cd-bfe1-aa1a9bb33946'
   label: 'Soc Icons for header'
-  label_display: visible
+  label_display: '0'
   provider: block_content
   status: true
   info: ''

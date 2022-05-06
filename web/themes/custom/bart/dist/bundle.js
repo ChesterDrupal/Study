@@ -10,23 +10,23 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/scss/scss.scss":
-/*!****************************!*\
-  !*** ./src/scss/scss.scss ***!
-  \****************************/
+/***/ "./src/scss/header.scss":
+/*!******************************!*\
+  !*** ./src/scss/header.scss ***!
+  \******************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://wb/./src/scss/scss.scss?");
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://wb/./src/scss/header.scss?");
 
 /***/ }),
 
-/***/ "./src/styles/styles.css":
-/*!*******************************!*\
-  !*** ./src/styles/styles.css ***!
-  \*******************************/
+/***/ "./src/css/styles.css":
+/*!****************************!*\
+  !*** ./src/css/styles.css ***!
+  \****************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://wb/./src/styles/styles.css?");
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://wb/./src/css/styles.css?");
 
 /***/ }),
 
@@ -36,7 +36,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scss_scss_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./scss/scss.scss */ \"./src/scss/scss.scss\");\n/* harmony import */ var _styles_styles_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles/styles.css */ \"./src/styles/styles.css\");\n\n\n\n//# sourceURL=webpack://wb/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scss_header_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./scss/header.scss */ \"./src/scss/header.scss\");\n/* harmony import */ var _css_styles_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./css/styles.css */ \"./src/css/styles.css\");\n\n\n//import '../dist/style.css'\n\n\n//# sourceURL=webpack://wb/./src/index.js?");
 
 /***/ })
 

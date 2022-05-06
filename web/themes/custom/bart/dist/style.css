@@ -1,25 +1,50 @@
-/*!*************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/scss.scss ***!
-  \*************************************************************************************************************/
-.card {
-  padding: 1rem;
-  border-radius: 5px;
-  margin-top: 1rem;
-  border: 1px solid #ccc;
+/*!***************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/header.scss ***!
+  \***************************************************************************************************************/
+.region-secondary-menu {
+  width: 100%;
+  float: left;
+  max-height: 100px;
 }
-.card h2 {
+.region-secondary-menu .layout--twocol-section--25-75 {
+  float: left;
+  width: 20%;
+}
+.region-secondary-menu .layout--twocol-section--25-75 .field--type-text {
+  font-size: 3vh;
+  color: white;
+}
+.region-secondary-menu .layout--twocol-section--25-75 .field--type-text-with-summary {
+  font-size: 1vh;
+  color: white;
+}
+.region-secondary-menu .layout--twocol-section--25-75 .layout__region--second {
+  padding: 15px 0;
+}
+.region-secondary-menu .layout--twocol-section--25-75 .field--type-entity-reference {
+  padding: 20px 0;
+}
+.region-secondary-menu #block-bart-mainmenu-2 {
+  float: left;
+  max-width: 40%;
+  padding: 30px 0;
+  font-size: 1.5vh;
+}
+.region-secondary-menu .field--name-field-social {
+  float: right;
+  padding: 30px 0;
+  margin: 0 10px 0 10px;
+}
+.region-secondary-menu .field--name-field-social .field__item {
+  float: left;
+}
+.region-secondary-menu .search-form {
+  float: right;
   text-align: center;
-  color: darkred;
+  padding: 30px 0;
+  margin: 0 15px 0 15px;
 }
-/*!*************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/styles.css ***!
-  \*************************************************************************/
-.container {
-    padding-top: 2rem;
-    max-width: 1000px;
-    margin: 0 auto;
-}
+/*!**********************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/css/styles.css ***!
+  \**********************************************************************/
 
-h1 {
-    text-align: center;
-}

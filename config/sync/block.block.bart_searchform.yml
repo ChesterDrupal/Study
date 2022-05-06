@@ -9,7 +9,7 @@ dependencies:
 id: bart_searchform
 theme: bart
 region: header
-weight: 0
+weight: -5
 provider: null
 plugin: search_form_block
 settings:
