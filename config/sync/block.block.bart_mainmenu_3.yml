@@ -11,7 +11,7 @@ dependencies:
 id: bart_mainmenu_3
 theme: bart
 region: secondary_menu
-weight: -3
+weight: -8
 provider: null
 plugin: 'system_menu_block:mm'
 settings:

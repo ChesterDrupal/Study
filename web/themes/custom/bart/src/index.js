@@ -1,2 +1,3 @@
-import './scss/scss.scss'
-import './styles/styles.css'
+import './scss/header.scss'
+import './css/styles.css'
+//import '../dist/style.css'

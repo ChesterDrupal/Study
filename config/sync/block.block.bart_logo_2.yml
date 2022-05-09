@@ -11,7 +11,7 @@ dependencies:
 id: bart_logo_2
 theme: bart
 region: secondary_menu
-weight: -4
+weight: -9
 provider: null
 plugin: 'block_content:038d490e-cdb3-44b6-9890-50fe43c7d658'
 settings:
