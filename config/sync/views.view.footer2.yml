@@ -184,6 +184,7 @@ display:
           replica: false
           query_tags: {  }
       relationships: {  }
+      css_class: footer_photo_girl
       header: {  }
       footer: {  }
       display_extenders: {  }

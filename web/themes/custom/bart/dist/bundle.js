@@ -10,6 +10,16 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/scss/footer.scss":
+/*!******************************!*\
+  !*** ./src/scss/footer.scss ***!
+  \******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://wb/./src/scss/footer.scss?");
+
+/***/ }),
+
 /***/ "./src/scss/scss.scss":
 /*!****************************!*\
   !*** ./src/scss/scss.scss ***!
@@ -36,7 +46,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scss_scss_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./scss/scss.scss */ \"./src/scss/scss.scss\");\n/* harmony import */ var _styles_styles_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles/styles.css */ \"./src/styles/styles.css\");\n\n\n\n//# sourceURL=webpack://wb/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scss_scss_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./scss/scss.scss */ \"./src/scss/scss.scss\");\n/* harmony import */ var _styles_styles_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles/styles.css */ \"./src/styles/styles.css\");\n/* harmony import */ var _scss_footer_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./scss/footer.scss */ \"./src/scss/footer.scss\");\n\n\n\n\n\n//# sourceURL=webpack://wb/./src/index.js?");
 
 /***/ })
 

@@ -23,3 +23,127 @@
 h1 {
     text-align: center;
 }
+/*!***************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/footer.scss ***!
+  \***************************************************************************************************************/
+.site-footer {
+  background: white;
+  padding: 0;
+}
+.site-footer .layout-container {
+  margin: 0;
+  padding: 0;
+  min-width: 100%;
+}
+.site-footer .layout-container .region-footer-fifth .col-3 .field--type-entity-reference {
+  display: flex;
+}
+.site-footer .layout-container .region-footer-fifth .col-3 .field--type-entity-reference .image-style-thumbnail {
+  padding: 0 10px;
+}
+.site-footer .layout-container .region-footer-fifth .layout--onecol .field--name-field-header {
+  font-size: 1.75rem;
+  color: black;
+}
+.site-footer .layout-container .region-footer-fifth .layout--onecol p {
+  font-size: 0.875rem;
+  color: grey;
+}
+.site-footer .layout-container .region-footer-fifth .layout--onecol a {
+  color: #f5b000;
+  border-bottom: none;
+}
+.site-footer .layout-container .region-footer-fifth .layout--twocol-section--25-75 {
+  width: 100%;
+  padding: 2.8rem 0;
+}
+.site-footer .layout-container .region-footer-fifth .layout--twocol-section--25-75 .content {
+  margin-top: 0;
+  padding: 0;
+}
+.site-footer .layout-container .region-footer-fifth .layout--twocol-section--25-75 .block {
+  margin: 0;
+}
+.site-footer .layout-container .region-footer-fifth .layout--twocol-section--25-75 .image-style-thumbnail {
+  float: right;
+  padding: 0 0.625rem 0 0;
+}
+.site-footer .layout-container .region-footer-fifth .layout--twocol-section--25-75 p {
+  margin: 0;
+}
+.site-footer .layout-container .region-footer-fifth .layout--twocol-section--25-75 .field--type-text {
+  font-size: 1.875rem;
+  color: black;
+}
+.site-footer .layout-container .region-footer-fifth .layout--twocol-section--25-75 .field--type-text-with-summary {
+  font-size: 0.625rem;
+  color: black;
+}
+.site-footer .layout-container .region-footer-fifth .layout--twocol-section--25-75 .layout__region--second {
+  padding: 15px 0;
+}
+.site-footer .layout-container .region-footer-fifth .layout--twocol-section--25-75 .field--type-entity-reference {
+  padding: 20px 0;
+}
+.site-footer .layout-container .region-footer-fifth .views-view-grid.horizontal .views-row {
+  border-bottom: 0;
+}
+.site-footer .layout-container .region-footer-fifth .views-view-grid.vertical .views-col {
+  border: 0;
+}
+.site-footer .layout-container .region-footer-fifth .views-view-grid.vertical {
+  margin: 0;
+}
+.site-footer .layout-container .region-footer-fifth .views-col {
+  max-height: 18.6rem;
+  padding: 0;
+  margin: 0;
+}
+.site-footer .layout-container .region-footer-fifth .views-col .image-style-medium-300x300 {
+  height: 18.75rem;
+  width: 19.75rem;
+}
+.site-footer .layout-container .site-footer__six .container {
+  max-width: 100%;
+  display: contents;
+  margin: 0;
+  padding: 0;
+}
+.site-footer .layout-container .site-footer__six .region-footer-six {
+  width: 100%;
+  background-color: black;
+  display: flex;
+  height: 2.5rem;
+}
+.site-footer .layout-container .site-footer__six .region-footer-six .block-block-content {
+  margin: 0;
+  width: 50%;
+  border: 0;
+  padding: 0;
+}
+.site-footer .layout-container .site-footer__six .region-footer-six .block-block-content .block-field-blockblock-contentbasicbody {
+  border: 0;
+  margin: 0 0 0 20.625rem;
+  padding: 0;
+}
+.site-footer .layout-container .site-footer__six .region-footer-six .block-block-content .block-field-blockblock-contentbasicbody a {
+  color: #f5b000;
+  border-bottom: none;
+}
+.site-footer .layout-container .site-footer__six .region-footer-six .menu--footer {
+  width: 50%;
+  border: 0;
+  padding: 0;
+  height: 2.5rem;
+  margin: 0 20.625rem 0 0;
+}
+.site-footer .layout-container .site-footer__six .region-footer-six .menu--footer a {
+  border-bottom: none;
+}
+.site-footer .layout-container .site-footer__six .region-footer-six .menu--footer a:hover {
+  color: #f5b000;
+}
+.site-footer .layout-container .site-footer__six .region-footer-six .menu--footer .menu-item {
+  float: right;
+  margin: 0 20px;
+}
