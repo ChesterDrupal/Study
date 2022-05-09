@@ -53,4 +53,4 @@
 /.gitattributes
 /web/themes/custom/bart/node_modules
 /web/themes/custom/bart/.idea
-/web/themes/custom/bart/dist
+/web/themes/custom/bart/dist/
