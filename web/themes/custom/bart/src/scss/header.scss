@@ -1,0 +1,49 @@
+$cent: 30px 0;
+
+.region-secondary-menu {
+  width: 100%;
+  float: left;
+  max-height: 100px;
+
+  .layout--twocol-section--25-75 {
+    float: left;
+    width: 20%;
+    .field--type-text {
+      font-size: 3vh;
+      color: white;
+    }
+    .field--type-text-with-summary {
+      font-size: 1vh;
+      color: white;
+    }
+    .layout__region--second {
+      padding: 15px 0;
+    }
+    .field--type-entity-reference {
+      padding: 20px 0;
+    }
+  }
+
+  .menu--mm {
+    float: left;
+    max-width: 40%;
+    padding: $cent;
+    font-size: 1.5vh;
+  }
+  .field--name-field-social {
+    float: right;
+    padding: $cent;
+    margin: 0 10px 0 10px;
+
+    .field__item {
+      float:left;
+    }
+  }
+
+  .search-form {
+    float: right;
+    text-align: center;
+    padding: $cent;
+    margin: 0 15px 0 15px;
+  }
+}

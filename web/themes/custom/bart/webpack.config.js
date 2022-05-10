@@ -1,14 +1,23 @@
 const path = require('path');
 const miniCss = require('mini-css-extract-plugin');
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-   mode: 'development',
-   entry: './src/index.js',
-   output: {
-      filename: 'bundle.js',
-      path: path.resolve(__dirname, 'dist')
-   },
-   module: {
+  mode: 'development',
+  entry: {
+    main: [
+      './src/index.js'
+  ]
+},
+
+  output: {
+    filename: 'bundle.js',
+    path: path.resolve(__dirname, 'dist')
+  },
+  devServer: {
+
+  },
+  module: {
       rules: [
          {
             test: /\.css$/,
@@ -31,5 +40,8 @@ module.exports = {
       new miniCss({
          filename: 'style.css',
       }),
-   ]
-};
+     new HtmlWebpackPlugin({
+       title: "webpack not App"
+     })
+   ],
+}
