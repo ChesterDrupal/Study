@@ -26,6 +26,42 @@ h1 {
 /*!***************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/footer.scss ***!
   \***************************************************************************************************************/
+.featured-bottom {
+  background-color: white;
+  border: 0;
+}
+.featured-bottom h2 {
+  text-align: left;
+  font-size: 1.75rem;
+  font-weight: 800;
+  padding: 0 0 10px 0;
+}
+.featured-bottom .node__title, .featured-bottom .node__meta {
+  display: none;
+}
+.featured-bottom a {
+  border-bottom: none;
+}
+.featured-bottom .region-featured-bottom-first .block-field-blocknodearticlestitle, .featured-bottom .region-featured-bottom-second .block-field-blocknodearticlestitle {
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+.featured-bottom .region-featured-bottom-first .content, .featured-bottom .region-featured-bottom-second .content {
+  margin: 0;
+}
+.featured-bottom .region-featured-bottom-first a, .featured-bottom .region-featured-bottom-second a {
+  font-weight: 600;
+  font-size: 1rem;
+}
+.featured-bottom .region-featured-bottom-third td {
+  font-size: 1rem;
+  font-weight: 600;
+}
+.featured-bottom .region-featured-bottom-third tr {
+  background: none;
+}
+
 .site-footer {
   background: white;
   padding: 0;
@@ -39,15 +75,17 @@ h1 {
   display: flex;
 }
 .site-footer .layout-container .region-footer-fifth .col-3 .field--type-entity-reference .image-style-thumbnail {
-  padding: 0 10px;
+  padding: 0 20px 0 0;
 }
 .site-footer .layout-container .region-footer-fifth .layout--onecol .field--name-field-header {
   font-size: 1.75rem;
   color: black;
+  font-weight: 800;
 }
 .site-footer .layout-container .region-footer-fifth .layout--onecol p {
   font-size: 0.875rem;
   color: grey;
+  padding: 0 20px 0 0;
 }
 .site-footer .layout-container .region-footer-fifth .layout--onecol a {
   color: #f5b000;
@@ -56,6 +94,7 @@ h1 {
 .site-footer .layout-container .region-footer-fifth .layout--twocol-section--25-75 {
   width: 100%;
   padding: 2.8rem 0;
+  margin: 0 0 0 15rem;
 }
 .site-footer .layout-container .region-footer-fifth .layout--twocol-section--25-75 .content {
   margin-top: 0;
@@ -72,11 +111,13 @@ h1 {
   margin: 0;
 }
 .site-footer .layout-container .region-footer-fifth .layout--twocol-section--25-75 .field--type-text {
+  font-weight: 700;
   font-size: 1.875rem;
   color: black;
 }
 .site-footer .layout-container .region-footer-fifth .layout--twocol-section--25-75 .field--type-text-with-summary {
   font-size: 0.625rem;
+  font-weight: 300;
   color: black;
 }
 .site-footer .layout-container .region-footer-fifth .layout--twocol-section--25-75 .layout__region--second {
@@ -99,9 +140,10 @@ h1 {
   padding: 0;
   margin: 0;
 }
-.site-footer .layout-container .region-footer-fifth .views-col .image-style-medium-300x300 {
+.site-footer .layout-container .region-footer-fifth .views-col .image-style-_18x318 {
   height: 18.75rem;
   width: 19.75rem;
+  margin: 0;
 }
 .site-footer .layout-container .site-footer__six .container {
   max-width: 100%;

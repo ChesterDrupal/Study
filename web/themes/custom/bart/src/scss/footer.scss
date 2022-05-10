@@ -1,15 +1,64 @@
 $link: #f5b000;
-// config for all footer regions
+
+.featured-bottom {
+  background-color: white;
+  border: 0;
+
+  //Design h2 and remove double title and border
+  h2 {
+    text-align: left;
+    font-size: 1.75rem;
+    font-weight: 800;
+    padding: 0 0 10px 0;
+  }
+  .node__title, .node__meta {
+    display: none;
+  }
+  a {
+    border-bottom: none;
+  }
+  // Editor picks and must read blocks
+  .region-featured-bottom-first, .region-featured-bottom-second {
+
+  .block-field-blocknodearticlestitle {
+    margin: 0;
+    border: 0;
+    padding: 0;
+  }
+
+  .content {
+    margin: 0;
+  }
+
+    a {
+      font-weight: 600;
+      font-size: 1rem;
+    }
+  }
+  // Hot topics
+  .region-featured-bottom-third {
+    td {
+      font-size: 1rem;
+      font-weight: 600;
+    }
+    tr {
+      background: none;
+    }
+  }
+
+}
+
+// Config for all footer regions
 .site-footer {
   background: white;
   padding: 0;
+
 
 
   .layout-container {
     margin: 0;
     padding: 0;
     min-width: 100%;
-
     // theming footer five region
     .region-footer-fifth {
 
@@ -18,7 +67,7 @@ $link: #f5b000;
         display: flex;
 
         .image-style-thumbnail {
-          padding: 0 10px;
+          padding: 0 20px 0 0;
         }
       }
 
@@ -27,11 +76,13 @@ $link: #f5b000;
         .field--name-field-header {
           font-size: 1.75rem;
           color: black;
+          font-weight: 800;
         }
 
         p {
           font-size: 0.875rem;
           color: grey;
+          padding: 0 20px 0 0;
         }
 
         a {
@@ -45,10 +96,12 @@ $link: #f5b000;
       .layout--twocol-section--25-75 {
         width: 100%;
         padding: 2.8rem 0;
+        margin: 0 0 0 15rem;
 
         .content {
           margin-top: 0;
           padding: 0;
+
         }
 
         .block {
@@ -65,12 +118,14 @@ $link: #f5b000;
         }
 
         .field--type-text {
+          font-weight: 700;
           font-size: 1.875rem;
           color: black;
         }
 
         .field--type-text-with-summary {
           font-size: 0.625rem;
+          font-weight: 300;
           color: black;
         }
 
@@ -101,9 +156,11 @@ $link: #f5b000;
         padding: 0;
         margin: 0;
 
-        .image-style-medium-300x300 {
+
+        .image-style-_18x318 {
           height: 18.75rem;
           width: 19.75rem;
+          margin: 0;
         }
       }
     }
