@@ -4,20 +4,23 @@ $link: #f5b000;
   background-color: white;
   border: 0;
 
-  //Design h2 and remove double title and border
+  // Design h2 and remove double title and border.
   h2 {
     text-align: left;
     font-size: 1.75rem;
     font-weight: 800;
     padding: 0 0 10px 0;
   }
+
   .node__title, .node__meta {
     display: none;
   }
+
   a {
     border-bottom: none;
   }
-  // Editor picks and must read blocks
+
+  // Editor picks and must read blocks.
   .region-featured-bottom-first, .region-featured-bottom-second {
 
   .block-field-blocknodearticlestitle {
@@ -35,12 +38,15 @@ $link: #f5b000;
       font-size: 1rem;
     }
   }
-  // Hot topics
+
+  // Hot topics.
   .region-featured-bottom-third {
+
     td {
       font-size: 1rem;
       font-weight: 600;
     }
+
     tr {
       background: none;
     }
@@ -48,21 +54,20 @@ $link: #f5b000;
 
 }
 
-// Config for all footer regions
+// Config for all footer regions.
 .site-footer {
   background: white;
   padding: 0;
-
-
 
   .layout-container {
     margin: 0;
     padding: 0;
     min-width: 100%;
-    // theming footer five region
+
+    // Theming footer five region.
     .region-footer-fifth {
 
-      // theming third column with soc ic
+      // Theming third column with soc ic.
       .col-3 .field--type-entity-reference {
         display: flex;
 
@@ -71,7 +76,7 @@ $link: #f5b000;
         }
       }
 
-      // theming second column and titles
+      // Theming second column and titles.
       .layout--onecol {
         .field--name-field-header {
           font-size: 1.75rem;
@@ -89,10 +94,9 @@ $link: #f5b000;
           color: $link;
           border-bottom: none;
         }
-
       }
 
-      // theming logo LifeNews
+      // Theming logo LifeNews.
       .layout--twocol-section--25-75 {
         width: 100%;
         padding: 2.8rem 0;
@@ -101,7 +105,6 @@ $link: #f5b000;
         .content {
           margin-top: 0;
           padding: 0;
-
         }
 
         .block {
@@ -138,7 +141,7 @@ $link: #f5b000;
         }
       }
 
-      // delete border customise block with photos
+      // Delete border customise block with photos.
       .views-view-grid.horizontal .views-row {
         border-bottom: 0;
       }
@@ -156,16 +159,15 @@ $link: #f5b000;
         padding: 0;
         margin: 0;
 
-
         .image-style-_18x318 {
           height: 18.75rem;
-          width: 19.75rem;
+          width: 22rem;
           margin: 0;
         }
       }
     }
 
-    // theming footer six container for full width
+    // Theming footer six container for full width.
     .site-footer__six {
 
       .container {
@@ -174,7 +176,8 @@ $link: #f5b000;
         margin: 0;
         padding: 0;
       }
-      // theming footer six region
+
+      // Theming footer six region.
       .region-footer-six {
         width: 100%;
         background-color: black;
@@ -192,12 +195,12 @@ $link: #f5b000;
             border: 0;
             margin: 0 0 0 20.625rem;
             padding: 0;
+
             a {
               color: $link;
               border-bottom: none;
             }
           }
-
         }
 
         .menu--footer {
