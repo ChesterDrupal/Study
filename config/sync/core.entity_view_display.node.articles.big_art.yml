@@ -64,7 +64,7 @@ third_party_settings:
                 settings:
                   link: true
                 third_party_settings: {  }
-            weight: 3
+            weight: 4
             additional: {  }
           c30bb62d-bb22-4ffb-a9f1-74e3f6666007:
             uuid: c30bb62d-bb22-4ffb-a9f1-74e3f6666007
@@ -82,7 +82,26 @@ third_party_settings:
                 label: hidden
                 settings: {  }
                 third_party_settings: {  }
-            weight: 4
+            weight: 6
+            additional: {  }
+          d2d4d3bc-4040-4019-bed8-242484d406d0:
+            uuid: d2d4d3bc-4040-4019-bed8-242484d406d0
+            region: content
+            configuration:
+              id: 'field_block:node:articles:title'
+              label: Title
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 5
             additional: {  }
         third_party_settings: {  }
 id: node.articles.big_art

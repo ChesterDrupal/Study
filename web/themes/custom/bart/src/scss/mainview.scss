@@ -1,0 +1,18 @@
+//main view
+.block-views-blockmain-view-block-1 {
+  border: none;
+
+  .node__title {
+    display: none;
+  }
+  .node__meta {
+    display: none;
+  }
+  a {
+    border-bottom: none;
+  }
+
+  .contextual-region {
+    display: flex;
+  }
+}
