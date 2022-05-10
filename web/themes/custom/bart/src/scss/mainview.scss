@@ -1,18 +1,87 @@
-//main view
+// Main view hide title + borders.
 .block-views-blockmain-view-block-1 {
   border: none;
+  line-height: 1.2;
 
-  .node__title {
+  .node__title, .node__meta {
     display: none;
   }
-  .node__meta {
-    display: none;
+
+  .node__content {
+    margin: 0;
   }
+
   a {
     border-bottom: none;
   }
 
+// Main View size configuration.
   .contextual-region {
     display: flex;
+
+    .views-col {
+      padding: 0;
+    }
+
+    .view-display-id-attachment_1 {
+
+      .view-content {
+        width: 100%;
+        text-align: center;
+
+        // Taxonomy field.
+        .block-field-blocknodearticlesfield-taxonommy {
+          position: relative;
+          bottom: 2.25rem;
+          margin: 0 17rem;
+
+          .field__item {
+
+            a {
+            background-color: white;
+            border: 1px solid black;
+            font-size: 1rem;
+            font-weight: 600;
+            padding: 8px 12px;
+            }
+          }
+        }
+
+        // Title + paragraph.
+        .block-field-blocknodearticlestitle, .block-field-blocknodearticlesfield-para {
+          margin: 0 5rem;
+        }
+
+          .field--name-title {
+            font-size: 2rem;
+            font-weight: 600;
+
+            a:hover {
+              border-bottom: 3px solid #ffcd3f;
+            }
+          }
+
+
+        .summary-content {
+          font-size: 0.875rem;
+        }
+
+        .field--name-uid {
+          font-size: 0.75rem;
+        }
+
+        .views-col {
+          width: 100% !important;
+        }
+      }
+    }
+      // Main view right.
+      .view-content {
+        width: 40%;
+        .image-style-_70-x-135-for-main-vi {
+          width: 270px;
+          height: 135px;
+        }
+      }
+    }
   }
-}
