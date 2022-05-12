@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.media.full
+    - core.entity_view_mode.media.footer
     - taxonomy.vocabulary.tags
   content:
     - 'taxonomy_term:tags:1f946061-22f1-4093-8194-c9cf6b0c23ff'
@@ -174,7 +174,7 @@ display:
         type: 'entity:media'
         options:
           relationship: none
-          view_mode: full
+          view_mode: footer
       query:
         type: views_query
         options:
@@ -184,6 +184,7 @@ display:
           replica: false
           query_tags: {  }
       relationships: {  }
+      css_class: footer_photo_girl
       header: {  }
       footer: {  }
       display_extenders: {  }
