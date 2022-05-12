@@ -1,0 +1,15 @@
+uuid: 2f4c665d-3bd9-40fe-a752-8d006d021c3f
+langcode: en
+status: true
+dependencies: {  }
+name: 320x160_for_main_view
+label: '320x160 for main view ( Big art)'
+effects:
+  fa955559-95b4-4230-81ee-eafd6c31c2ec:
+    uuid: fa955559-95b4-4230-81ee-eafd6c31c2ec
+    id: image_scale
+    weight: 1
+    data:
+      width: 320
+      height: 160
+      upscale: false

@@ -1,4 +1,7 @@
 // Main view hide title + borders.
+.layout--twocol-section {
+  flex-wrap: nowrap;
+}
 .block-views-blockmain-view-block-1 {
   border: none;
   line-height: 1.2;
@@ -36,29 +39,35 @@
         // Taxonomy field.
         .block-field-blocknodearticlesfield-taxonommy {
           position: relative;
-          bottom: 2.25rem;
-          margin: 0 17rem;
+          bottom: 3rem;
+
+          @media all and (min-width: 1440px) {
+            margin: 0 17rem;
+          }
 
           .field__item {
 
             a {
-            text-transform: uppercase;
-            background-color: white;
-            border: 1px solid black;
-            font-size: 1rem;
-            font-weight: 600;
-            padding: 8px 12px;
+              text-transform: uppercase;
+              background-color: white;
+              border: 1px solid black;
+              font-size: 1rem;
+              font-weight: 600;
+              padding: 8px 12px;
             }
           }
         }
 
         // Title + paragraph.
-        .block-field-blocknodearticlestitle, .block-field-blocknodearticlesfield-para {
-          margin: 0 5rem;
+        @media (min-width: 1019px) {
+
+          .block-field-blocknodearticlestitle, .block-field-blocknodearticlesfield-para {
+            margin: 0 4rem;
+          }
         }
 
           .field--name-title {
-            font-size: 2rem;
+            font-size: 2.6vw;
             font-weight: 600;
 
             a:hover {
@@ -89,19 +98,13 @@
     .view-content {
 
       .cols-1 {
-        width: 16.875rem;
         border-bottom: none;
-      }
-
-      .image-style-_70-x-135-for-main-vi {
-        width: 16.875rem;
-        height: 8.438rem;
       }
 
       // Taxonomy in right column.
       .block-field-blocknodearticlesfield-taxonommy {
         position: relative;
-        bottom: 2.25rem;
+        bottom: 3rem;
         display: block;
         height: 0;
 
@@ -142,6 +145,176 @@
         padding: 0 0 1.5rem 0;
         margin: 0;
       }
+    }
+  }
+}
+
+// Responsive.
+@media all and (max-width: 767px) {
+
+  .layout--twocol-section--25-75 {
+    display: block;
+
+    .contextual-region {
+      display: block;
+    }
+  }
+}
+@media (min-width: 426px) and (max-width: 559px) {
+
+  .block-field-blocknodearticlesfield-taxonommy {
+    bottom: 3rem !important;
+  }
+}
+
+@media (min-width: 560px) and (max-width: 767px) {
+
+  .block-field-blocknodearticlesfield-taxonommy {
+    bottom: 2rem !important;
+  }
+}
+
+@media all and (min-width: 0) and (max-width: 425px) {
+
+  .main-content .section {
+    padding: 0;
+  }
+  // Configuration fo attach for main view.
+  .view-display-id-attachment_1 {
+
+    .field--name-title {
+      font-size: 18px !important;
+      font-weight: 600;
+    }
+  }
+
+  .view-content {
+
+    .field--name-title {
+      font-size: 18px !important;
+      font-weight: 600;
+    }
+  }
+
+  .field__item {
+
+    a {
+      font-size: 11px !important;
+    }
+  }
+}
+
+@media all and (min-width: 426px) and (max-width: 767px) {
+
+  .contextual-region {
+
+    .view-content {
+
+      .cols-1 {
+        width: 100% !important;
+      }
+    }
+  }
+  .view-content {
+
+    .field--name-title {
+      font-size: 18px !important;
+      font-weight: 600;
+    }
+  }
+
+  .main-content .section {
+    padding: 0;
+  }
+
+  // Configuration fo attach for main view.
+  .view-display-id-attachment_1 {
+
+    .field--name-title {
+      font-size: 18px !important;
+      font-weight: 600;
+    }
+  }
+
+  .field__item {
+
+    a {
+      font-size: 11px !important;
+    }
+  }
+
+
+}
+@media all and (min-width: 768px) and (max-width: 1440px) {
+
+  .block-views-blockmain-view-block-1 {
+
+    .contextual-region {
+
+      .view-content {
+
+        .cols-1 {
+          width: 50% !important;
+        }
+      }
+    }
+
+  }
+  .view-content {
+
+    .field--name-title {
+      font-size: 15px !important;
+      font-weight: 600;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1018px) {
+
+  // Configuration fo attach for main view.
+  .view-display-id-attachment_1 {
+
+    .field--name-title {
+      font-size: 20px !important;
+      font-weight: 600;
+    }
+  }
+
+  .field__item {
+
+    a {
+      font-size: 11px !important;
+    }
+  }
+}
+
+
+@media all and (min-width: 1019px) and (max-width: 1140px) {
+
+  // Configuration fo attach for main view.
+  .view-display-id-attachment_1 {
+
+    .field--name-title {
+      font-size: 24px !important;
+      font-weight: 600;
+    }
+  }
+
+  .field__item {
+
+    a {
+      font-size: 11px !important;
+    }
+  }
+}
+@media all and (min-width: 1141px) {
+
+  // Configuration fo attach for main view.
+  .view-display-id-attachment_1 {
+
+    .field--name-title {
+      font-size: 32px !important;
+      font-weight: 600;
     }
   }
 }

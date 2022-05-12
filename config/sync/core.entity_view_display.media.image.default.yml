@@ -5,25 +5,24 @@ dependencies:
   config:
     - field.field.media.image.field_media_image
     - field.field.media.image.field_txi
-    - field.field.media.image.layout_builder__layout
-    - image.style.large
     - media.type.image
+    - responsive_image.styles.respons_for_img
   module:
-    - image
     - layout_builder
     - layout_discovery
+    - responsive_image
 third_party_settings:
   layout_builder:
     enabled: true
-    allow_custom: true
+    allow_custom: false
     sections:
       -
         layout_id: layout_onecol
         layout_settings:
           label: ''
         components:
-          8d3a3c2d-8854-4a6b-be81-274897e18de6:
-            uuid: 8d3a3c2d-8854-4a6b-be81-274897e18de6
+          273328e0-3943-4f64-a9a0-a2b781c1d287:
+            uuid: 273328e0-3943-4f64-a9a0-a2b781c1d287
             region: content
             configuration:
               id: 'field_block:media:image:field_media_image'
@@ -34,11 +33,11 @@ third_party_settings:
                 entity: layout_builder.entity
                 view_mode: view_mode
               formatter:
-                type: image
+                type: responsive_image
                 label: hidden
                 settings:
-                  image_link: ''
-                  image_style: large
+                  responsive_image_style: respons_for_img
+                  image_link: content
                 third_party_settings: {  }
             weight: 0
             additional: {  }
@@ -51,24 +50,17 @@ bundle: image
 mode: default
 content:
   field_media_image:
-    type: image
-    label: visually_hidden
+    type: responsive_image
+    label: hidden
     settings:
-      image_link: ''
-      image_style: large
+      responsive_image_style: respons_for_img
+      image_link: content
     third_party_settings: {  }
-    weight: 1
-    region: content
-  field_txi:
-    type: entity_reference_label
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    weight: 2
+    weight: 0
     region: content
 hidden:
   created: true
+  field_txi: true
   langcode: true
   layout_builder__layout: true
   name: true

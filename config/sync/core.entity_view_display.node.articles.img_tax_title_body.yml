@@ -39,11 +39,10 @@ third_party_settings:
                 entity: layout_builder.entity
                 view_mode: view_mode
               formatter:
-                type: media_thumbnail
+                type: entity_reference_entity_view
                 label: hidden
                 settings:
-                  image_link: content
-                  image_style: medium
+                  view_mode: default
                 third_party_settings: {  }
             weight: 2
             additional: {  }
@@ -99,7 +98,7 @@ third_party_settings:
                 type: string
                 label: hidden
                 settings:
-                  link_to_entity: false
+                  link_to_entity: true
                 third_party_settings: {  }
             weight: 4
             additional: {  }

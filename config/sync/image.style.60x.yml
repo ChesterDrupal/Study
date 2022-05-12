@@ -1,0 +1,15 @@
+uuid: 2886da9c-ffc9-45b7-84b6-90b7c9e6d274
+langcode: en
+status: true
+dependencies: {  }
+name: 60x
+label: 60x60
+effects:
+  6f3f1741-5b10-4865-9893-25c632c638aa:
+    uuid: 6f3f1741-5b10-4865-9893-25c632c638aa
+    id: image_scale
+    weight: 1
+    data:
+      width: 60
+      height: 60
+      upscale: false

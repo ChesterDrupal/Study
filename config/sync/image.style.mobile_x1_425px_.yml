@@ -1,0 +1,15 @@
+uuid: 45a8d827-5886-40e6-981e-e49837dadba9
+langcode: en
+status: true
+dependencies: {  }
+name: mobile_x1_425px_
+label: 'Mobile x1 (425px)'
+effects:
+  0eaa259c-8324-4290-8a8b-abb7fc32d055:
+    uuid: 0eaa259c-8324-4290-8a8b-abb7fc32d055
+    id: image_scale
+    weight: 1
+    data:
+      width: 425
+      height: null
+      upscale: false

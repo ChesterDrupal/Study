@@ -39,11 +39,10 @@ third_party_settings:
                 entity: layout_builder.entity
                 view_mode: view_mode
               formatter:
-                type: media_thumbnail
+                type: entity_reference_entity_view
                 label: hidden
                 settings:
-                  image_link: content
-                  image_style: bigp
+                  view_mode: default
                 third_party_settings: {  }
             weight: 2
             additional: {  }
@@ -99,9 +98,27 @@ third_party_settings:
                 type: string
                 label: hidden
                 settings:
-                  link_to_entity: false
+                  link_to_entity: true
                 third_party_settings: {  }
             weight: 5
+            additional: {  }
+          c9d9dc5e-a431-40aa-bce0-e8448cb31083:
+            uuid: c9d9dc5e-a431-40aa-bce0-e8448cb31083
+            region: content
+            configuration:
+              id: 'field_block:node:articles:uid'
+              label: 'Authored by'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: author
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 7
             additional: {  }
         third_party_settings: {  }
 id: node.articles.big_art

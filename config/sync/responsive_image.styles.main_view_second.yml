@@ -1,0 +1,43 @@
+uuid: 32954165-bf74-4678-a889-a0ac8c1c6985
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.4k_x1_2560
+    - image.style.60x
+    - image.style.laptop_x1_1024px
+    - image.style.laptopl_x1_1440
+    - image.style.mobile_x1_425px_
+    - image.style.mobile_x2_425px
+  theme:
+    - bart
+id: main_view_second
+label: 'main view second'
+image_style_mappings:
+  -
+    image_mapping_type: image_style
+    image_mapping: 4k_x1_2560
+    breakpoint_id: bart.4k
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: laptopl_x1_1440
+    breakpoint_id: bart.laptopL
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: laptop_x1_1024px
+    breakpoint_id: bart.laptop
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: mobile_x2_425px
+    breakpoint_id: bart.tablet
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: mobile_x1_425px_
+    breakpoint_id: bart.mobile
+    multiplier: 1x
+breakpoint_group: bart
+fallback_image_style: 60x
