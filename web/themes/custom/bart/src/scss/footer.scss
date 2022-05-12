@@ -1,0 +1,228 @@
+$link: #f5b000;
+
+.featured-bottom {
+  background-color: white;
+  border: 0;
+
+  // Design h2 and remove double title and border.
+  h2 {
+    text-align: left;
+    font-size: 1.75rem;
+    font-weight: 800;
+    padding: 0 0 10px 0;
+  }
+
+  .node__title, .node__meta {
+    display: none;
+  }
+
+  a {
+    border-bottom: none;
+  }
+
+  // Editor picks and must read blocks.
+  .region-featured-bottom-first, .region-featured-bottom-second {
+
+  .block-field-blocknodearticlestitle {
+    margin: 0;
+    border: 0;
+    padding: 0;
+  }
+
+  .content {
+    margin: 0;
+  }
+
+    a {
+      font-weight: 600;
+      font-size: 1rem;
+    }
+  }
+
+  // Hot topics.
+  .region-featured-bottom-third {
+
+    td {
+      font-size: 1rem;
+      font-weight: 600;
+    }
+
+    tr {
+      background: none;
+    }
+  }
+
+}
+
+// Config for all footer regions.
+.site-footer {
+  background: white;
+  padding: 0;
+
+  .layout-container {
+    margin: 0;
+    padding: 0;
+    min-width: 100%;
+
+    // Theming footer five region.
+    .region-footer-fifth {
+
+      // Theming third column with soc ic.
+      .col-3 .field--type-entity-reference {
+        display: flex;
+
+        .image-style-thumbnail {
+          padding: 0 20px 0 0;
+        }
+      }
+
+      // Theming second column and titles.
+      .layout--onecol {
+        .field--name-field-header {
+          font-size: 1.75rem;
+          color: black;
+          font-weight: 800;
+        }
+
+        p {
+          font-size: 0.875rem;
+          color: grey;
+          padding: 0 20px 0 0;
+        }
+
+        a {
+          color: $link;
+          border-bottom: none;
+        }
+      }
+
+      // Theming logo LifeNews.
+      .layout--twocol-section--25-75 {
+        width: 100%;
+        padding: 2.8rem 0;
+        margin: 0 0 0 15rem;
+
+        .content {
+          margin-top: 0;
+          padding: 0;
+        }
+
+        .block {
+          margin: 0;
+        }
+
+        .image-style-thumbnail {
+          float: right;
+          padding: 0 0.625rem 0 0;
+        }
+
+        p {
+          margin: 0;
+        }
+
+        .field--type-text {
+          font-weight: 700;
+          font-size: 1.875rem;
+          color: black;
+        }
+
+        .field--type-text-with-summary {
+          font-size: 0.625rem;
+          font-weight: 300;
+          color: black;
+        }
+
+        .layout__region--second {
+          padding: 15px 0;
+        }
+
+        .field--type-entity-reference {
+          padding: 20px 0;
+        }
+      }
+
+      // Delete border customise block with photos.
+      .views-view-grid.horizontal .views-row {
+        border-bottom: 0;
+      }
+
+      .views-view-grid.vertical .views-col {
+        border: 0;
+      }
+
+      .views-view-grid.vertical {
+        margin: 0;
+      }
+
+      .views-col {
+        max-height: 18.6rem;
+        padding: 0;
+        margin: 0;
+
+        .image-style-_18x318 {
+          height: 18.75rem;
+          width: 22rem;
+          margin: 0;
+        }
+      }
+    }
+
+    // Theming footer six container for full width.
+    .site-footer__six {
+
+      .container {
+        max-width: 100%;
+        display: contents;
+        margin: 0;
+        padding: 0;
+      }
+
+      // Theming footer six region.
+      .region-footer-six {
+        width: 100%;
+        background-color: black;
+        display: flex;
+        height: 2.5rem;
+
+        .block-block-content {
+          margin: 0;
+          width: 50%;
+          border: 0;
+          padding: 0;
+
+
+          .block-field-blockblock-contentbasicbody {
+            border: 0;
+            margin: 0 0 0 20.625rem;
+            padding: 0;
+
+            a {
+              color: $link;
+              border-bottom: none;
+            }
+          }
+        }
+
+        .menu--footer {
+          width: 50%;
+          border: 0;
+          padding: 0;
+          height: 2.5rem;
+          margin: 0 20.625rem 0 0;
+
+          a {
+            border-bottom: none;
+          }
+          a:hover {
+            color: $link;
+          }
+
+          .menu-item {
+            float: right;
+            margin: 0 20px;
+          }
+        }
+      }
+    }
+  }
+}

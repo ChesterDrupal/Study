@@ -1,6 +1,6 @@
-uuid: 1a6ecdf6-8471-4c37-9bdd-495520ffeee1
+uuid: e1f1f1ae-8764-48e9-aa53-f0ae8b3fb1d9
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - views.view.footer2
@@ -8,10 +8,10 @@ dependencies:
     - views
   theme:
     - bart
-id: bart_views_block__footer2_block_1
+id: views_block__footer2_block_1_2
 theme: bart
-region: footer_fifth
-weight: -8
+region: header
+weight: 0
 provider: null
 plugin: 'views_block:footer2-block_1'
 settings:

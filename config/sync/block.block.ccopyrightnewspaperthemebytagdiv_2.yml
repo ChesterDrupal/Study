@@ -1,6 +1,6 @@
-uuid: 90f5fdfe-f6a4-468d-8098-f6ea2cf4bb40
+uuid: ed5dae68-24a8-4fc1-aa62-e9c738881c6a
 langcode: en
-status: true
+status: false
 dependencies:
   content:
     - 'block_content:basic:348b941e-8a7e-4d4f-9aee-6cf303f3af21'
@@ -8,16 +8,16 @@ dependencies:
     - block_content
   theme:
     - bart
-id: bart_ccopyrightnewspaperthemebytagdiv
+id: ccopyrightnewspaperthemebytagdiv_2
 theme: bart
-region: footer_six
-weight: -9
+region: header
+weight: 0
 provider: null
 plugin: 'block_content:348b941e-8a7e-4d4f-9aee-6cf303f3af21'
 settings:
   id: 'block_content:348b941e-8a7e-4d4f-9aee-6cf303f3af21'
   label: "© Copyright -\_Newspaper theme\_by tagDiv"
-  label_display: '0'
+  label_display: visible
   provider: block_content
   status: true
   info: ''

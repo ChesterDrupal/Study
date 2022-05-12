@@ -1,0 +1,10 @@
+uuid: 1fed6dc5-cf8e-4f18-9002-52a97a66990c
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.footer
+label: footer
+targetEntityType: media
+cache: true
