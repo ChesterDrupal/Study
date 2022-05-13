@@ -1189,7 +1189,7 @@ display:
           plugin_id: text
           empty: false
           content:
-            value: '<br>VIEW ALL ARTICLES >'
+            value: '<a href="#" class="allfeatured"><br>VIEW ALL ARTICLES >'
             format: basic_html
           tokenize: false
       display_extenders: {  }

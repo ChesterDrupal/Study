@@ -5,6 +5,7 @@ global-styling:
       dist/style.css: {}
     theme:
       dist/style.css: {}
-
+    layout:
+      css/layout.css: {}
   js:
     js/script.js: {}

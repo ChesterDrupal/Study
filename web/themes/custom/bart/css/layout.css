@@ -1,0 +1,12 @@
+@media all and (max-width: 767px) {
+
+  .layout--twocol-section--25-75 {
+    display: block;
+}
+  .contextual-region {
+    display: block;
+  }
+  .section {
+    padding: 0 !important;
+  }
+}
