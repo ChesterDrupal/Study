@@ -1,20 +1,33 @@
-uuid: f66419aa-dd9f-425c-b7b6-c2e4e3f373f8
+uuid: 6b38cb04-dbc6-448a-9b8b-d76d291945b8
 langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.paragraphs_library_item.summary
     - field.field.paragraphs_library_item.paragraphs_library_item.field_test
     - field.field.paragraphs_library_item.paragraphs_library_item.field_test1
   module:
+    - entity_reference_revisions
     - paragraphs_library
-_core:
-  default_config_hash: XstmA6WDBHCnXqwpkJ4hDHdn8ELRpS3gIl9yxbsjIyM
-id: paragraphs_library_item.paragraphs_library_item.summary
+    - text
+id: paragraphs_library_item.paragraphs_library_item.default
 targetEntityType: paragraphs_library_item
 bundle: paragraphs_library_item
-mode: summary
+mode: default
 content:
+  field_test:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_test1:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
   label:
     type: string
     label: hidden
@@ -24,15 +37,14 @@ content:
     weight: 0
     region: content
   paragraphs:
-    type: library_item_summary
+    type: entity_reference_revisions_entity_view
     label: hidden
-    settings: {  }
+    settings:
+      view_mode: default
+      link: ''
     third_party_settings: {  }
     weight: 0
     region: content
 hidden:
-  content_moderation_control: true
-  field_test: true
-  field_test1: true
   langcode: true
   search_api_excerpt: true

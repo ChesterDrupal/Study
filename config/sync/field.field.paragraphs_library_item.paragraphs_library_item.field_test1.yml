@@ -1,0 +1,21 @@
+uuid: 39f40b73-3e97-4042-9c71-b3db0c1da4c0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraphs_library_item.field_test1
+  module:
+    - paragraphs_library
+    - text
+id: paragraphs_library_item.paragraphs_library_item.field_test1
+field_name: field_test1
+entity_type: paragraphs_library_item
+bundle: paragraphs_library_item
+label: test1
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text
