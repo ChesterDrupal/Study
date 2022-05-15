@@ -1,0 +1,10 @@
+uuid: fd123b6a-ecff-4f7f-871b-b0ff67b1af4b
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.describ
+label: Describ
+targetEntityType: paragraph
+cache: true

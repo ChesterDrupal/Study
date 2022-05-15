@@ -1,0 +1,10 @@
+uuid: a45db7ed-fabe-435b-83e4-d34303f9f144
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs_library
+id: paragraphs_library_item.describ
+label: Describ2
+targetEntityType: paragraphs_library_item
+cache: true

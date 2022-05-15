@@ -1,0 +1,20 @@
+uuid: dd005c66-cb31-4102-be93-f15d686494e7
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs_library
+    - text
+id: paragraphs_library_item.field_test1
+field_name: field_test1
+entity_type: paragraphs_library_item
+type: text
+settings:
+  max_length: 100
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
