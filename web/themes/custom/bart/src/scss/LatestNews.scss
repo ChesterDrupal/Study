@@ -1,0 +1,77 @@
+.layout__region--first {
+
+  .block-views-blocklatest-news-block-3 {
+
+    h2 {
+      font-size: 1.75rem;
+      font-weight: 800;
+      color: black;
+      padding-left: 20px;
+    }
+
+    // Position article content.
+    .layout--onecol {
+      display: flex;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-bottom: 15px;
+      margin-bottom: 15px;
+      border-bottom: 1px solid #eaeaea;
+    }
+
+    // Hide double titles.
+    .node__title, .node__meta {
+        display: none;
+    }
+
+    .block-field-blocknodearticlesfield-taxonommy {
+      display: inline-block;
+      margin-right: 10px;
+      font-size: 0.75rem;
+
+      .field__item:first-child {
+        display: block;
+      }
+
+      .field__item {
+        display: none;
+      }
+
+      a {
+        border-bottom: none;
+      }
+    }
+
+    .block-field-blocknodearticlescreated {
+      display: inline-block;
+      color: #ffcd3f;
+      font-size: 0.75rem;
+    }
+  }
+
+  .block-field-blocknodearticlestitle {
+
+    .content {
+      margin-top: 0;
+    }
+
+    a {
+      border-bottom: none;
+      font-size: 1rem;
+      display: inline;
+      font-weight: 800;
+    }
+
+    a:hover {
+      border-bottom: 2px solid #ffcd3f;
+    }
+  }
+
+  .block-field-blocknodearticlescreated .block-field-blocknodearticlesfield-para {
+    display: inline;
+  }
+
+  .paragraph-formatter {
+    display: inline;
+  }
+}

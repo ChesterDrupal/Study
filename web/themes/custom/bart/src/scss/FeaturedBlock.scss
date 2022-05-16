@@ -1,0 +1,138 @@
+// Theming features block.
+.block-views-blockduplicate-of-main-blocks-block-3 {
+
+  .node__title, .node__meta {
+    display: none;
+  }
+
+  a {
+    border-bottom: none;
+  }
+
+  .contextual-region {
+
+    .views-row {
+      padding: 0;
+      border: 0;
+    }
+  }
+
+  // Title.
+  h2 {
+    padding-top: ;
+    color: black;
+    font-size: 1.75rem;
+    font-weight: 800;
+    max-width: 30%;
+    position: relative;
+    top: 8rem;
+    margin: 0;
+  }
+
+  .view-display-id-block_3 {
+
+    .view-header {
+      max-width: 30%;
+      display: inline-block;
+      padding-top: 8rem;
+
+      a {
+        font-size: 0.813rem;
+        font-weight: 600;
+      }
+    }
+
+    .view-content {
+      max-width: 70%;
+      display: inline-block;
+      float: right;
+
+      .views-col {
+        padding: 0;
+      }
+    }
+
+    // Configurate taxonomy block.
+    .block-field-blocknodearticlesfield-taxonommy {
+      position: relative;
+      bottom: 2rem;
+      display: block;
+      height: 0;
+      text-align: left;
+
+      .field__item:first-child {
+        display: block;
+      }
+
+      .field__item {
+        display: none;
+
+        a {
+          text-transform: uppercase;
+          background-color: white;
+          border: 1px solid black;
+          font-size: 0.688rem;
+          font-weight: 400;
+          padding: 5px 6px;
+        }
+      }
+    }
+
+    .field--name-title {
+      font-size: 1rem;
+      font-weight: 600;
+
+      a:hover {
+        border-bottom: 2px solid #ffcd3f;
+      }
+    }
+  }
+}
+
+// Mobile responsive.
+@media all and (max-width: 767px) {
+
+  .block-views-blockduplicate-of-main-blocks-block-3 {
+
+    .layout__region--content {
+      display: grid;
+      justify-items: start;
+    }
+
+    h2 {
+      display: block;
+      position: initial;
+      padding-left: 15px;
+    }
+
+    .view-header {
+      padding-top: 0 !important;
+      padding-left: 15px;
+
+      a {
+        display: none;
+      }
+    }
+
+    .view-content {
+      max-width: 100% !important;
+
+      .image-style-large {
+        width: 100vw;
+      }
+    }
+
+    .block-field-blocknodearticlesfield-taxonommy {
+      bottom: 4rem !important;
+    }
+
+    .views-col {
+      width: 100% !important;
+      padding: 0;
+    }
+
+    .block-field-blocknodearticlestitle, .block-field-blocknodearticlescreated, .block-field-blocknodearticlesfield-taxonommy{
+      padding-left: 15px;
+    }
+  }
+}

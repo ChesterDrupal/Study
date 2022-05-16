@@ -39,11 +39,10 @@ third_party_settings:
                 entity: layout_builder.entity
                 view_mode: view_mode
               formatter:
-                type: media_thumbnail
+                type: entity_reference_entity_view
                 label: hidden
                 settings:
-                  image_link: content
-                  image_style: large
+                  view_mode: default
                 third_party_settings: {  }
             weight: 0
             additional: {  }
@@ -64,7 +63,7 @@ third_party_settings:
                 settings:
                   link_to_entity: true
                 third_party_settings: {  }
-            weight: 1
+            weight: 2
             additional: {  }
           d29f6320-806f-4ea4-bb6e-4ffd7fafd81d:
             uuid: d29f6320-806f-4ea4-bb6e-4ffd7fafd81d
@@ -84,6 +83,25 @@ third_party_settings:
                   date_format: custom
                   custom_date_format: Y/m/d
                   timezone: ''
+                third_party_settings: {  }
+            weight: 3
+            additional: {  }
+          60f1cc7a-e68e-41e5-b462-695a6dd7e9a7:
+            uuid: 60f1cc7a-e68e-41e5-b462-695a6dd7e9a7
+            region: content
+            configuration:
+              id: 'field_block:node:articles:field_taxonommy'
+              label: Taxonomy
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_label
+                label: hidden
+                settings:
+                  link: true
                 third_party_settings: {  }
             weight: 1
             additional: {  }

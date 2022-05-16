@@ -1,34 +1,12 @@
-/**
- * @file
- * Bartik layout styling.
- */
+@media all and (max-width: 767px) {
 
-/**
- * Container
- */
-.layout-container {
-  box-sizing: border-box;
-  max-width: 860px;
-  margin-right: auto;
-  margin-left: auto;
+  .layout--twocol-section--25-75 {
+    display: block;
 }
-
-@media all and (min-width: 768px) {
-  .layout-container {
-    max-width: 1280px;
+  .contextual-region {
+    display: block;
   }
-}
-
-
-
-
-/**
- * Main
- */
-.layout-main-wrapper {
-  min-height: 300px;
-}
-.layout-main {
-  margin-top: 20px;
-  margin-bottom: 40px;
+  .section {
+    padding: 0 !important;
+  }
 }
