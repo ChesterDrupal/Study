@@ -1,0 +1,269 @@
+// Fashion block.
+.block-views-blockduplicate-of-main-blocks-block-5 {
+  width: 64%;
+  display: inline-block;
+
+  h2 {
+    font-size: 1.75rem;
+    font-weight: 800;
+    color: black;
+  }
+
+  a {
+    border-bottom: 0;
+  }
+
+  .node__title, .node__meta {
+    display: none;
+  }
+
+  .block-field-blocknodearticlestitle {
+      font-size: 1rem;
+      font-weight: 800;
+
+    a:hover {
+      border-bottom: 2px solid #ffcd3f;
+    }
+  }
+
+  .block-field-blocknodearticlesuid {
+    display: inline-block;
+    padding-right: 15px;
+  }
+
+  .block-field-blocknodearticlescreated {
+    display: inline-block;
+  }
+
+  .views-row {
+    border-bottom: none !important;
+  }
+}
+
+// Responsive for fashion block.
+@media all and (max-width: 767px) {
+
+  .block-views-blockduplicate-of-main-blocks-block-5 {
+    max-width: 100%;
+
+    h2 {
+      padding: 0 15px !important;
+    }
+
+    .views-col {
+      width: 100% !important;
+
+    }
+
+    .views-row {
+      padding: 0 15px !important;
+      margin: 0 !important;
+    }
+  }
+}
+
+// Technology block.
+.block-views-blockduplicate-of-main-blocks-block-7 {
+  width: 64%;
+  float: left;
+
+  .layout__region--second {
+    padding-left: 15px;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+    font-weight: 800;
+    color: black;
+  }
+
+  a {
+    border-bottom: 0;
+  }
+
+  .node__title, .node__meta {
+    display: none;
+  }
+
+  .block-field-blocknodearticlestitle {
+    font-size: 1rem;
+    font-weight: 800;
+
+    a:hover {
+      border-bottom: 2px solid #ffcd3f;
+    }
+  }
+
+  .block-field-blocknodearticlesuid {
+    display: inline-block;
+    padding-right: 15px;
+  }
+
+  .block-field-blocknodearticlescreated {
+    display: inline-block;
+  }
+}
+
+// Responsive for technology block.
+@media all and (max-width: 767px) {
+
+  .block-views-blockduplicate-of-main-blocks-block-7 {
+    max-width: 100%;
+
+    h2 {
+      padding-left: 15px;
+    }
+
+    .layout__region--first {
+      padding-left: 15px;
+    }
+
+    .block-field-blocknodearticlesfield-para,  .block-field-blocknodearticlesuid {
+      display: none;
+    }
+  }
+}
+
+// Attachment for celebrities block.
+.block-views-blockmain-view-block-2 {
+  max-width: 64%;
+  float: left;
+
+  h2 {
+    font-size: 1.75rem;
+    font-weight: 800;
+    color: black;
+  }
+
+  a {
+    border-bottom: 0;
+  }
+
+  .node__title, .node__meta {
+    display: none;
+  }
+
+  .block-field-blocknodearticlestitle {
+    font-size: 1rem;
+    font-weight: 800;
+
+    a:hover {
+      border-bottom: 2px solid #ffcd3f;
+    }
+  }
+
+  .view-display-id-attachment_2 {
+
+    .view-content {
+      width: 100%;
+      text-align: center;
+
+      // Taxonomy field.
+      .block-field-blocknodearticlesfield-taxonommy {
+        position: relative;
+        bottom: 2rem;
+
+        .field__items {
+          display: contents;
+        }
+        .field__item:first-child {
+          display: block;
+        }
+
+        .field__item {
+          display: none;
+
+          a {
+            text-transform: uppercase;
+            background-color: white;
+            border: 1px solid black;
+            font-size: 1rem;
+            font-weight: 600;
+            padding: 8px 12px;
+          }
+        }
+      }
+
+      // Title + paragraph.
+
+      .field--name-title {
+        font-size: 2rem;
+        font-weight: 800;
+
+        a:hover {
+          border-bottom: 2px solid #ffcd3f;
+        }
+      }
+
+      .summary-content {
+        font-size: 0.875rem;
+      }
+
+      .field--name-uid {
+        font-size: 0.75rem;
+      }
+
+      .row-1 {
+        border: none;
+      }
+
+      .views-col {
+        width: 100% !important;
+      }
+    }
+  }
+// Celebrities block.
+  .view-content {
+
+    .cols-1 {
+      border-bottom: none;
+    }
+
+    // Taxonomy in right column.
+    .block-field-blocknodearticlesfield-taxonommy {
+      position: relative;
+      bottom: 2rem;
+      display: block;
+      height: 0;
+
+      .field__item:first-child {
+        display: block;
+      }
+
+      .field__item {
+        display: none;
+
+        a {
+          text-transform: uppercase;
+          background-color: white;
+          border: 1px solid black;
+          font-size: 0.688rem;
+          font-weight: 400;
+          padding: 5px 6px;
+        }
+      }
+    }
+
+    .field--name-title {
+      font-size: 1.25rem;
+      font-weight: 600;
+
+      a:hover {
+        border-bottom: 2px solid #ffcd3f;
+      }
+    }
+
+    .summary-content {
+      font-size: 0.875rem;
+      word-break: break-all;
+    }
+
+    .row-1, .row-2 {
+      border: none;
+      padding: 0 0 1.5rem 0;
+      margin: 0;
+    }
+  }
+}
+
+

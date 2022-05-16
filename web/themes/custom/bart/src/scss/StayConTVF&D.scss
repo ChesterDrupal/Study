@@ -1,0 +1,34 @@
+// Stay connected block.
+.block-views-blockstay-connected-block-1 {
+  width: 35%;
+  display: inline-block;
+
+  thead {
+    display: none;
+  }
+
+  tr {
+    background-color: white;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+    font-weight: 800;
+    color: black;
+  }
+
+  tbody {
+    font-weight: bold;
+    font-size: 11px;
+    color: black;
+  }
+  .views-field-field-logo {
+    width: 40px;
+  }
+}
+
+// TV block.
+.block-views-blockduplicate-of-main-blocks-block-6, .block-views-blockduplicate-of-main-blocks-block-8 {
+  width: 35%;
+  float: right;
+}
