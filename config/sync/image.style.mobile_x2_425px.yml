@@ -1,0 +1,15 @@
+uuid: 57600cf3-b136-46a6-b0d3-af70bcdacf39
+langcode: en
+status: true
+dependencies: {  }
+name: mobile_x2_425px
+label: 'Tablet x1 (768px)'
+effects:
+  2daa4f64-d594-4402-a3c9-b587cb331471:
+    uuid: 2daa4f64-d594-4402-a3c9-b587cb331471
+    id: image_scale
+    weight: 1
+    data:
+      width: 768
+      height: null
+      upscale: false

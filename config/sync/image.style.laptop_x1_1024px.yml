@@ -1,0 +1,15 @@
+uuid: 1d807162-0bf8-413d-8424-6b8280e46a43
+langcode: en
+status: true
+dependencies: {  }
+name: laptop_x1_1024px
+label: 'Laptop x1 (1024px)'
+effects:
+  8d7f54b3-fa39-44ab-ad93-cb458a963051:
+    uuid: 8d7f54b3-fa39-44ab-ad93-cb458a963051
+    id: image_scale
+    weight: 1
+    data:
+      width: 1024
+      height: null
+      upscale: false

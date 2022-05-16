@@ -1,0 +1,15 @@
+uuid: 785f9a54-a56f-4291-abb6-7f0359f42c31
+langcode: en
+status: true
+dependencies: {  }
+name: 270_x_135_for_main_vi
+label: '270 x 135 for main view'
+effects:
+  508dd189-e6c4-4e34-aa34-2cdbe068ecee:
+    uuid: 508dd189-e6c4-4e34-aa34-2cdbe068ecee
+    id: image_scale
+    weight: 1
+    data:
+      width: 270
+      height: 135
+      upscale: false

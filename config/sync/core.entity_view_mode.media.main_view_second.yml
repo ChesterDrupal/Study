@@ -1,0 +1,10 @@
+uuid: 420c1c15-b1cb-4069-953b-ac97f057a3b4
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.main_view_second
+label: 'main view second'
+targetEntityType: media
+cache: true

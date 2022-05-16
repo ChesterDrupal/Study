@@ -1,0 +1,30 @@
+bart.mobile:
+  label: mobile
+  mediaQuery: '(min-width: 0px)'
+  weight: 0
+  multipliers:
+    - 1x
+bart.tablet:
+  label: tablet
+  mediaQuery: 'all and (min-width: 425px) and (max-width: 768px)'
+  weight: 1
+  multipliers:
+    - 1x
+bart.laptop:
+  label: laptop
+  mediaQuery: 'all and (min-width: 768px) and (max-width: 1024px)'
+  weight: 2
+  multipliers:
+    - 1x
+bart.laptopL:
+  label: laptop L
+  mediaQuery: 'all and (min-width: 1024px) and (max-width: 1440px)'
+  weight: 3
+  multipliers:
+    - 1x
+bart.4k:
+  label: 4k
+  mediaQuery: 'all and (min-width: 1440px) and (max-width: 2560px)'
+  weight: 4
+  multipliers:
+    - 1x

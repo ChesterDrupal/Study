@@ -1,0 +1,15 @@
+uuid: f09cf239-d5bc-451c-a5f2-c56c62620e14
+langcode: en
+status: true
+dependencies: {  }
+name: 4k_x1_2560
+label: '4k x1 (2560px)'
+effects:
+  0d27c67f-ceca-478e-aabe-fc0de15e3b67:
+    uuid: 0d27c67f-ceca-478e-aabe-fc0de15e3b67
+    id: image_scale
+    weight: 1
+    data:
+      width: 2560
+      height: null
+      upscale: false

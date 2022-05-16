@@ -6,11 +6,10 @@ dependencies:
     - core.entity_view_mode.media.media_library
     - field.field.media.image.field_media_image
     - field.field.media.image.field_txi
-    - field.field.media.image.layout_builder__layout
-    - image.style.medium
     - media.type.image
+    - responsive_image.styles.main_view_second
   module:
-    - image
+    - responsive_image
 _core:
   default_config_hash: p4SdSdLBlqfympeNav_Tdpn0-pL62tbjc348_zcPof4
 id: media.image.media_library
@@ -18,21 +17,20 @@ targetEntityType: media
 bundle: image
 mode: media_library
 content:
-  thumbnail:
-    type: image
+  field_media_image:
+    type: responsive_image
     label: hidden
     settings:
-      image_link: ''
-      image_style: medium
+      responsive_image_style: main_view_second
+      image_link: content
     third_party_settings: {  }
     weight: 0
     region: content
 hidden:
   created: true
-  field_media_image: true
   field_txi: true
   langcode: true
-  layout_builder__layout: true
   name: true
   search_api_excerpt: true
+  thumbnail: true
   uid: true

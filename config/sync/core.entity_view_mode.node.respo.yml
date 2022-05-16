@@ -1,0 +1,10 @@
+uuid: b89fedda-1a86-4d91-a4ac-ad2e529a9215
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.respo
+label: respons
+targetEntityType: node
+cache: true

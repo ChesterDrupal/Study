@@ -1,0 +1,42 @@
+uuid: 8eb79e19-da57-4bd3-8304-4e0b5a147276
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.4k_x1_2560
+    - image.style.laptop_x1_1024px
+    - image.style.laptopl_x1_1440
+    - image.style.mobile_x1_425px_
+    - image.style.mobile_x2_425px
+_core:
+  default_config_hash: E9Pvy75e7AcNQi7TBRvoG0DU2FI8mjFcLARqfB-rlIU
+id: narrow
+label: images
+image_style_mappings:
+  -
+    image_mapping_type: image_style
+    image_mapping: 4k_x1_2560
+    breakpoint_id: responsive_image.4k
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: laptopl_x1_1440
+    breakpoint_id: responsive_image.laptopL
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: laptop_x1_1024px
+    breakpoint_id: responsive_image.laptop
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: mobile_x2_425px
+    breakpoint_id: baresponsive_imagert.tablet
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: mobile_x1_425px_
+    breakpoint_id: responsive_image.mobile
+    multiplier: 1x
+breakpoint_group: responsive_image
+fallback_image_style: mobile_x1_425px_
