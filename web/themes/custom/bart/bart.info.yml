@@ -2,7 +2,6 @@ name: Bart
 type: theme
 base theme: bartik
 description: 'My own bart version.'
-version: 1.x
 package: Other
 core_version_requirement: ^8 || ^9
 libraries:
@@ -18,7 +17,6 @@ regions:
   page_bottom: 'Page bottom'
   highlighted: Highlighted
   featured_top: 'Featured top'
-
   content: Content
   featured_bottom_first: 'Featured bottom first'
   featured_bottom_second: 'Featured bottom second'
