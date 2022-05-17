@@ -2,7 +2,16 @@
 
   .layout--twocol-section--25-75 {
     display: block;
-}
+  }
+  .contextual-region {
+    display: block;
+  }
+  .section {
+    padding: 0 !important;
+  }
+  .layout--twocol-section--67-33 {
+    display: block;
+  }
   .contextual-region {
     display: block;
   }
