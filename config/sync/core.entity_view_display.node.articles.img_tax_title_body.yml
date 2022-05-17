@@ -42,7 +42,7 @@ third_party_settings:
                 type: entity_reference_entity_view
                 label: hidden
                 settings:
-                  view_mode: default
+                  view_mode: main_view_second
                 third_party_settings: {  }
             weight: 2
             additional: {  }
@@ -80,7 +80,19 @@ third_party_settings:
                 type: paragraph_summary
                 label: hidden
                 settings: {  }
-                third_party_settings: {  }
+                third_party_settings:
+                  linked_field:
+                    linked: 0
+                    type: field
+                    destination:
+                      field: ''
+                      custom: ''
+                    advanced:
+                      title: ''
+                      target: ''
+                      class: ''
+                      rel: ''
+                      text: ''
             weight: 5
             additional: {  }
           6f4fb7e2-ea36-417d-a6f6-4e14ccf6e9cc:
@@ -99,7 +111,22 @@ third_party_settings:
                 label: hidden
                 settings:
                   link_to_entity: true
-                third_party_settings: {  }
+                third_party_settings:
+                  linked_field:
+                    linked: 0
+                    type: custom
+                    destination:
+                      field:
+                        field: ''
+                        custom:
+                          custom: ''
+                      custom: ''
+                    advanced:
+                      title: ''
+                      target: ''
+                      class: ''
+                      rel: ''
+                      text: ''
             weight: 4
             additional: {  }
         third_party_settings: {  }

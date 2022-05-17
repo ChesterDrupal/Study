@@ -1,0 +1,216 @@
+// Advertise.
+.block-views-blockadvertise-block-1 {
+  width: 100%;
+  text-align: center;
+
+  h2 {
+    display: none;
+  }
+}
+
+// Theming music block.
+.block-views-blockduplicate-of-main-blocks-block-9 {
+
+  h2 {
+    font-size: 3.375rem;
+    text-align: center;
+    color: black;
+  }
+
+  .view-header {
+    font-size: 1rem;
+    text-align: center;
+    color: #f5b000;
+  }
+
+  a {
+    border-bottom: 0;
+  }
+
+  .node__title, .node__meta {
+    display: none;
+  }
+
+  .block-field-blocknodearticlestitle {
+    font-size: 1rem;
+    font-weight: 800;
+
+    a:hover {
+      border-bottom: 2px solid #ffcd3f;
+    }
+  }
+
+  // Attachment first.
+  .attachment-before {
+    width: 25%;
+    float: left;
+    display: block;
+
+    .view-content {
+      width: 100%
+    }
+
+    .block-field-blocknodearticlesfield-taxonommy {
+      position: relative;
+      bottom: 2rem;
+      display: block;
+      height: 0;
+
+      .field__item:first-child {
+        display: block;
+      }
+
+      .field__item {
+        display: none;
+
+        a {
+          text-transform: uppercase;
+          background-color: white;
+          border: 1px solid black;
+          font-size: 0.688rem;
+          font-weight: 400;
+          padding: 5px 6px;
+        }
+      }
+    }
+
+    .field--name-title {
+      font-size: 1.25rem;
+      font-weight: 600;
+
+      a:hover {
+        border-bottom: 3px solid #ffcd3f;
+      }
+    }
+
+    .summary-content {
+      font-size: 0.875rem;
+      word-break: break-all;
+    }
+  }
+
+  // Main view.
+  .view-content {
+    text-align: center;
+    width: 50%;
+    display: block;
+    float: left;
+
+    .col-1 {
+      width: 100% !important;
+    }
+
+    .row-1 {
+      border-bottom: none;
+    }
+
+    .node--view-mode-big-art {
+
+      // Configuration taxonomy and title.
+      .block-field-blocknodearticlesfield-taxonommy {
+        position: relative;
+        bottom: 2rem;
+        display: block;
+        height: 0;
+
+        .field__item:first-child {
+          display: block;
+        }
+
+        .field__item {
+          display: none;
+
+          a {
+            text-transform: uppercase;
+            background-color: white;
+            border: 1px solid black;
+            font-size: 0.688rem;
+            font-weight: 400;
+            padding: 5px 6px;
+          }
+        }
+      }
+
+      .field--name-title {
+        font-size: 2rem;
+        font-weight: 800;
+
+        a:hover {
+          border-bottom: 3px solid #ffcd3f;
+        }
+      }
+
+      .summary-content {
+        font-size: 0.875rem;
+        word-break: break-all;
+      }
+    }
+  }
+
+  // Attachment second.
+  .attachment-after {
+    width: 25%;
+    float: right;
+    display: block;
+
+    .view-content {
+      width: 100%
+    }
+
+    .block-field-blocknodearticlesfield-taxonommy {
+      position: relative;
+      bottom: 2rem;
+      display: block;
+      height: 0;
+
+      .field__item:first-child {
+        display: block;
+      }
+
+      .field__item {
+        display: none;
+
+        a {
+          text-transform: uppercase;
+          background-color: white;
+          border: 1px solid black;
+          font-size: 0.688rem;
+          font-weight: 400;
+          padding: 5px 6px;
+        }
+      }
+    }
+
+    .field--name-title {
+      font-size: 1.25rem;
+      font-weight: 600;
+
+      a:hover {
+        border-bottom: 3px solid #ffcd3f;
+      }
+    }
+
+    .summary-content {
+      font-size: 0.875rem;
+      word-break: break-all;
+    }
+  }
+}
+
+@media all and (max-width: 767px) {
+
+  .block-views-blockduplicate-of-main-blocks-block-9 {
+
+    .attachment-before {
+      width: 100%;
+    }
+
+    .attachment-after {
+      width: 100%;
+    }
+
+    .view-content {
+      width: auto;
+    }
+  }
+}

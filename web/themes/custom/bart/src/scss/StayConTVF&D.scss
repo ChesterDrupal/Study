@@ -27,6 +27,22 @@
   }
 }
 
+// Responsive for connected block.
+@media all and (max-width: 767px) {
+
+  .block-views-blockstay-connected-block-1 {
+    width: 100%;
+
+    h2 {
+      padding: 0 15px !important;
+    }
+
+    .views-field-field-number {
+      width: 10%;
+    }
+  }
+}
+
 // TV, F&D blocks.
 .block-views-blockduplicate-of-main-blocks-block-6, .block-views-blockduplicate-of-main-blocks-block-8 {
   width: 35%;
@@ -52,6 +68,26 @@
 
     a:hover {
       border-bottom: 2px solid #ffcd3f;
+    }
+  }
+}
+
+// Responsive for TV, F&D blocks.
+@media all and (max-width: 767px) {
+
+  .block-views-blockduplicate-of-main-blocks-block-6, .block-views-blockduplicate-of-main-blocks-block-8 {
+    width: 100%;
+
+    h2 {
+      padding: 0 15px !important;
+    }
+
+    .layout__region--first {
+      padding: 0 15px;
+    }
+
+    .views-field-field-number {
+      width: 10%;
     }
   }
 }

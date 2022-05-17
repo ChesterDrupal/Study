@@ -108,7 +108,7 @@
 @media all and (max-width: 767px) {
 
   .block-views-blockduplicate-of-main-blocks-block-7 {
-    max-width: 100%;
+    width: 100%;
 
     h2 {
       padding-left: 15px;
@@ -166,6 +166,7 @@
         .field__items {
           display: contents;
         }
+
         .field__item:first-child {
           display: block;
         }
@@ -212,14 +213,15 @@
       }
     }
   }
-// Celebrities block.
+
+  // Celebrities block.
   .view-content {
 
     .cols-1 {
       border-bottom: none;
     }
 
-    // Taxonomy in right column.
+    // Taxonomy in bottom column.
     .block-field-blocknodearticlesfield-taxonommy {
       position: relative;
       bottom: 2rem;
@@ -266,4 +268,21 @@
   }
 }
 
+@media all and (max-width: 767px) {
 
+  .block-views-blockmain-view-block-2 {
+    max-width: 100% !important;
+
+    h2 {
+      padding: 0 15px;
+    }
+
+    .views-col {
+      width: 100% !important;
+    }
+
+    .block-field-blocknodearticlestitle, .block-field-blocknodearticlesfield-taxonommy, .block-field-blocknodearticlesfield-para {
+      padding: 0 15px;
+    }
+  }
+}

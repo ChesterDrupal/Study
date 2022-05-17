@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.media.image.field_media_image
     - field.field.media.image.field_txi
+    - field.field.media.image.layout_builder__layout
     - image.style.thumbnail
     - media.type.image
   module:
@@ -72,4 +73,5 @@ content:
       placeholder: ''
     third_party_settings: {  }
 hidden:
+  layout_builder__layout: true
   name: true
