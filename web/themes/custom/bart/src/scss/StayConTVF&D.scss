@@ -27,8 +27,31 @@
   }
 }
 
-// TV block.
+// TV, F&D blocks.
 .block-views-blockduplicate-of-main-blocks-block-6, .block-views-blockduplicate-of-main-blocks-block-8 {
   width: 35%;
   float: right;
+
+  h2 {
+    font-size: 1.75rem;
+    font-weight: 800;
+    color: black;
+  }
+
+  a {
+    border-bottom: 0;
+  }
+
+  .node__title, .node__meta {
+    display: none;
+  }
+
+  .block-field-blocknodearticlestitle {
+    font-size: 1rem;
+    font-weight: 800;
+
+    a:hover {
+      border-bottom: 2px solid #ffcd3f;
+    }
+  }
 }
