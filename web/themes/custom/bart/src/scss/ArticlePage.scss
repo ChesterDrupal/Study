@@ -1,0 +1,33 @@
+// Layout config.
+.node__meta {
+  display: none;
+}
+.layout-main-wrapper {
+  padding: 0;
+  margin: 0;
+  min-width: 100%;
+  background: none;
+  .layout-main {
+    margin: 0;
+  }
+  .section {
+    padding: 0;
+    margin-top: -10px;
+  }
+}
+// View main block.
+.layout__region--content {
+  text-align: center;
+
+  // Main image.
+  .block-field-blocknodearticlesfield-head {
+
+    .image-style-_400x1500 {
+      height: 37.5rem;
+    }
+  }
+
+
+
+}
+
