@@ -35,6 +35,7 @@
     }
   }
 }
+
 // Body category page (articles).
 .categoryview {
 
@@ -50,6 +51,7 @@
   }
 
   .block-field-blocknodearticlesfield-taxonommy {
+
     .field__item:first-child {
       display: block;
     }
@@ -79,20 +81,25 @@
   .paragraphs-collapsed-description {
     font-size: 0.875rem;
   }
+
   .block-field-blocknodearticlesuid {
     padding-right: 15px;
     float: left;
   }
 }
+
 // Responsive for articles view.
 @media all and (max-width: 767px) {
+
   .layout--twocol-section--33-67 {
     line-height: 1.1 !important;
     flex-direction: column;
   }
+
   .block-field-blocknodearticlesfield-taxonommy {
     position: relative;
     bottom: 1.5rem !important;
+
     .content {
       margin: auto;
     }
@@ -101,6 +108,7 @@
 
 // News block.
 .block-views-blocklatest-news-block-1 {
+
   // Position article content.
   .layout--onecol {
     display: flex;
@@ -119,12 +127,13 @@
   .block-field-blockmediaimagefield-media-image, .block-field-blocknodearticlesfield-taxonommy, .block-field-blocknodearticlestitle, .block-field-blocknodearticlesfield-para {
     padding-left: 20px;
   }
+
   .block-field-blocknodearticlesfield-para {
     padding-bottom: 15px;
     border-bottom: 1px solid #eaeaea;
   }
-
 }
+
 .block-views-blocklatest-news-block-1, .block-views-blocklatest-news-block-4 {
   max-width: 75%;
 
@@ -134,7 +143,6 @@
     color: black;
     padding-left: 20px;
   }
-
 
   // Hide double titles.
   .node__title, .node__meta {
@@ -206,6 +214,7 @@
     display: none;
   }
 }
+
 @media all and (max-width: 767px) {
 
   .block-views-blocklatest-news-block-1, .block-views-blocklatest-news-block-4 {
@@ -215,8 +224,8 @@
       position: initial;
     }
   }
-
 }
+
 // You might also like.
 .block-views-blockduplicate-of-main-blocks-block-2 {
 
