@@ -1,0 +1,436 @@
+// Header of category page.
+.block-system-main-block {
+
+  .layout__region--content {
+
+    .block-field-blocknodepagetitle {
+      font-size: 2.375rem;
+      font-weight: 800;
+      text-align: center;
+      padding-top: 3rem;
+      color: black;
+    }
+
+    .block-field-blocknodepagefield-body {
+      text-align: center;
+    }
+
+    .block-field-blocknodepagefield-taxo {
+
+      .field--name-field-taxo {
+        display: flex;
+        justify-content: center;
+
+        a {
+          text-transform: uppercase;
+          background-color: white;
+          border: 1px solid black;
+          font-size: 0.688rem;
+          font-weight: 400;
+          padding: 5px 6px;
+          margin: 0 5px;
+          color: black;
+        }
+      }
+    }
+  }
+}
+
+// Body category page (articles).
+.categoryview {
+
+  .layout__region--second {
+    padding: 0 15px;
+  }
+  .node__title, .node__meta {
+    display: none;
+  }
+
+  a {
+    border-bottom: none;
+  }
+
+  .block-field-blocknodearticlesfield-taxonommy {
+
+    .field__item:first-child {
+      display: block;
+    }
+
+    .field__item {
+      display: none;
+
+      a {
+        text-transform: uppercase;
+        background-color: white;
+        border: 1px solid black;
+        font-size: 0.688rem;
+        font-weight: 400;
+        padding: 5px 6px;
+        color: black;
+      }
+    }
+  }
+
+  .block-field-blocknodearticlestitle {
+    a {
+      font-size: 1.75rem;
+      font-weight: 800;
+    }
+  }
+
+  .paragraphs-collapsed-description {
+    font-size: 0.875rem;
+  }
+
+  .block-field-blocknodearticlesuid {
+    padding-right: 15px;
+    float: left;
+  }
+}
+
+// Responsive for articles view.
+@media all and (max-width: 767px) {
+
+  .layout--twocol-section--33-67 {
+    line-height: 1.1 !important;
+    flex-direction: column;
+  }
+
+  .block-field-blocknodearticlesfield-taxonommy {
+    position: relative;
+    bottom: 1.5rem !important;
+
+    .content {
+      margin: auto;
+    }
+  }
+}
+
+// News block.
+.block-views-blocklatest-news-block-1 {
+
+  // Position article content.
+  .layout--onecol {
+    display: flex;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #eaeaea;
+  }
+}
+
+// Must read block.
+.block-views-blocklatest-news-block-4 {
+
+  // Position article content.
+  .block-field-blockmediaimagefield-media-image, .block-field-blocknodearticlesfield-taxonommy, .block-field-blocknodearticlestitle, .block-field-blocknodearticlesfield-para {
+    padding-left: 20px;
+  }
+
+  .block-field-blocknodearticlesfield-para {
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eaeaea;
+  }
+}
+
+.block-views-blocklatest-news-block-1, .block-views-blocklatest-news-block-4 {
+  max-width: 75%;
+
+  h2 {
+    font-size: 1.75rem;
+    font-weight: 800;
+    color: black;
+    padding-left: 20px;
+  }
+
+  // Hide double titles.
+  .node__title, .node__meta {
+    display: none;
+  }
+
+  .block-field-blocknodearticlesfield-taxonommy {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 0.75rem;
+
+    .field__item:first-child {
+      display: block;
+    }
+
+    .field__item {
+      display: none;
+    }
+
+    a {
+      border-bottom: none;
+    }
+  }
+
+  .block-field-blocknodearticlescreated {
+    display: inline-block;
+    color: #ffcd3f;
+    font-size: 0.75rem;
+  }
+}
+
+.block-field-blocknodearticlestitle {
+  line-height: 1.15;
+
+  .field--label-above {
+  font-size: 1rem !important;
+  }
+
+  .content {
+    margin-top: 0;
+  }
+
+  a {
+    border-bottom: none;
+    font-size: 1rem;
+    display: inline;
+    font-weight: 800;
+  }
+
+  a:hover {
+    border-bottom: 2px solid #ffcd3f;
+  }
+}
+
+.block-field-blocknodearticlescreated .block-field-blocknodearticlesfield-para {
+  display: inline;
+}
+
+.paragraph-formatter {
+  display: inline;
+}
+
+// Advertise.
+.block-views-blockadvertise-block-1 {
+  display: flex;
+  justify-content: center;
+
+  h2 {
+    display: none;
+  }
+}
+
+@media all and (max-width: 767px) {
+
+  .block-views-blocklatest-news-block-1, .block-views-blocklatest-news-block-4 {
+    max-width: 100%;
+
+    .block-field-blocknodearticlesfield-taxonommy {
+      position: initial;
+    }
+  }
+}
+
+// You might also like.
+.block-views-blockduplicate-of-main-blocks-block-2 {
+
+    h2 {
+      font-size: 3.375rem;
+      text-align: center;
+      color: black;
+    }
+
+    .view-header {
+      font-size: 1rem;
+      text-align: center;
+      color: #f5b000;
+    }
+
+    a {
+      border-bottom: 0;
+    }
+
+    .node__title, .node__meta {
+      display: none;
+    }
+
+    .block-field-blocknodearticlestitle {
+      font-size: 1rem;
+      font-weight: 800;
+
+      a:hover {
+        border-bottom: 2px solid #ffcd3f;
+      }
+    }
+
+    // Attachment first.
+    .attachment-before {
+      width: 25%;
+      float: left;
+      display: block;
+
+      .view-content {
+        width: 100%
+      }
+
+      .block-field-blocknodearticlesfield-taxonommy {
+        position: relative;
+        bottom: 2rem;
+        display: block;
+        height: 0;
+
+        .field__item:first-child {
+          display: block;
+        }
+
+        .field__item {
+          display: none;
+
+          a {
+            text-transform: uppercase;
+            background-color: white;
+            border: 1px solid black;
+            font-size: 0.688rem;
+            font-weight: 400;
+            padding: 5px 6px;
+          }
+        }
+      }
+
+      .field--name-title {
+        font-size: 1.25rem;
+        font-weight: 600;
+
+        a:hover {
+          border-bottom: 3px solid #ffcd3f;
+        }
+      }
+
+      .summary-content {
+        font-size: 0.875rem;
+        word-break: break-all;
+      }
+    }
+
+    // Middle view.
+    .view-content {
+      text-align: center;
+      width: 50%;
+      display: block;
+      float: left;
+
+      .col-1 {
+        width: 100% !important;
+      }
+
+      .row-1 {
+        border-bottom: none;
+      }
+
+        // Configuration taxonomy and title.
+        .block-field-blocknodearticlesfield-taxonommy {
+          position: relative;
+          bottom: 2.5rem;
+          display: block;
+          height: 0;
+
+          .field__item:first-child {
+            display: block;
+          }
+
+          .field__item {
+            display: none;
+
+            a {
+              text-transform: uppercase;
+              background-color: white;
+              border: 1px solid black;
+              font-size: 0.688rem;
+              font-weight: 400;
+              padding: 5px 6px;
+            }
+          }
+        }
+
+        .field--name-title {
+          font-size: 2rem;
+          font-weight: 800;
+
+          a:hover {
+            border-bottom: 3px solid #ffcd3f;
+          }
+        }
+
+        .summary-content {
+          font-size: 0.875rem;
+          word-break: break-all;
+        }
+
+    }
+
+    // Attachment second.
+    .attachment-after {
+      width: 25%;
+      float: right;
+      display: block;
+
+      .view-content {
+        width: 100%
+      }
+
+      .block-field-blocknodearticlesfield-taxonommy {
+        position: relative;
+        bottom: 2rem;
+        display: block;
+        height: 0;
+
+        .field__item:first-child {
+          display: block;
+        }
+
+        .field__item {
+          display: none;
+
+          a {
+            text-transform: uppercase;
+            background-color: white;
+            border: 1px solid black;
+            font-size: 0.688rem;
+            font-weight: 400;
+            padding: 5px 6px;
+          }
+        }
+      }
+
+      .field--name-title {
+        font-size: 1.25rem;
+        font-weight: 600;
+
+        a:hover {
+          border-bottom: 3px solid #ffcd3f;
+        }
+      }
+
+      .summary-content {
+        font-size: 0.875rem;
+        word-break: break-all;
+      }
+    }
+  }
+
+@media all and (max-width: 767px) {
+
+  .block-views-blockduplicate-of-main-blocks-block-2 {
+
+    h2 {
+      font-size: 1.625rem;
+    }
+    .attachment-before {
+      width: 100%;
+    }
+
+    .attachment-after {
+      width: 100%;
+    }
+
+    .view-content {
+      width: auto;
+    }
+  }
+}
+
