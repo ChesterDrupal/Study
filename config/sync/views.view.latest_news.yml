@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.img_tax_title_body
+    - core.entity_view_mode.node.mustread
     - core.entity_view_mode.node.nes
     - node.type.articles
   content:
@@ -408,7 +408,7 @@ display:
         type: 'entity:node'
         options:
           relationship: none
-          view_mode: img_tax_title_body
+          view_mode: mustread
       defaults:
         title: false
         pager: false
