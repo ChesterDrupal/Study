@@ -15,11 +15,13 @@
     margin-top: -10px;
   }
 }
+
 // Region with main image.
 .absolut {
-  position: absolute;
+  height: 36rem;
+  position: relative;
   left: -18rem;
-  top: -2.47rem;
+  top: -4rem;
 
   .block-field-blocknodearticlesfield-head {
     width: 99.29vw;
@@ -31,11 +33,11 @@
     }
   }
 }
+
 // Text to main image.
 .articlepage {
   text-align: center;
-  height: 36rem;
-  padding-top: 38rem;
+  height: 10rem;
 
   // Taxonomy terms and titles.
   .taxonomyone {
@@ -101,6 +103,7 @@
   }
 
   .titlesecond {
+    max-height: 5.6rem;
     position: relative;
     bottom: 18rem;
     font-size: 2.5rem;
@@ -135,98 +138,172 @@
 
 .block-views-blockadvertise-block-1 {
   position: relative;
-  bottom: 15rem;
+  bottom: 14rem;
 }
 
-// Theming region with paragraph and latest news.
+// Theming region with paragraphs and latest news.
 .reg66x34 {
-  position: relative;
-  top: -25rem;
 
-  // Latest News block.
-  .layout__region--second
-  .block-views-blocklatest-news-block-2 {
-    text-align: left;
+  .layout__region--first {
+    color: black;
 
-    h2 {
-      font-size: 1.75rem;
-      font-weight: 800;
-      color: black;
-      padding-left: 20px;
+    h2, h3 {
+      font-size: 1.688rem;
+      margin: 0 5rem;
     }
 
-    // Position article content.
-    .layout--onecol {
-      display: flex;
-      padding-left: 20px;
-      padding-right: 20px;
-      padding-bottom: 15px;
-      margin-bottom: 15px;
-      border-bottom: 1px solid #eaeaea;
+    p {
+      font-size: 1rem;
+      margin: 0 5rem;
     }
 
-    // Hide double titles.
-    .node__title, .node__meta {
-      display: none;
-    }
+    .block-field-blocknodearticlesuid {
+      margin-top: 5rem;
 
-    .block-field-blocknodearticlesfield-taxonommy {
-      display: inline-block;
-      margin-right: 10px;
-      font-size: 0.75rem;
-
-      .field__item:first-child {
-        display: block;
+      a {
+        border: none;
+        font-size: 1.75rem;
       }
 
-      .field__item {
+      a:hover {
+        color: #ffcd3f;
+      }
+    }
+
+    .comment-wrapper {
+
+      h2 {
+        margin: 0;
+      }
+    }
+
+    .block-field-blocknodearticlesfield-comment {
+
+      .cke_reset_all {
+        background: white;
+        border: none;
+      }
+      .comment-form .form-text {
+        width: 100%;
+        border-radius: 0;
+      }
+    }
+
+    .button {
+      background: #f5b000;
+      color: white;
+      text-transform: uppercase;
+      border-color: #ededed;
+      border-radius: 0;
+      border: none;
+      font-size: 0.688rem;
+      padding: 12px 18px 11px;
+    }
+
+    .button:hover {
+      background-color: black;
+      color: white;
+    }
+  }
+
+  // Latest News block.
+  .layout__region--second {
+
+    .block-views-blocklatest-news-block-2 {
+      text-align: left;
+
+      h2 {
+        font-size: 1.75rem;
+        font-weight: 800;
+        color: black;
+        padding-left: 20px;
+      }
+
+      // Position article content.
+      .layout--onecol {
+        display: flex;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+        border-bottom: 1px solid #eaeaea;
+      }
+
+      // Hide double titles.
+      .node__title, .node__meta {
         display: none;
+      }
+
+      .block-field-blocknodearticlesfield-taxonommy {
+        display: inline-block;
+        margin-right: 10px;
+        font-size: 0.75rem;
+
+        .field__item:first-child {
+          display: block;
+        }
+
+        .field__item {
+          display: none;
+        }
+
+        a {
+          border-bottom: none;
+        }
+      }
+
+      .block-field-blocknodearticlescreated {
+        display: inline-block;
+        color: #ffcd3f;
+        font-size: 0.75rem;
+      }
+    }
+
+    .block-field-blocknodearticlestitle {
+
+      .content {
+        margin-top: 0;
       }
 
       a {
         border-bottom: none;
+        font-size: 1rem;
+        display: inline;
+        font-weight: 800;
+      }
+
+      a:hover {
+        border-bottom: 2px solid #ffcd3f;
       }
     }
 
-    .block-field-blocknodearticlescreated {
-      display: inline-block;
-      color: #ffcd3f;
-      font-size: 0.75rem;
-    }
-  }
-
-  .block-field-blocknodearticlestitle {
-
-    .content {
-      margin-top: 0;
-    }
-
-    a {
-      border-bottom: none;
-      font-size: 1rem;
+    .block-field-blocknodearticlescreated .block-field-blocknodearticlesfield-para {
       display: inline;
-      font-weight: 800;
     }
 
-    a:hover {
-      border-bottom: 2px solid #ffcd3f;
+    .paragraph-formatter {
+      display: inline;
     }
-  }
-
-  .block-field-blocknodearticlescreated .block-field-blocknodearticlesfield-para {
-    display: inline;
-  }
-
-  .paragraph-formatter {
-    display: inline;
   }
 }
 
+// Article footer (advertise and you might block).
+.bottomsection {
+
+  .block-views-blockadvertise-block-2 {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+// Responsive for main view.
 @media all and (max-width: 767px) {
   .absolut {
-  position: absolute;
-  left: 0rem;
-  top: -1.85rem;
+    position: relative;
+
+    left: 0;
+    top: -1.85rem;
+
     .block-field-blocknodearticlesfield-head {
       width: 100vw;
 
@@ -247,14 +324,19 @@
     .taxonomytwo {
       bottom: 18rem !important;
     }
+
     .titlesecond {
       font-size: 1.625rem;
     }
   }
 
   .reg66x34 {
-    position: relative;
-    top: -33rem;
-  }
 
+    .block-field-blocknodearticlesuid {
+      padding: 0 15px;
+    }
+    .block-field-blocknodearticlesfield-comment {
+      padding: 0 15px;
+    }
+  }
 }
