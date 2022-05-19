@@ -2,7 +2,7 @@
 .node__meta {
   display: none;
 }
-.layout-main-wrapper {
+.k {
   padding: 0;
   margin: 0;
   min-width: 100%;
@@ -16,18 +16,207 @@
   }
 }
 // View main block.
-.layout__region--content {
-  text-align: center;
+.absolut {
+  position: absolute;
+  left: -18rem;
+  top: -2.47rem;
 
-  // Main image.
   .block-field-blocknodearticlesfield-head {
+    width: 99.29vw;
 
     .image-style-_400x1500 {
+      width: 100vw;
       height: 37.5rem;
+      filter: brightness(60%)
+    }
+  }
+}
+
+.articlepage {
+  text-align: center;
+  height: 36rem;
+  padding-top: 38rem;
+
+  // Taxonomy terms and titles.
+  .taxonomyone {
+    display: inline-block;
+    position: relative;
+    bottom: 17rem;
+    padding-right: 10px;
+
+    a {
+      color: white;
+      border: none;
+      font-size: 0.75rem;
+    }
+
+    a:hover {
+      color: #ffcd3f;
+    }
+
+    .field__item:first-child {
+      display: block;
+    }
+
+    .field__item {
+      display: none;
     }
   }
 
+  .titlefirst {
+    display: inline-block;
+    padding-right: 15px;
+    position: relative;
+    bottom: 17rem;
 
+    .field--name-title {
+      color: white;
+      font-size: 0.75rem;
+    }
+  }
 
+  .taxonomytwo {
+    position: relative;
+    bottom: 18rem;
+
+    .field__item:first-child {
+      display: block;
+    }
+
+    .field__item {
+      display: none;
+
+      a {
+        color: white;
+        border: 1px solid grey;
+        font-size: 0.688rem;
+        font-weight: 400;
+        padding: 5px 6px;
+      }
+
+      a:hover {
+        border: 1px solid white;
+      }
+    }
+  }
+
+  .titlesecond {
+    position: relative;
+    bottom: 18rem;
+    font-size: 2.5rem;
+    color: white;
+    font-weight: 800;
+    padding: 0 10%;
+  }
+
+  .block-field-blocknodearticlesuid {
+    position: relative;
+    bottom: 18rem;
+    display: inline-block;
+    padding-right: 10px;
+
+    a {
+      color: white;
+      border: none;
+    }
+
+    a:hover {
+      color: #ffcd3f;
+    }
+  }
+
+  .block-field-blocknodearticlescreated {
+    position: relative;
+    bottom: 18rem;
+    display: inline-block;
+    color: white;
+  }
+}
+.block-views-blockadvertise-block-1 {
+  position: relative;
+  bottom: 15rem;
 }
 
+
+.reg66x34 {
+  position: relative;
+  top: -25rem;
+}
+
+// Latest News block.
+.layout__region--second
+
+.block-views-blocklatest-news-block-2 {
+  text-align: left;
+  h2 {
+    font-size: 1.75rem;
+    font-weight: 800;
+    color: black;
+    padding-left: 20px;
+  }
+
+  // Position article content.
+  .layout--onecol {
+    display: flex;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #eaeaea;
+  }
+
+  // Hide double titles.
+  .node__title, .node__meta {
+    display: none;
+  }
+
+  .block-field-blocknodearticlesfield-taxonommy {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 0.75rem;
+
+    .field__item:first-child {
+      display: block;
+    }
+
+    .field__item {
+      display: none;
+    }
+
+    a {
+      border-bottom: none;
+    }
+  }
+
+  .block-field-blocknodearticlescreated {
+    display: inline-block;
+    color: #ffcd3f;
+    font-size: 0.75rem;
+  }
+}
+
+.block-field-blocknodearticlestitle {
+
+  .content {
+    margin-top: 0;
+  }
+
+  a {
+    border-bottom: none;
+    font-size: 1rem;
+    display: inline;
+    font-weight: 800;
+  }
+
+  a:hover {
+    border-bottom: 2px solid #ffcd3f;
+  }
+}
+
+.block-field-blocknodearticlescreated .block-field-blocknodearticlesfield-para {
+  display: inline;
+}
+
+.paragraph-formatter {
+  display: inline;
+}
