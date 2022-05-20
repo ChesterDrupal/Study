@@ -1,0 +1,10 @@
+uuid: 5bea20ca-6259-45f6-b485-6c016f13a155
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.mustread
+label: MustReadCategory
+targetEntityType: node
+cache: true

@@ -37,12 +37,23 @@ third_party_settings:
                 entity: layout_builder.entity
                 view_mode: view_mode
               formatter:
-                type: media_thumbnail
+                type: entity_reference_entity_view
                 label: hidden
                 settings:
-                  image_link: content
-                  image_style: thumbnail
-                third_party_settings: {  }
+                  view_mode: main_view_second
+                third_party_settings:
+                  linked_field:
+                    linked: 0
+                    type: field
+                    destination:
+                      field: ''
+                      custom: ''
+                    advanced:
+                      title: ''
+                      target: ''
+                      class: ''
+                      rel: ''
+                      text: ''
             weight: 0
             additional: {  }
           0bb45c44-07c7-4696-8d17-54a5042e90ec:

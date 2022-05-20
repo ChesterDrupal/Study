@@ -40,31 +40,12 @@ third_party_settings:
                 entity: layout_builder.entity
                 view_mode: view_mode
               formatter:
-                type: media_thumbnail
+                type: entity_reference_entity_view
                 label: hidden
                 settings:
-                  image_link: content
-                  image_style: medium_300x300
+                  view_mode: categorypage
                 third_party_settings: {  }
             weight: 0
-            additional: {  }
-          c611d336-d23b-43ba-91cd-1d0a643f9772:
-            uuid: c611d336-d23b-43ba-91cd-1d0a643f9772
-            region: second
-            configuration:
-              id: 'field_block:node:articles:field_para'
-              label: parag
-              label_display: '0'
-              provider: layout_builder
-              context_mapping:
-                entity: layout_builder.entity
-                view_mode: view_mode
-              formatter:
-                type: paragraph_summary
-                label: hidden
-                settings: {  }
-                third_party_settings: {  }
-            weight: 3
             additional: {  }
           bb7cfb07-fee3-4e28-a660-e8547d06a94f:
             uuid: bb7cfb07-fee3-4e28-a660-e8547d06a94f
@@ -83,7 +64,7 @@ third_party_settings:
                 settings:
                   link: true
                 third_party_settings: {  }
-            weight: 4
+            weight: 5
             additional: {  }
           1b859443-764b-4452-813d-67fdfecff167:
             uuid: 1b859443-764b-4452-813d-67fdfecff167
@@ -104,7 +85,7 @@ third_party_settings:
                   custom_date_format: Y/m/d
                   timezone: ''
                 third_party_settings: {  }
-            weight: 5
+            weight: 6
             additional: {  }
           0a4c6365-62f2-4f93-bdb6-c394cebe1415:
             uuid: 0a4c6365-62f2-4f93-bdb6-c394cebe1415
@@ -143,6 +124,24 @@ third_party_settings:
                   link: true
                 third_party_settings: {  }
             weight: 1
+            additional: {  }
+          c611d336-d23b-43ba-91cd-1d0a643f9772:
+            uuid: c611d336-d23b-43ba-91cd-1d0a643f9772
+            region: second
+            configuration:
+              id: 'field_block:node:articles:field_para'
+              label: parag
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: paragraph_summary
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 4
             additional: {  }
         third_party_settings: {  }
 id: node.articles.test
