@@ -1,0 +1,11 @@
+uuid: 8f8f578a-1f19-43a4-8632-727e0a7c9208
+langcode: en
+status: true
+dependencies: {  }
+id: 66x34_region
+label: '66x34 region'
+classes: reg66x34
+type: section
+block_restrictions: {  }
+layout_restrictions: {  }
+weight: 0

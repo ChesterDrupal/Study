@@ -1,8 +1,9 @@
 global-styling:
-  version: 1.x
+  version: VERSION
   css:
     component:
       dist/style.css: {}
+      css/components/field.css: {}
     theme:
       dist/style.css: {}
     layout:

@@ -1,0 +1,11 @@
+uuid: 68e953ad-81a5-4c91-8324-fabfd291d31e
+langcode: en
+status: true
+dependencies: {  }
+id: articlepage
+label: ArticlePage
+classes: articlepage
+type: section
+block_restrictions: {  }
+layout_restrictions: {  }
+weight: 0

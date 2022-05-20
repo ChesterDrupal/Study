@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.img_tax_title_body
+    - core.entity_view_mode.node.music_festivals
     - node.type.articles
     - taxonomy.vocabulary.ar
   module:
@@ -178,7 +178,7 @@ display:
         type: 'entity:node'
         options:
           relationship: none
-          view_mode: img_tax_title_body
+          view_mode: music_festivals
       query:
         type: views_query
         options:
@@ -201,7 +201,20 @@ display:
           vids:
             - ar
       group_by: false
-      header: {  }
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text
+          empty: false
+          content:
+            value: 'Recommended to you'
+            format: basic_html
+          tokenize: false
       footer: {  }
       display_extenders: {  }
     cache_metadata:
