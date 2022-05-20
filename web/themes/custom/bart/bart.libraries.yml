@@ -8,4 +8,4 @@ global-styling:
     layout:
       css/layout.css: {}
   js:
-    js/script.js: {}
+    dist/bundle.js: {}
