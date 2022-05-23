@@ -1,0 +1,93 @@
+// Stay connected block.
+.block-views-blockstay-connected-block-1 {
+  width: 35%;
+  display: inline-block;
+
+  thead {
+    display: none;
+  }
+
+  tr {
+    background-color: white;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+    font-weight: 800;
+    color: black;
+  }
+
+  tbody {
+    font-weight: bold;
+    font-size: 11px;
+    color: black;
+  }
+  .views-field-field-logo {
+    width: 40px;
+  }
+}
+
+// Responsive for connected block.
+@media all and (max-width: 767px) {
+
+  .block-views-blockstay-connected-block-1 {
+    width: 100%;
+
+    h2 {
+      padding: 0 15px !important;
+    }
+
+    .views-field-field-number {
+      width: 10%;
+    }
+  }
+}
+
+// TV, F&D blocks.
+.block-views-blockduplicate-of-main-blocks-block-6, .block-views-blockduplicate-of-main-blocks-block-8 {
+  width: 35%;
+  float: right;
+
+  h2 {
+    font-size: 1.75rem;
+    font-weight: 800;
+    color: black;
+  }
+
+  a {
+    border-bottom: 0;
+  }
+
+  .node__title, .node__meta {
+    display: none;
+  }
+
+  .block-field-blocknodearticlestitle {
+    font-size: 1rem;
+    font-weight: 800;
+
+    a:hover {
+      border-bottom: 2px solid #ffcd3f;
+    }
+  }
+}
+
+// Responsive for TV, F&D blocks.
+@media all and (max-width: 767px) {
+
+  .block-views-blockduplicate-of-main-blocks-block-6, .block-views-blockduplicate-of-main-blocks-block-8 {
+    width: 100%;
+
+    h2 {
+      padding: 0 15px !important;
+    }
+
+    .layout__region--first {
+      padding: 0 15px;
+    }
+
+    .views-field-field-number {
+      width: 10%;
+    }
+  }
+}

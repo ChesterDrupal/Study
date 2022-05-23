@@ -26,8 +26,11 @@
         "drupal/entity_usage": "^2.0@beta",
         "drupal/layout_builder_perms": "1.x-dev@dev",
         "drupal/layout_builder_styles": "^1.0@beta",
+        "drupal/layout_library": "^1.0@beta",
+        "drupal/layoutcomponents": "^3.0",
         "drupal/page_manager": "^4.0@beta",
         "drupal/page_manager_ui": "^4.0@beta",
+        "drupal/panels": "^4.6",
         "drupal/paragraphs": "^1.13",
         "drupal/search_api_db": "^1.8",
         "drupal/views_bulk_operations": "^4.1"
