@@ -42,6 +42,7 @@ module:
   language: 0
   layout_builder: 0
   layout_builder_perms: 0
+  layout_builder_styles: 0
   layout_discovery: 0
   link: 0
   media: 0

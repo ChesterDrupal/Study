@@ -1,0 +1,11 @@
+uuid: f4c384e1-1a96-43e7-b79e-2e473d1c8f5a
+langcode: en
+status: true
+dependencies: {  }
+id: title1
+label: title1
+classes: titlefirst
+type: component
+block_restrictions: {  }
+layout_restrictions: {  }
+weight: 0

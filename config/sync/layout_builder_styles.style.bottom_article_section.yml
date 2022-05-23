@@ -1,0 +1,11 @@
+uuid: d3d6f82e-8f3c-4693-b25c-19629c909399
+langcode: en
+status: true
+dependencies: {  }
+id: bottom_article_section
+label: 'bottom article section'
+classes: bottomsection
+type: section
+block_restrictions: {  }
+layout_restrictions: {  }
+weight: 0

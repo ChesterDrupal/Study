@@ -1,0 +1,11 @@
+uuid: 3022e075-751b-4dea-9e76-591b1da1086c
+langcode: en
+status: true
+dependencies: {  }
+id: tax2
+label: tax2
+classes: taxonomytwo
+type: component
+block_restrictions: {  }
+layout_restrictions: {  }
+weight: 0

@@ -1,0 +1,11 @@
+uuid: a99aaf82-c52c-426c-9314-b56b14399afc
+langcode: en
+status: true
+dependencies: {  }
+id: tax1
+label: tax1
+classes: taxonomyone
+type: component
+block_restrictions: {  }
+layout_restrictions: {  }
+weight: 0
