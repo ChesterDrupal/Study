@@ -39,7 +39,7 @@ third_party_settings:
                 label: above
                 settings: {  }
                 third_party_settings: {  }
-            weight: 3
+            weight: 2
             additional: {  }
           8a0cd046-f988-421d-9ac9-068827ee2115:
             uuid: 8a0cd046-f988-421d-9ac9-068827ee2115
@@ -58,26 +58,7 @@ third_party_settings:
                 settings:
                   link: true
                 third_party_settings: {  }
-            weight: 4
-            additional: {  }
-          1e8c2720-4a64-4c31-a3e8-443ac9e0b816:
-            uuid: 1e8c2720-4a64-4c31-a3e8-443ac9e0b816
-            region: content
-            configuration:
-              id: 'field_block:node:page:title'
-              label: Title
-              label_display: '0'
-              provider: layout_builder
-              context_mapping:
-                entity: layout_builder.entity
-                view_mode: view_mode
-              formatter:
-                type: string
-                label: hidden
-                settings:
-                  link_to_entity: false
-                third_party_settings: {  }
-            weight: 2
+            weight: 3
             additional: {  }
         third_party_settings: {  }
       -

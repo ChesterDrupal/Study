@@ -1,0 +1,11 @@
+uuid: 49ca1bb7-3d2e-40f4-bcb3-e0fa02d432d7
+langcode: en
+status: true
+dependencies: {  }
+id: categorypage
+label: categorypage
+classes: categorypage
+type: section
+block_restrictions: {  }
+layout_restrictions: {  }
+weight: 0

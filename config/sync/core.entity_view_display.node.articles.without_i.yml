@@ -44,7 +44,7 @@ third_party_settings:
                 settings:
                   link: true
                 third_party_settings: {  }
-            weight: 2
+            weight: 1
             additional: {  }
           fb794e90-6091-49f6-9ac2-b55bc1d9b897:
             uuid: fb794e90-6091-49f6-9ac2-b55bc1d9b897
@@ -62,29 +62,10 @@ third_party_settings:
                 label: hidden
                 settings:
                   date_format: custom
-                  custom_date_format: Y/m/d
+                  custom_date_format: Y-m-d
                   timezone: ''
                 third_party_settings: {  }
-            weight: 3
-            additional: {  }
-          55e5514e-e1df-4acd-90be-2bb1c342dbd7:
-            uuid: 55e5514e-e1df-4acd-90be-2bb1c342dbd7
-            region: content
-            configuration:
-              id: 'field_block:node:articles:title'
-              label: Title
-              label_display: '0'
-              provider: layout_builder
-              context_mapping:
-                entity: layout_builder.entity
-                view_mode: view_mode
-              formatter:
-                type: string
-                label: hidden
-                settings:
-                  link_to_entity: true
-                third_party_settings: {  }
-            weight: 1
+            weight: 2
             additional: {  }
         third_party_settings: {  }
 id: node.articles.without_i

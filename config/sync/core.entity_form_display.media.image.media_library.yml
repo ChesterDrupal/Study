@@ -6,7 +6,6 @@ dependencies:
     - core.entity_form_mode.media.media_library
     - field.field.media.image.field_media_image
     - field.field.media.image.field_txi
-    - field.field.media.image.layout_builder__layout
     - image.style.thumbnail
     - media.type.image
   module:
@@ -36,7 +35,6 @@ content:
 hidden:
   created: true
   field_txi: true
-  layout_builder__layout: true
   name: true
   path: true
   status: true

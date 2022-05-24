@@ -1,5 +1,4 @@
 global-styling:
-  version: 1.x
   css:
     component:
       dist/style.css: {}
@@ -8,4 +7,8 @@ global-styling:
     layout:
       css/layout.css: {}
   js:
-    dist/bundle.js: {}
+    dist/main.bundle.js: {minified: true}
+  dependencies:
+    - core/jquery
+    - core/jquery.once
+    - core/drupalSettings

@@ -3,7 +3,6 @@ langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.big_art
     - core.entity_view_mode.node.featured
     - core.entity_view_mode.node.img_head_
     - core.entity_view_mode.node.music_festiva
@@ -320,7 +319,6 @@ display:
           replica: false
           query_tags: {  }
       relationships: {  }
-      css_class: ''
       header: {  }
       footer: {  }
       display_extenders: {  }
@@ -974,7 +972,7 @@ display:
         type: 'entity:node'
         options:
           relationship: none
-          view_mode: big_art
+          view_mode: music_festiva
       defaults:
         title: false
         style: false
@@ -1591,13 +1589,11 @@ display:
           view_mode: trst
       defaults:
         title: false
-        css_class: false
         pager: false
         style: false
         row: false
         filters: false
         filter_groups: false
-      css_class: tv_food
       display_description: ''
       display_extenders: {  }
       block_description: TVBlock
@@ -1942,15 +1938,13 @@ display:
         type: 'entity:node'
         options:
           relationship: none
-          view_mode: big_art
+          view_mode: music_festiva
       defaults:
         title: false
-        css_class: false
         style: false
         row: false
         sorts: false
         header: false
-      css_class: music
       display_description: ''
       header:
         area:
