@@ -1,0 +1,15 @@
+uuid: 0f72a913-5d63-4eb2-bb60-7e0b433c82f8
+langcode: en
+status: true
+dependencies: {  }
+name: 2400x1500
+label: 2400x1500
+effects:
+  c2ce95f9-6d64-49d7-92a5-800860fc294e:
+    uuid: c2ce95f9-6d64-49d7-92a5-800860fc294e
+    id: image_scale
+    weight: 1
+    data:
+      width: 2400
+      height: 1500
+      upscale: false

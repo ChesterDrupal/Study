@@ -2,6 +2,7 @@ global-styling:
   css:
     component:
       dist/style.css: {}
+      css/components/field.css: {}
     theme:
       dist/style.css: {}
     layout:
