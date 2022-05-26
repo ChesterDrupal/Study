@@ -13,7 +13,7 @@
   .block-field-blocknodearticlesfield-head {
     width: 99.29vw;
 
-    .image-style-_400x1500 {
+    .image-style-wide {
       object-fit: cover;
       width:100vw ;
       height: 37.5rem;
@@ -145,11 +145,48 @@
       font-size: 1rem;
       margin: 0 5rem;
     }
-    .paragraph {
-      img {
+
+    .image-position--right {
+      text-align: right;
+
+      .image-style-image-and-text-4-of-12 {
+        width: 25%;
+        margin: 0 5rem 0 2rem;
+        float: right;
+      }
+
+      .image-style-image-and-text-6-of-12 {
+        width: 50%;
+        margin: 0 5rem 0 2rem;
+        float: right;
+      }
+
+      .image-style-image-and-text-8-of-12 {
         width: 100%;
       }
     }
+
+    .image-position--left {
+      text-align: start;
+
+      .image-style-image-and-text-4-of-12 {
+        width: 25%;
+        margin: 0 2rem 0 5rem;
+        float: left;
+      }
+
+      .image-style-image-and-text-6-of-12 {
+        width: 50%;
+        margin: 0 2rem 0 5rem;
+        float: left;
+      }
+
+      .image-style-image-and-text-8-of-12 {
+        width: 100%;
+      }
+    }
+
+
 
     .block-field-blocknodearticlesuid {
       margin-top: 5rem;
@@ -332,7 +369,7 @@
 
     .block-field-blocknodearticlesfield-taxonommy {
       position: relative;
-      bottom: 2.5rem;
+      bottom: 3rem;
       display: block;
       height: 0;
 
@@ -386,7 +423,7 @@
     .block-field-blocknodearticlesfield-head {
       width: 100vw;
 
-      .image-style-_400x1500 {
+      .image-style-wide {
         height: 31.5rem;
       }
     }

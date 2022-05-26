@@ -1,0 +1,7 @@
+paragraph_align:
+  path: '/paragraph/page'
+  defaults:
+    _controller: '\Drupal\paragraph_align\Controller\ParagraphController::para'
+    _title: 'Welcome to My Module in Drupal 9'
+  requirements:
+    _permission: 'access content'
