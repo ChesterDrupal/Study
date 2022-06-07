@@ -1,0 +1,7 @@
+<h1>{{ title }}</h1>
+<ul class="block_exchange-list"><h2><b>
+  {% for item in items %}
+   <li>{{ item['ccy'] }} - {{ item['base_ccy'] }}: {{ item['buy'] }} - {{ item['sale'] }}</li>
+  {% endfor %}
+</b></h2></ul>
+

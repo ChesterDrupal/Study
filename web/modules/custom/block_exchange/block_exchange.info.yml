@@ -1,0 +1,5 @@
+name: 'Exchange Block'
+type: module
+description: 'Module which show exchange course.'
+package: custom
+core_version_requirement: ^8 || ^9
