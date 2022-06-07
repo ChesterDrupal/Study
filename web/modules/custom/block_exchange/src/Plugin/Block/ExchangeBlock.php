@@ -32,7 +32,7 @@ class ExchangeBlock extends BlockBase {
       '#attributes' => ['class' => ['render-version-list']],
     ];
 
-    $title = $this->t("The same list rendered by theme('theming_example_list')");
+    $title = $this->t('Currency: BUY - SELL');
     $build['our_theme_function'] = [
       '#title' => $title,
       '#theme' => 'block-exchange-block',
