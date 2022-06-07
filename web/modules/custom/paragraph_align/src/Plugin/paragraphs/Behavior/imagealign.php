@@ -12,14 +12,11 @@ use Drupal\paragraphs\ParagraphsBehaviorBase;
 
 /**
  * @ParagraphsBehavior(
- *   id = "dummy_image_and_text",
- *   label = @Translation("Paragraph Image and Text settings"),
- *   description = @Translation("Allows to select image size and position."),
- *   weight = 0,
+ *   id = "image_and_text",
  * )
  */
 
-class imagealign extends ParagraphsBehaviorBase {
+class ImageAlign extends ParagraphsBehaviorBase {
 
   /**
    * {@inheritdoc}
