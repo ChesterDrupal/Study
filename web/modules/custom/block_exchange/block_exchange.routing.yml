@@ -1,0 +1,7 @@
+block_exchange.inputurl:
+  path: '/admin/content/block-exchange'
+  defaults:
+    _form: '\Drupal\block_exchange\Form\InputUrl'
+    _title: 'Settings'
+  requirements:
+    _permission: 'access administration pages'

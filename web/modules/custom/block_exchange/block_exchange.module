@@ -8,11 +8,10 @@
 function block_exchange_theme($existing, $type, $theme, $path) {
   return array(
     'block-exchange-block' => array(
-      // We use 'variables' when the item to be passed is an array whose
-      // structure must be described here.
+
       'variables' => array(
         'title' => NULL,
-        'items' => NULL,
+        'item' => NULL,
       ),
     ),
   );

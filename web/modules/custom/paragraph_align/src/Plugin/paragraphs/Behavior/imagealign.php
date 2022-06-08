@@ -12,14 +12,14 @@ use Drupal\paragraphs\ParagraphsBehaviorBase;
 
 /**
  * @ParagraphsBehavior(
- *   id = "dummy_image_and_text",
+ *   id = "image_and_text",
  *   label = @Translation("Paragraph Image and Text settings"),
  *   description = @Translation("Allows to select image size and position."),
  *   weight = 0,
  * )
  */
 
-class imagealign extends ParagraphsBehaviorBase {
+class ImageAlign extends ParagraphsBehaviorBase {
 
   /**
    * {@inheritdoc}
@@ -83,7 +83,6 @@ class imagealign extends ParagraphsBehaviorBase {
     $image_position = $paragraph->getBehaviorSetting($this->getPluginId(), 'image_position', 'left');
     $image_position_options = $this->getImagePositionOptions();
 
-    $summary = [];
     $summary[] = $this->t('Image size: @value', ['@value' => $image_size_options[$image_size]]);
     $summary[] = $this->t('Image position: @value', ['@value' => $image_position_options[$image_position]]);
 

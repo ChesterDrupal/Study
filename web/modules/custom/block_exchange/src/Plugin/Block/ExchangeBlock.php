@@ -5,13 +5,14 @@ namespace Drupal\block_exchange\Plugin\Block;
 use Drupal\Core\Block\BlockBase;
 
 /**
- * Provides a 'Hello' Block.
+ * Provides a 'Exchange' Block.
  *
  * @Block(
  *   id = "block_exchange",
  *   admin_label = @Translation("Exchange Block")
  * )
  */
+
 class ExchangeBlock extends BlockBase {
 
   /**
@@ -20,27 +21,41 @@ class ExchangeBlock extends BlockBase {
 
   public function build()
   {
+    $config = \Drupal::config('block_exchange.settings');
+    $testurl = $config->get('url');
+    $testcurr = $config->get('currency');
 
-    $j = @file_get_contents('https://api.privatbank.ua/p24api/pubinfo?json&exchange&coursid=5');
-    $data = json_decode($j, TRUE);
-
-    $title = $this->t("A list returned to be rendered using theme('item_list')");
-    $build['render_version'] = [
-      '#theme' => 'item_list',
-      '#title' => $title,
-      '#items' => array_column($data, 'ccy'),
-      '#attributes' => ['class' => ['render-version-list']],
-    ];
-
+    $urltomass = @file_get_contents($testurl);
+    $data = json_decode($urltomass, TRUE);
     $title = $this->t('Currency: BUY - SELL');
-    $build['our_theme_function'] = [
-      '#title' => $title,
-      '#theme' => 'block-exchange-block',
-      '#items' => $data,
-      '#wrapper_attributes' => ['class' => ['exch-container']],
-      '#markup' => $this->t("This block's title is changed to uppercase..."),
-    ];
-    return $build;
+
+    if ($testcurr == 'USD') {
+      $build['exchange_function'] = [
+        '#title' => $title,
+        '#theme' => 'block-exchange-block',
+        '#item' => $data[0],
+        '#wrapper_attributes' => ['class' => ['exch-container']],
+      ];
+      return $build;
+    }
+    elseif ($testcurr == 'EUR') {
+      $build['exchange_function'] = [
+        '#title' => $title,
+        '#theme' => 'block-exchange-block',
+        '#item' => $data[1],
+        '#wrapper_attributes' => ['class' => ['exch-container']],
+      ];
+      return $build;
+    }
+    elseif ($testcurr == 'BTC') {
+      $build['exchange_function'] = [
+        '#title' => $title,
+        '#theme' => 'block-exchange-block',
+        '#item' => $data[2],
+        '#wrapper_attributes' => ['class' => ['exch-container']],
+      ];
+      return $build;
+    }
 
   }
   /**
