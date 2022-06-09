@@ -53,11 +53,13 @@ class ExchangeBlock extends BlockBase {
     return $build;
 
   }
+
   /**
    * @TODO work with cache.
    *
    * @return int
    */
+
   public function getCacheMaxAge() {
     return 0;
   }
