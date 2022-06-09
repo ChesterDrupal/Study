@@ -29,33 +29,28 @@ class ExchangeBlock extends BlockBase {
     $data = json_decode($urltomass, TRUE);
     $title = $this->t('Currency: BUY - SELL');
 
-    if ($testcurr == 'USD') {
-      $build['exchange_function'] = [
-        '#title' => $title,
-        '#theme' => 'block-exchange-block',
-        '#item' => $data[0],
-        '#wrapper_attributes' => ['class' => ['exch-container']],
-      ];
-      return $build;
+    $curr_indentificator = 0;
+
+    switch ($testcurr) {
+      case 'USD':
+        $curr_indentificator = 0;
+        break;
+
+      case 'EUR':
+        $curr_indentificator = 1;
+        break;
+
+      case 'BTC':
+        $curr_indentificator = 2;
+        break;
     }
-    elseif ($testcurr == 'EUR') {
-      $build['exchange_function'] = [
-        '#title' => $title,
-        '#theme' => 'block-exchange-block',
-        '#item' => $data[1],
-        '#wrapper_attributes' => ['class' => ['exch-container']],
-      ];
-      return $build;
-    }
-    elseif ($testcurr == 'BTC') {
-      $build['exchange_function'] = [
-        '#title' => $title,
-        '#theme' => 'block-exchange-block',
-        '#item' => $data[2],
-        '#wrapper_attributes' => ['class' => ['exch-container']],
-      ];
-      return $build;
-    }
+    $build['exchange_function'] = [
+      '#title' => $title,
+      '#theme' => 'block-exchange-block',
+      '#item' => $data[$curr_indentificator],
+      '#wrapper_attributes' => ['class' => ['exch-container']],
+    ];
+    return $build;
 
   }
   /**
