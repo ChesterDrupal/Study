@@ -6,12 +6,10 @@ dependencies:
     - core.entity_view_mode.media.main_view_second
     - field.field.media.image.field_media_image
     - field.field.media.image.field_txi
-    - field.field.media.image.layout_builder__layout
     - media.type.image
     - responsive_image.styles.respons_for_img
   module:
     - layout_builder
-    - layout_discovery
     - responsive_image
 third_party_settings:
   layout_builder:

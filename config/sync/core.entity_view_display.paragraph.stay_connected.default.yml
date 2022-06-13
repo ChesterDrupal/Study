@@ -4,93 +4,11 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.stay_connected.field_action
-    - field.field.paragraph.stay_connected.field_logo
     - field.field.paragraph.stay_connected.field_number
     - field.field.paragraph.stay_connected.field_people
-    - field.field.paragraph.stay_connected.layout_builder__layout
     - paragraphs.paragraphs_type.stay_connected
   module:
-    - layout_builder
-    - layout_discovery
     - options
-third_party_settings:
-  layout_builder:
-    enabled: true
-    allow_custom: true
-    sections:
-      -
-        layout_id: layout_onecol
-        layout_settings:
-          label: ''
-        components:
-          7c7964c8-81fa-4e2e-a30e-1fa317565da4:
-            uuid: 7c7964c8-81fa-4e2e-a30e-1fa317565da4
-            region: content
-            configuration:
-              id: 'field_block:paragraph:stay_connected:field_logo'
-              label: logo
-              label_display: '0'
-              provider: layout_builder
-              context_mapping:
-                entity: layout_builder.entity
-                view_mode: view_mode
-              formatter:
-                type: media_thumbnail
-                label: hidden
-                settings:
-                  image_link: ''
-                  image_style: 60x
-                third_party_settings: {  }
-            weight: 0
-            additional: {  }
-          dccbc1f3-4e6d-4473-a971-ec8c88c3da7a:
-            uuid: dccbc1f3-4e6d-4473-a971-ec8c88c3da7a
-            region: content
-            configuration:
-              id: 'field_block:paragraph:stay_connected:field_number'
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              formatter:
-                type: number_integer
-                label: above
-                settings:
-                  thousand_separator: ''
-                  prefix_suffix: true
-                third_party_settings: {  }
-            weight: 1
-            additional: {  }
-          70cab766-a107-47cd-a2ba-b20eae5014c2:
-            uuid: 70cab766-a107-47cd-a2ba-b20eae5014c2
-            region: content
-            configuration:
-              id: 'field_block:paragraph:stay_connected:field_people'
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              formatter:
-                type: list_default
-                label: above
-                settings: {  }
-                third_party_settings: {  }
-            weight: 2
-            additional: {  }
-          2ec96ef1-b4ca-4360-b851-92d36908c6c8:
-            uuid: 2ec96ef1-b4ca-4360-b851-92d36908c6c8
-            region: content
-            configuration:
-              id: 'field_block:paragraph:stay_connected:field_action'
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              formatter:
-                type: list_default
-                label: above
-                settings: {  }
-                third_party_settings: {  }
-            weight: 3
-            additional: {  }
-        third_party_settings: {  }
 id: paragraph.stay_connected.default
 targetEntityType: paragraph
 bundle: stay_connected
@@ -101,16 +19,7 @@ content:
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 3
-    region: content
-  field_logo:
-    type: entity_reference_entity_view
-    label: above
-    settings:
-      view_mode: default
-      link: false
-    third_party_settings: {  }
-    weight: 0
+    weight: 2
     region: content
   field_number:
     type: number_integer
@@ -119,15 +28,14 @@ content:
       thousand_separator: ''
       prefix_suffix: true
     third_party_settings: {  }
-    weight: 1
+    weight: 0
     region: content
   field_people:
     type: list_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 2
+    weight: 1
     region: content
 hidden:
-  layout_builder__layout: true
   search_api_excerpt: true

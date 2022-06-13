@@ -1,6 +1,6 @@
 uuid: 94100b10-3ce4-46cc-985f-48ece72c2e8d
 langcode: en
-status: false
+status: true
 dependencies:
   config:
     - core.entity_view_display.comment.comment.default

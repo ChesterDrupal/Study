@@ -4,13 +4,9 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.stay_connected.field_action
-    - field.field.paragraph.stay_connected.field_logo
     - field.field.paragraph.stay_connected.field_number
     - field.field.paragraph.stay_connected.field_people
-    - field.field.paragraph.stay_connected.layout_builder__layout
     - paragraphs.paragraphs_type.stay_connected
-  module:
-    - media_library
 id: paragraph.stay_connected.default
 targetEntityType: paragraph
 bundle: stay_connected
@@ -18,31 +14,23 @@ mode: default
 content:
   field_action:
     type: options_select
-    weight: 3
+    weight: 2
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_logo:
-    type: media_library_widget
-    weight: 0
-    region: content
-    settings:
-      media_types: {  }
-    third_party_settings: {  }
   field_number:
     type: number
-    weight: 1
+    weight: 0
     region: content
     settings:
       placeholder: ''
     third_party_settings: {  }
   field_people:
     type: options_select
-    weight: 2
+    weight: 1
     region: content
     settings: {  }
     third_party_settings: {  }
 hidden:
   created: true
-  layout_builder__layout: true
   status: true
