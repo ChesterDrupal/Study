@@ -44,11 +44,12 @@ class ExchangeBlock extends BlockBase {
         $curr_indentificator = 2;
         break;
     }
+
+
     $build['exchange_function'] = [
       '#title' => $title,
       '#theme' => 'block-exchange-block',
       '#item' => $data[$curr_indentificator],
-      '#wrapper_attributes' => ['class' => ['exch-container']],
     ];
     return $build;
 
@@ -61,6 +62,7 @@ class ExchangeBlock extends BlockBase {
    */
 
   public function getCacheMaxAge() {
+
     return 0;
   }
 }

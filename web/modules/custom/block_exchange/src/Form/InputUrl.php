@@ -18,7 +18,7 @@ class InputUrl extends FormBase {
    * {@inheritdoc}
    */
   public function buildForm(array $form, FormStateInterface $form_state) {
-    // @todo
+
     $config = $this->configFactory()->get('block_exchange.settings');
     $form['url'] = [
       '#type' => 'url',
@@ -38,7 +38,7 @@ class InputUrl extends FormBase {
         'EUR' => $this->t('EUR - UAH'),
         'BTC' => $this->t('BTC - USD'),
       ],
-      '#description' => $this->t('Choose currency which u wanna check.'),
+      '#description' => $this->t('Which currency u wanna check?'),
     ];
 
     $form['submit'] = [
@@ -54,7 +54,6 @@ class InputUrl extends FormBase {
    * {@inheritdoc}
    */
   public function getFormId() {
-    // @todo
     return 'block_exchange_settings_form';
   }
 
@@ -65,10 +64,7 @@ class InputUrl extends FormBase {
     $myurl = $form_state->getValue('url');
     $currency = $form_state->getValue('currency');
 
-    // @todo
     $config = $this->configFactory()->getEditable('block_exchange.settings');
-
-    $t = \Drupal::configFactory()->get('block_exchange.settings');
 
     $config->set('url', $myurl);
     $config->set('currency', $currency);

@@ -12,7 +12,7 @@ use Drupal\paragraphs\ParagraphsBehaviorBase;
 
 /**
  * @ParagraphsBehavior(
- *   id = "image_and_text",
+ *   id = "dummy_image_and_text",
  *   label = @Translation("Paragraph Image and Text settings"),
  *   description = @Translation("Allows to select image size and position."),
  *   weight = 0,
