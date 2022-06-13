@@ -74,20 +74,7 @@ class ImageAlign extends ParagraphsBehaviorBase {
     return $form;
   }
 
-  /**
-   * {@inheritdoc}
-   */
-  public function settingsSummary(Paragraph $paragraph) {
-    $image_size = $paragraph->getBehaviorSetting($this->getPluginId(), 'image_size', '4_12');
-    $image_size_options = $this->getImageSizeOptions();
-    $image_position = $paragraph->getBehaviorSetting($this->getPluginId(), 'image_position', 'left');
-    $image_position_options = $this->getImagePositionOptions();
 
-    $summary[] = $this->t('Image size: @value', ['@value' => $image_size_options[$image_size]]);
-    $summary[] = $this->t('Image position: @value', ['@value' => $image_position_options[$image_position]]);
-
-    return $summary;
-  }
 
   /**
    * Return options for image size.
