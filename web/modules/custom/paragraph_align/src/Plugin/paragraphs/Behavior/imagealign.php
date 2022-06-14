@@ -12,7 +12,7 @@ use Drupal\paragraphs\ParagraphsBehaviorBase;
 
 /**
  * @ParagraphsBehavior(
- *   id = "image_and_text",
+ *   id = "dummy_image_and_text",
  * )
  */
 
