@@ -24,6 +24,7 @@
         "drupal/entity_browser": "^2.6",
         "drupal/entity_reference_revisions": "^1.9",
         "drupal/entity_usage": "^2.0@beta",
+        "drupal/examples": "^3.0",
         "drupal/layout_builder_perms": "1.x-dev@dev",
         "drupal/layout_builder_styles": "^1.0@beta",
         "drupal/layout_library": "^1.0@beta",

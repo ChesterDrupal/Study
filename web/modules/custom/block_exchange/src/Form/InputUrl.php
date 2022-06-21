@@ -71,5 +71,4 @@ class InputUrl extends FormBase {
     $config->save();
 
   }
-
 }
