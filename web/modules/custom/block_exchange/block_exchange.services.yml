@@ -1,0 +1,3 @@
+services:
+  block_exchange.awesome_service:
+    class:     Drupal\block_exchange\ObjectExch

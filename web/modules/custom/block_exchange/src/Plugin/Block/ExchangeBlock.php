@@ -4,6 +4,7 @@ namespace Drupal\block_exchange\Plugin\Block;
 
 use Drupal\Core\Block\BlockBase;
 
+
 /**
  * Provides a 'Exchange' Block.
  *
@@ -19,16 +20,16 @@ class ExchangeBlock extends BlockBase {
    * {@inheritdoc}
    */
 
-  public function build()
-  {
+  public function build() {
+
     $config = \Drupal::config('block_exchange.settings');
     $testurl = $config->get('url');
     $testcurr = $config->get('currency');
 
     $urltomass = @file_get_contents($testurl);
     $data = json_decode($urltomass, TRUE);
-    $title = $this->t('Currency: BUY - SELL');
 
+    $title = $this->t('Currency: BUY - SELL');
     $curr_indentificator = 0;
 
     switch ($testcurr) {
@@ -44,18 +45,24 @@ class ExchangeBlock extends BlockBase {
         $curr_indentificator = 2;
         break;
     }
+    /**
+     * @var Drupal\block_exchange\ObjectExch $manager
+     */
 
+    $manager = \Drupal::service('block_exchange.awesome_service');
+    $manager->SaveInDb($data[$curr_indentificator]);
 
     $build['exchange_function'] = [
       '#title' => $title,
       '#theme' => 'block-exchange-block',
       '#item' => $data[$curr_indentificator],
     ];
+
     return $build;
 
   }
 
-  /**
+    /**
    * @TODO work with cache.
    *
    * @return int
